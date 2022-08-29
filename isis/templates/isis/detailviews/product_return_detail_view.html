@@ -1,0 +1,87 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load humanize %}
+
+{% block title %} {{ block.super }} | {% trans 'product_return Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='product_return Details' path='<a href="/product_return/"> product_returns</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h1
+                {% if product_return.is_paid %}
+                    style="color: green;"
+                {% else %}
+                    style="color: orange;"
+                {% endif %}
+                >{{ product_return.name }}</h1>
+                <div class="btn-group">
+                    <a href="{% url 'isis:product_return_update' product_return.pk %}" 
+                        class="fas fa-edit btn btn-secondary">
+                    </a> 
+                    <a href="{% url 'isis:product_return_list' %}" 
+                        class="btn btn-info">
+                        <i class="fas fa-list"></i>
+                        {% trans 'List' %} 
+                    </a>
+                </div>
+                <hr>
+                <table class="table table-small">
+                <tr><td width="15%">{% trans 'Total' %}: <td><strong>{{ product_return.total | floatformat:2 |intcomma }}</strong></td></tr>
+                <tr><td>{% trans 'Paid' %}: </td> <td><strong>{{ product_return.credit | floatformat:2 |intcomma }}</strong></td></tr>
+                <tr><td>{% trans 'Debit' %}: </td> <td><strong>{{ product_return.debit | floatformat:2 |intcomma }}</strong></td></tr>
+                <tr><td>{% trans 'Costumer' %}: </td> <td><strong><a href="{% url 'asset_app:costumer_details' product_return.costumer.pk %}">{{ product_return.costumer.name }}</a></strong></td></tr>
+                <tr><td>{% trans 'Date' %}: </td> <td><strong>{{ product_return.date }}</strong></td></tr>
+                <tr><td>{% trans 'Due Date' %}: </td> <td><strong>{{ product_return.due_date }}</strong></td></tr>
+                <tr><td>{% trans 'Payment Method' %}: </td> <td><strong>{{ product_return.payment_method }}</strong></td></tr>
+                <tr><td>{% trans 'Payment Term' %}: </td> <td><strong>{{ product_return.payment_term }}</strong></td></tr>
+                <tr><td>{% trans 'Paid Status' %}:  </td>
+                    <td><strong>
+                        {{ product_return.payment_status }}
+                    </strong></td>
+                </tr>
+                
+                <tr><td> {% trans 'Delivered Status' %}:  </td>
+                    <td><strong>
+                        {{ product_return.delivery_status }}
+                    </strong></td>
+                </tr>
+                
+                <tr><td>{% trans 'Finished Status' %}: </td> 
+                    <td><strong>
+                        {% if product_return.finished_status %}
+                            {% trans "Validated" %}
+                        {% else %}
+                            {% trans "Not Validated" %}
+                        {% endif %}
+                    </strong></td>
+                </tr>
+                
+                <tr><td>{% trans 'Active' %}: </td>
+                    <td><strong>  
+                        {% if product_return.active_status %} {% trans 'Active' %}
+                        {% else %} {% trans 'Canceled' %}
+                        {% endif %}
+                    </strong></td>
+                </tr>
+
+                <tr><td>{% trans 'Notes' %}: </td> <td><strong>{{ product_return.notes }}</strong></td></tr>
+            </table>
+    
+            <p>{% trans 'Created on' %}: <i>{{ product_return.date_created}}</i></p>
+            <p>{% trans 'Created by' %}: <i>{{ product_return.created_by }}</i></p>
+            <p>{% trans 'Modified on' %}: <i>{{ product_return.date_modified }}</i></p>
+            <p>{% trans 'Modified by' %}: <i>{{ product_return.modified_by }}</i></p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

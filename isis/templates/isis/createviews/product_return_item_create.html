@@ -1,0 +1,124 @@
+{% extends 'index.html' %}
+
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'New Product Return Item' %} {% endblock title %}
+
+{% block breadcrumb %}
+{% include 'breadcrumb.html' with title='New Product Return Item' path='<a href="/product_return/"> product_return Items </a>' dest='New product_return Item' %}
+{% endblock breadcrumb %}
+            
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="conteiner-fluid p-10 m-0" id="results">
+                </div>
+                
+                {% if total %}
+                    
+                <div class="col-md-12 text-align-center p-0 m-0">
+    
+                    <table class="table table-hover table-striped p-0 table-small" width="100%" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th scope="row" width='20%'><h3> {% trans "Return Note Total" %}: </h3></th>
+                                <th width='12%' class="text-end"> <h3 class='text-end'> {{ total.total | floatformat:2 |intcomma }} </h3></th>
+                                <th width='15%'></th>
+                                <th><h3>{{ product_return.name }}</h3></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">{% trans "Sub Total" %}: </td>
+                                <td class="text-end"> <span> {{ sub_total.subtotal | floatformat:2 |intcomma }} </span></td>
+                                <td> {% trans "Costumer" %} </td>
+                                <td><strong> {{ product_return.costumer }} </strong></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">{% trans "Discount Total" %}: </td>
+                                <td class="text-end"> <span> {{ discount_total.discount | floatformat:2 |intcomma }} </span></td>
+                                <td> {% trans "Payment Method" %}</td>                               
+                                <td> {{ product_return.payment_method }} </td>
+                                <td> {% trans "Return Note Date" %}</td>                               
+                                <td> {{ product_return.date }} </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">{% trans "Tax Total" %}: </td>
+                                <td class="text-end"> <span> {{ tax_total.tax | floatformat:2 |intcomma }} </span></td>
+                                <td> {% trans "Payment Term" %} </td>
+                                <td> {{ product_return.payment_term }} </td>
+                                <td> {% trans "Due on" %} </td>
+                                <td> {{ product_return.due_date }} </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+                {% endif %}
+                
+                {% csrf_token %}
+                {% crispy form %}
+
+                <p> <strong> {% trans 'List of Items' %} </strong> </p>
+                <hr>
+                <table id="sortTableSmall" class="table display responsive nowrap">
+                    <thead>
+                        <tr class="p-0 m-0">
+                            <th style="padding-left: 11px;">
+                                <input type="checkbox" id="checkall" name="main_Checkbox" 
+                                value="" style="vertical-align: middle"> 
+                            </th>
+                            <th> {% trans "Name" %}</th>
+                            <th class="text-end">{% trans "Price" %}</th>
+                            <th class="text-end">{% trans "Quantity" %}</th>
+                            <th class="text-end">{% trans "Tax" %}</th>
+                            <th class="text-end">{% trans "Discount" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in items %}
+                            <tr data-id="{{ item.id }}"  class="row{{ item.id }}">    
+                                <td with="10"> <input type="checkbox" id="{{ item.id }}" class="rowcheckbox" 
+                                    value="" style="vertical-align: middle">
+                                </td>
+                                <td>{{ item.product }}</td>
+                                <td class="text-end">{{ item.price | floatformat:2 |intcomma }}</td>
+                                <td class="text-end">{{ item.quantity | floatformat:2 |intcomma }}</td>
+                                <td class="text-end">{{ item.tax }}</td>
+                                <td class="text-end">{{ item.discount | floatformat:2 |intcomma }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                
+                <button class="btn btn-danger delete-btn fa fa-minus-square" data-toggle="modal"
+                    onclick="DeleteItems('#sortTableSmall','{% url 'isis:product_return_item_delete' %}', 
+                    '{% url 'isis:product_return_item_create' product_return.pk %}', true)">
+                
+                </button>
+                
+                <hr>
+
+                <div class="col-md-12">
+                    <form  class="form-inline" id="product_return-finish" method="post">
+                        {% csrf_token %}
+                        <input type="submit"name="validate" value="{% trans "Finish" %}" 
+                        class="btn btn-default fa fa-plus" id="finishproduct_return"/>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

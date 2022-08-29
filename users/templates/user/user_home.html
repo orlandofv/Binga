@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {{ block.super }} - Contactos
+{% endblock %}
+
+{% block menu_categorias %}
+{% endblock %}
+
+{% block content %}
+     <!-- ##### Breadcrumb Area Start ##### -->
+
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Welcome, {% if profile.sexo == 1 %} Mr. {% else %} Mrs. {% endif %} {{ profile.user_name }}</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'mozlaserapp:home' %}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Welcome</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <h2 style="align: center-right;">My Profile</h2>
+        <a href="{% url 'user:edit-user-profile' pk=user.id %}" style="background-position: center;">Edit my Profile</a>
+        <hr/>
+
+        <div class="row" style="border: 5px;">
+
+            <a href="{% url 'internationaldonations:user-donation' pk=user.id %}" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms"
+            style="margin: 10px;">Donate</a>
+
+            <a href="{% url 'user:received-notification' %}" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms"
+            style="margin: 10px;">Received Notification</a>
+
+            <a href="{% url 'user:send-notification' pk=user.id %}" class="btn credit-btn mt-50" data-animation="fadeInUp" data-delay="700ms"
+            style="margin: 10px;">Send Notification</a>
+
+        </div>
+
+                <p>Email: {{ user.email }}</p>
+
+                {% if profile %}
+                    <p>User Name: {{ profile.user_name }}</p>
+                    <p>Contact: {{ profile.contacto }}</p>
+                    <p>Birth Date: {{ profile.data_nascimento }}</p>
+                    <p>Godfather Email: {{ profile.email_padrinho }}</p>
+                {% endif %}
+
+                <table>
+                    <caption>LIST OF TRANSACTIONS</caption>
+                    <thead>
+                        <tr>
+                            <th>DONATION DATE</th>
+                            <th>PLAN</th>
+                            <th>DONATION</th>
+                            <th>DUE DATE</th>
+                            <th>REWARD</th>
+                            <th>WARRANTY</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+
+
+                        <tbody>
+                            {% for d in doacao %}
+                                <tr>
+                                    <td>{{ d.data }}</td>
+                                    <td>{{ d.nome }} ({{d.percentagem}}%)</td>
+                                    <td>{{ d.valor_doado }}</td>
+                                    <td>{{ d.data_limite }}</td>
+                                    <td>{{ d.valor_a_receber }}</td>
+                                    <td>{{ d.taxa_a_reter }}</td>
+                                    <td>{% if d.estado == 1  %} <span style="color: green;"> Confirmed </span> {% else %}
+                                        <span style="color: red;"> Pending </span> {% endif %} </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+
+                </table>
+
+{% endblock %}
+
+{% block vistos %}
+{% endblock %}
+{% block banner %}
+{% endblock %}
+
+{% block negocio_da_semana %}
+{% endblock %}
+
+{% block categorias %}
+{% endblock %}
+
+{% block ratings %}
+{% endblock %}
+
+{% block novidades %}
+{% endblock %}
+
+{% block melhores_vendas %}
+{% endblock %}
+
+{% block anuncios %}
+{% endblock %}
+
+{% block trends %}
+{% endblock %}
+
+{% block reviews %}
+{% endblock %}
+
+{% block marcas %}
+{% endblock %}

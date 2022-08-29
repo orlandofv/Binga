@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-05 12:23-0200\n"
+"Last-Translator: None None <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\bank\forms.py:26
+msgid "Add/Update Bank"
+msgstr "Adicionar/Atualizar Banco"
+
+#: .\bank\forms.py:28
+msgid "BANK MAIN DATA"
+msgstr "DADOS PRINCIPAIS DO BANCO"
+
+#: .\bank\forms.py:53 .\bank\forms.py:98
+msgid "Save & Close"
+msgstr "Gravar & Fechar"
+
+#: .\bank\forms.py:54 .\bank\forms.py:99
+msgid "Save & Edit"
+msgstr "Gravar & Editar"
+
+#: .\bank\forms.py:77
+msgid "Add/Update Bank Account"
+msgstr "Adicionar/Atualizar Conta Bancária"
+
+#: .\bank\forms.py:79
+msgid "BANK ACCOUNT MAIN DATA"
+msgstr "DADOS PRINCIPAIS DA CONTA BANCÁRIA"
+
+#: .\bank\models.py:16 .\bank\models.py:63 .\bank\models.py:111
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:46
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:48
+msgid "Active"
+msgstr "Ativo"
+
+#: .\bank\models.py:16 .\bank\models.py:63 .\bank\models.py:109
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:49
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\bank\models.py:20
+msgid "Bank Name"
+msgstr "Nome do banco"
+
+#: .\bank\models.py:22
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:40
+#: .\bank\templates\bank\listviews\bank_list.html:31
+msgid "Address"
+msgstr "Endereço"
+
+#: .\bank\models.py:23
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:44
+#: .\bank\templates\bank\listviews\bank_list.html:33
+msgid "Email"
+msgstr "E-mail"
+
+#: .\bank\models.py:24
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:45
+msgid "Website"
+msgstr "Pág. Web"
+
+#: .\bank\models.py:25
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:41
+#: .\bank\templates\bank\listviews\bank_list.html:32
+msgid "Telephone"
+msgstr "Telefone"
+
+#: .\bank\models.py:26
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:42
+msgid "Fax"
+msgstr "Fax"
+
+#: .\bank\models.py:27
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:43
+msgid "Cell"
+msgstr "Celular"
+
+#: .\bank\models.py:28
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:42
+msgid "Status"
+msgstr "Estado"
+
+#: .\bank\models.py:29 .\bank\models.py:75 .\bank\models.py:120
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:43
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:54
+msgid "Notes"
+msgstr "Notas"
+
+#: .\bank\models.py:56 .\bank\models.py:99
+msgid "Checking"
+msgstr "Conta corrente"
+
+#: .\bank\models.py:56 .\bank\models.py:101
+msgid "Savings"
+msgstr "Conta Poupança"
+
+#: .\bank\models.py:57 .\bank\models.py:103
+msgid "Money Market"
+msgstr "Conta do Mercado Monetário"
+
+#: .\bank\models.py:57
+msgid "Certificate of Deposit"
+msgstr "Comprovante de depósito"
+
+#: .\bank\models.py:64 .\bank\models.py:113
+msgid "Suspended"
+msgstr "Suspenso"
+
+#: .\bank\models.py:66
+#: .\bank\templates\bank\listviews\bank_account_list.html:31
+msgid "Account"
+msgstr "Conta"
+
+#: .\bank\models.py:69
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:38
+#: .\bank\templates\bank\listviews\bank_account_list.html:33
+msgid "NIB"
+msgstr "NIB"
+
+#: .\bank\models.py:70
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:40
+msgid "IBAN"
+msgstr "IBAN"
+
+#: .\bank\models.py:71
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:39
+msgid "SWIFT"
+msgstr "SWIFT"
+
+#: .\bank\models.py:72
+msgid "Account Type"
+msgstr "Tipo de conta"
+
+#: .\bank\models.py:73
+msgid "Account Status"
+msgstr "Status da Conta"
+
+#: .\bank\models.py:94
+msgid "Bank Accounts"
+msgstr "Contas bancárias"
+
+#: .\bank\models.py:105
+msgid "Certificate Of Deposit"
+msgstr "Comprovante de depósito"
+
+#: .\bank\templates\bank\createviews\bank_account_create.html:8
+msgid "New Bank Account"
+msgstr "Nova Conta Bancária"
+
+#: .\bank\templates\bank\createviews\bank_create.html:8
+#: .\bank\templates\bank\modals\bank_modal.html:8
+msgid "New Bank"
+msgstr "Novo Banco"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:9
+msgid "Bank Account Details"
+msgstr "Detalhes da conta bancária"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:33
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:34
+msgid "List"
+msgstr "Lista"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:37
+#: .\bank\templates\bank\listviews\bank_account_list.html:32
+msgid "Bank"
+msgstr "Banco"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:41
+msgid "Type"
+msgstr "Tipo"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:44
+#: .\bank\templates\bank\listviews\bank_account_list.html:34
+msgid "Balance"
+msgstr "Saldo"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:47
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:57
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:48
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:58
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:49
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:59
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\bank\templates\bank\detailviews\bank_account_detail_view.html:50
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:60
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:8
+msgid "Bank Details"
+msgstr "Detalhes bancários"
+
+#: .\bank\templates\bank\detailviews\bank_detail_view.html:53
+msgid "Description"
+msgstr "Descrição"
+
+#: .\bank\templates\bank\listviews\bank_account_list.html:35
+#: .\bank\templates\bank\listviews\bank_list.html:34
+msgid "Actions"
+msgstr "Acões"
+
+#: .\bank\templates\bank\listviews\bank_list.html:30
+msgid "Name"
+msgstr "Nome"
+
+#: .\bank\templates\bank\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\bank\templates\bank\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de Artigos"
+
+#: .\bank\templates\bank\updateviews\bank_account_update.html:8
+msgid "Update Bank Account"
+msgstr "Atualizar conta bancária"
+
+#: .\bank\templates\bank\updateviews\bank_update.html:8
+msgid "Update Bank"
+msgstr "Atualizar banco"
+
+#: .\bank\views.py:27
+msgid "Bank added successfully!"
+msgstr "Banco adicionado com sucesso!"
+
+#: .\bank\views.py:65
+msgid "Bank updated successfully!"
+msgstr "Banco atualizado com sucesso!"
+
+#: .\bank\views.py:91 .\bank\views.py:217
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\bank\views.py:94
+msgid "Bank delete successfully!"
+msgstr "Exclusão bancária com sucesso!"
+
+#: .\bank\views.py:131
+msgid "Bank Account added successfully!"
+msgstr "Conta bancária adicionada com sucesso!"
+
+#: .\bank\views.py:191
+msgid "Bank Account updated successfully!"
+msgstr "Conta bancária atualizada com sucesso!"
+
+#: .\bank\views.py:220
+msgid "Bank Account delete successfully!"
+msgstr "Exclusão da conta bancária com sucesso!"
+
+#~ msgid "Products Dashboard"
+#~ msgstr "Painel de Produtos"
+
+#~ msgid "Print Invoice"
+#~ msgstr "Imprimir Factura"
+
+#~ msgid "Close"
+#~ msgstr "Fachar"
+
+#~ msgid "Invoice"
+#~ msgstr "Factura"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Due Date"
+#~ msgstr "Data de Vencimento"
+
+#~ msgid "Phone"
+#~ msgstr "Telefone"
+
+#~ msgid "Contacts"
+#~ msgstr "Contactos"
+
+#~ msgid "Price"
+#~ msgstr "Preço"
+
+#~ msgid "Qty"
+#~ msgstr "Qt."
+
+#~ msgid "VAT"
+#~ msgstr "IVA"
+
+#~ msgid "Discount"
+#~ msgstr "Desconto"
+
+#~ msgid "Total"
+#~ msgstr "Total"

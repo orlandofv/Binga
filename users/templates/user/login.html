@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block title %} {{ block.super }} | Entrada {% endblock title %}
+
+{% block layout %}
+    {% for message in messages %}
+    <div class="container p-0 m-0" id="alert_id{{ forloop.counter }}">
+        <div class="alert {{ message.tags }} alert-dismissible" role="alert" 
+        style="margin:0px; padding:0px;">
+            <button type="button" class="btn close" style="vertical-align: center; 
+            horizontal-align: right;" data-dismiss="alert" aria-label="Close"
+            <span aria-hidden="True" onclick="Hide(alert_id{{ forloop.counter }})">&times;</span>
+            </button>
+            {{ message|striptags }}
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-4">
+            </div>
+            
+            <div class="col-md-4" style="margin: 100px 10px 10px 10px; 
+                border: 1px solid #b5aec4; border-radius: 10px; padding:20px;">   
+                <h5> {% trans 'PLEASE, LOGIN TO CONTINUE' %} </h5>
+                <hr>    
+                {% csrf_token %}
+                {% crispy form %}
+
+                <h6>{% trans "Don't have account?" %}  
+                    <a href='{% url 'users:register' %}'> 
+                    {% trans "Register" %} </a> 
+                </h6>
+            </div>
+            
+            <div class="col-md-4">
+            </div>
+            
+        </div>
+    </div>
+
+{% endblock layout %}
+

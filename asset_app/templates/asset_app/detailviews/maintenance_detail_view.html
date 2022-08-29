@@ -1,0 +1,68 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Maintenance Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Maintenance Details' path='<a href="/maintenances/"> Maintenances</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                {% if maintenance.image.url %}
+                    <img src="{{ maintenance.image.url }}">
+                {% endif %}
+                <h1>{{ maintenance.name }}</h1>
+                <a href="{% url 'asset_app:maintenance_create' %}" 
+                    class="fa fa-plus btn btn-primary">
+                   
+                </a> 
+                <a href="{% url 'asset_app:maintenance_update' maintenance.slug %}" 
+                    class="fas fa-edit btn btn-secondary">
+                     
+                </a> 
+                <a href="{% url 'asset_app:maintenance_list' %}" 
+                    class="btn btn-info">
+                    <i class="fas fa-list"></i>
+                    {% trans 'List' %} 
+                </a>
+                
+              
+                <hr>
+                <h6>{% trans 'Maintenance Type' %}: <strong> <span id='type'>{{ maintenance.type }}</span> </strong></h6>
+                <h6>{% trans 'Maintenance frequency' %}: <strong> <span id='frequency'>{{ maintenance.frequency }}</span> (<span id='schedule'>{{ maintenance.schedule }}</span>)</strong></h6>
+                <h6>{% trans 'Time Allocated' %}: <strong> <span id='time_allocated'>{{ maintenance.time_allocated }}</span> 
+                    (<span id='time_schedule'>{{ maintenance.time_schedule }}</span>)</strong></h6>
+                <h6>{% trans 'Notes' %}: <strong>{{ maintenance.notes }}</strong></h6>
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ maintenance.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ maintenance.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ maintenance.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ maintenance.modified_by }}</i></p>
+            </div>
+        </div>
+        {% csrf_token %}
+        {% include 'asset_app/partials/action_item_list.html' %}
+        
+        <div class="panel panel-primary mt-2">
+            <div class="panel-heading">Related Items</div>
+            <ul class="list-group">
+                {% for rel in related %}
+                    <li class="list-group-item">
+                        <a href="{% url 'asset_app:maintenance_details' rel.slug %}" 
+                            class="fa fa-book btn btn-default">
+                            {{ rel }}
+                        </a> 
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,71 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'User Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='User Details' path='<a href="/users/"> users</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ user.name }}</h1>
+                <a href="{% url 'users:user_create' %}" 
+                    class="fa fa-plus btn btn-primary">
+                   
+                </a> 
+                <a href="{% url 'users:user_update' user.pk %}" 
+                    class="fas fa-edit btn btn-secondary">
+                     
+                </a>
+                <a href="{% url 'users:user_list' %}" 
+                    class="btn btn-info">
+                    <i class="fas fa-list"></i>
+                    {% trans 'List' %} 
+                </a>
+             
+                <hr>
+                <h6>{% trans 'Name' %}: <strong> <span>{{ user.name }}</span></strong></h6>
+                <h6>{% trans 'Parent' %}: <strong> <span>{{ parent_user }}</span></strong></h6>
+                <h6>{% trans 'Active' %}: <strong> 
+                    <span>  
+                        {% if user.is_active %} {% trans 'Active' %}
+                        {% else %} {% trans 'Inactive' %}
+                        {% endif %}
+                    </span> </strong>
+                </h6>
+                <h6>{% trans 'Notes' %}: <strong> <span>{{ user.notes }}</span></strong></h6>
+    
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ user.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ user.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ user.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ user.modified_by }}</i></p>
+            </div>
+        </div>
+        
+        {% if child_users %}
+        <div class="panel panel-primary mt-2">
+            <div class="panel-title">Child Categories <span class="badge">{{ child_users | length }}</span></div>
+            <div class='card-body'>
+                {% for rel in child_users %}
+                    <a href="{% url 'users:user_details' rel.pk %}" 
+                    class="fa fa-book btn btn-default card-text">
+                        {{ rel }}
+                    </a> 
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    </div>
+
+    
+{% endblock content %}

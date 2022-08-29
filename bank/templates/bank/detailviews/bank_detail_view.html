@@ -1,0 +1,64 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Bank Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Bank Details' path='<a href="/banks/"> Banks</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                {% if bank.image.url %}
+                    <img src="{{ bank.image.url }}">
+                {% endif %}
+                <h1>{{ bank.name }}</h1>
+                <a href="{% url 'bank:bank_create' %}" 
+                    class="fa fa-plus btn btn-primary">
+                   
+                </a> 
+                <a href="{% url 'bank:bank_update' bank.slug %}" 
+                    class="fas fa-edit btn btn-secondary">
+                     
+                </a> 
+                <a href="{% url 'bank:bank_list' %}" 
+                    class="btn btn-info">
+                    <i class="fas fa-list"></i>
+                    {% trans 'List' %} 
+                </a>
+                
+               
+
+                <hr>
+                <h6>{% trans 'Address' %}: <strong> <span>{{ bank.address }}</span></strong></h6>
+                <h6>{% trans 'Telephone' %}: <strong> <span>{{ bank.telephone }}</span></strong></h6>
+                <h6>{% trans 'Fax' %}: <strong> <span>{{ bank.fax }}</span></strong></h6>
+                <h6>{% trans 'Cell' %}: <strong> <span>{{ bank.cell }}</span></strong></h6>
+                <h6>{% trans 'Email' %}: <strong> <span>{{ bank.email }}</span></strong></h6>
+                <h6>{% trans 'Website' %}: <strong> <span>{{ bank.website }}</span></strong></h6>
+                <h6>{% trans 'Active' %}: <strong> 
+                    <span>  
+                        {% if bank.active_status %} {% trans 'Active' %}
+                        {% else %} {% trans 'Inactive' %}
+                        {% endif %}
+                    </span> </strong>
+                </h6>
+                <h6>{% trans 'Description' %}: <strong> <span>{{ bank.description }}</span></strong></h6>
+                <h6>{% trans 'Notes' %}: <strong> <span>{{ bank.notes }}</span></strong></h6>
+    
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ bank.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ bank.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ bank.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ bank.modified_by }}</i></p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\users\forms.py:27
+msgid "Sign in"
+msgstr "Entrar"
+
+#: .\users\forms.py:36 .\users\forms.py:148
+msgid "Enter Email"
+msgstr "Email"
+
+#: .\users\forms.py:37 .\users\forms.py:149
+msgid "Enter Password"
+msgstr "Entre a Senha"
+
+#: .\users\forms.py:38 .\users\forms.py:150
+msgid "Confirm Password"
+msgstr "Confirme a Senha"
+
+#: .\users\forms.py:56
+msgid "Add/Update User"
+msgstr "Adicionar/atualizar usuário"
+
+#: .\users\forms.py:58
+msgid "MAIN DATA"
+msgstr "DADOS PRINCIPAIS"
+
+#: .\users\forms.py:111
+msgid "Save & Close"
+msgstr "Gravar & Fechar"
+
+#: .\users\forms.py:112
+msgid "Save & Edit"
+msgstr "Gravar & Editar"
+
+#: .\users\forms.py:133
+msgid "Last active date must be greater than First active date"
+msgstr "A última data ativa deve ser maior que a primeira data ativa"
+
+#: .\users\forms.py:138 .\users\forms.py:182
+msgid "User Name must not be empty"
+msgstr "O nome de usuário não deve estar vazio"
+
+#: .\users\forms.py:143 .\users\forms.py:187
+msgid "password and confirm password does not match"
+msgstr "senha e senha de confirmação não coincidem"
+
+#: .\users\forms.py:151 .\users\models.py:70
+#: .\users\templates\user\listviews\user_list.html:30
+msgid "Username"
+msgstr "Usuário"
+
+#: .\users\forms.py:151
+msgid "Enter Username"
+msgstr "Insira nome de usuário"
+
+#: .\users\forms.py:166
+msgid "Sign Up"
+msgstr "Cadastre-se"
+
+#: .\users\managers.py:15
+msgid "The Email must be set"
+msgstr "O e-mail deve ser definido"
+
+#: .\users\managers.py:31
+msgid "Superuser must have is_staff=True."
+msgstr "Superusuário deve ter is_staff=True."
+
+#: .\users\managers.py:33
+msgid "Superuser must have is_superuser=True."
+msgstr "Superusuário deve ter is_superuser=True."
+
+#: .\users\models.py:20
+msgid "Male"
+msgstr "Masculino"
+
+#: .\users\models.py:21
+msgid "Female"
+msgstr "Femenino"
+
+#: .\users\models.py:71 .\users\templates\user\listviews\user_list.html:31
+msgid "Email"
+msgstr "E-mail"
+
+#: .\users\models.py:72
+msgid "Image"
+msgstr "Imagem"
+
+#: .\users\models.py:74
+msgid "Title"
+msgstr "Título"
+
+#: .\users\models.py:75
+msgid "Gender"
+msgstr "Género"
+
+#: .\users\models.py:76
+msgid "Employee"
+msgstr "Trabalhador"
+
+#: .\users\models.py:78
+msgid "First Active Date"
+msgstr "Primeira Data Ativa"
+
+#: .\users\models.py:80
+msgid "Last Active Date"
+msgstr "Última data ativa"
+
+#: .\users\models.py:82
+msgid "Country"
+msgstr "País"
+
+#: .\users\models.py:83
+msgid "Province/State"
+msgstr "Província/Estado"
+
+#: .\users\models.py:84
+msgid "City"
+msgstr "Cidade"
+
+#: .\users\models.py:85
+msgid "Zip Code"
+msgstr "Caixa Postal"
+
+#: .\users\models.py:86
+msgid "Address"
+msgstr "Endereço"
+
+#: .\users\models.py:87
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\users\models.py:88
+msgid "Fax"
+msgstr "Fax"
+
+#: .\users\models.py:89
+msgid "Mobile"
+msgstr "Celular"
+
+#: .\users\models.py:90
+msgid "VAT Number"
+msgstr "IVA"
+
+#: .\users\models.py:91
+msgid "Website"
+msgstr "Pág. Web"
+
+#: .\users\templates\user\createviews\user_create.html:8
+msgid "New User"
+msgstr "Novo usuário"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:8
+msgid "User Details"
+msgstr "Detalhes do usuario"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:31
+msgid "List"
+msgstr "Lista"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:35
+msgid "Name"
+msgstr "Nome"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:36
+msgid "Parent"
+msgstr "Parente"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:37
+#: .\users\templates\user\detailviews\user_detail_view.html:39
+#: .\users\templates\user\listviews\user_list.html:55
+msgid "Active"
+msgstr "Ativo"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:40
+#: .\users\templates\user\listviews\user_list.html:57
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:44
+msgid "Notes"
+msgstr "Notas"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:47
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:48
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:49
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\users\templates\user\detailviews\user_detail_view.html:50
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\users\templates\user\listviews\user_list.html:32
+msgid "Type"
+msgstr "Tipo"
+
+#: .\users\templates\user\listviews\user_list.html:33
+msgid "Status"
+msgstr "Estado"
+
+#: .\users\templates\user\listviews\user_list.html:34
+msgid "Actions"
+msgstr "Ações"
+
+#: .\users\templates\user\listviews\user_list.html:48
+msgid "Super User"
+msgstr "Super Usuário"
+
+#: .\users\templates\user\listviews\user_list.html:50
+msgid "Normal User"
+msgstr "Usuário Normal"
+
+#: .\users\templates\user\login.html:30
+msgid "PLEASE, LOGIN TO CONTINUE"
+msgstr "POR FAVOR FAÇA O LOGIN PARA CONTINUAR"
+
+#: .\users\templates\user\login.html:35
+msgid "Don't have account?"
+msgstr "Não tem conta?"
+
+#: .\users\templates\user\login.html:37
+msgid "Register"
+msgstr "Cadastre-se"
+
+#: .\users\templates\user\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\users\templates\user\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de artigos"
+
+#: .\users\templates\user\register.html:7
+msgid "Login"
+msgstr "Entrar"
+
+#: .\users\templates\user\register.html:30
+msgid "PLEASE, SIGN UP"
+msgstr "POR FAVOR, CADASTRE-SE"
+
+#: .\users\templates\user\register.html:35
+msgid "Already Have account?"
+msgstr "Já tem conta?"
+
+#: .\users\templates\user\register.html:36
+msgid "Please Login"
+msgstr "Por favor entre"
+
+#: .\users\templates\user\updateviews\user_update.html:8
+msgid "Update User"
+msgstr "Atualizar usuário"
+
+#: .\users\views.py:54
+msgid "Welcome {}."
+msgstr "Bem-vindo {}."
+
+#: .\users\views.py:58 .\users\views.py:59
+msgid "Your account is disabled."
+msgstr "Sua conta está desativada."
+
+#: .\users\views.py:139
+msgid "User added successfully!"
+msgstr "Usuário adicionado com sucesso!"
+
+#: .\users\views.py:192
+msgid "User updated successfully!"
+msgstr "Usuário atualizado com sucesso!"
+
+#: .\users\views.py:218
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\users\views.py:221
+msgid "User delete successfully!"
+msgstr "Usuário excluído com sucesso!"
+
+#~ msgid "Products Dashboard"
+#~ msgstr "Painel de Produtos"
+
+#~ msgid "All Products"
+#~ msgstr "Todos os produtos"
+
+#~ msgid "Last 15 Products"
+#~ msgstr "Últimos 15 produtos"

@@ -1,0 +1,94 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='List of Invoices' path='Invoices' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    {% csrf_token %}
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        {% url 'costumer:costumer_invoice_delete' as delete %}
+        {% url 'costumer:costumer_invoice_create' as create %}
+        {% url 'costumer:costumer_invoice_list' as redirect %}
+        
+        {% include 'new_delete_extra_buttons.html' with table_id='#sortTableExtraLarger' delete_url=delete redirect_url=redirect create_url=create %}
+        
+        <hr>
+
+        {% csrf_token %}
+        {% crispy search_form %}
+
+        <table id="sortTableExtraLarger" class="table display responsive nowrap" 
+        width="100%">
+        <thead>
+            <tr class="p-0 m-0">
+                <th style="padding-left: 11px;">
+                    <input type="checkbox" id="checkall" name="main_Checkbox" 
+                    value="" style="vertical-align: middle"> 
+                </th>
+                <th>{% trans "Invoice" %}</th>
+                <th>{% trans "Costumer" %}</th>
+                <th class="text-end">{% trans "Amount" %}</th>
+                <th class="text-end">{% trans "Paid" %}</th>
+                <th class="text-end">{% trans "Debit" %}</th>
+                <th>{% trans "Status" %}</th>
+                <th>{% trans "Actions" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for obj in object_list %}
+                <tr data-id="{{ obj.id }}" class="row{{ obj.id }}
+                {% if obj.is_paid %}
+                    table-success    
+                {% else %}
+                    table-warning
+                {% endif %}"
+                >
+                    <td with="10" > <input type="checkbox" id="{{ obj.id }}" class="rowcheckbox" 
+                        value="" style="vertical-align: middle">
+                    </td>
+                    <td data-label="Invoice"> 
+                        <a href="{% url 'costumer:costumer_invoice_update' obj.pk %}" 
+                            class="aler-link">{{ obj.invoice }} ({{ obj.number }})
+                        </a>  
+                    </td>
+                    <td data-label="Costumer">{{ obj.costumer }}</td>
+                    <td data-label="Total" class="text-end">{{ obj.total | floatformat:2 |intcomma }}</td>
+                    <td data-label="Paid" class="text-end">{{ obj.credit | floatformat:2 |intcomma }}</td>
+                    <td data-label="Debit" class="text-end">{{ obj.debit | floatformat:2 |intcomma }}</td>
+                    <td data-label="Status"> 
+                        {% if obj.active_status %}
+                            {% trans "Active" %}
+                        {% else %}
+                            {% trans "Inactive" %}
+                        {% endif %}
+                    </td>
+                    <td data-label="Actions">
+                        <a href="{% url 'costumer:costumer_invoice_update' obj.pk %}" 
+                                class="fas fa-edit btn btn-secondary">
+                            
+                        </a> 
+                        <a href="{% url 'costumer:costumer_invoice_details' obj.pk %}" 
+                                class="fa fa-eye btn btn-secondary">
+                            
+                        </a>
+                        <a href="{% url 'costumer:costumer_invoice_show' obj.pk %}" 
+                        class="fa fa-file btn btn-secondary">
+                       
+                        </a>  
+                    </td>
+                </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    
+    </div>
+{% endblock content %}
+    

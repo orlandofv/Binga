@@ -1,0 +1,71 @@
+{% extends 'index.html' %}
+
+{% load humanize %}
+{% load static %}
+{% load i18n %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Stock Summary' path='Stock' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+        
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div id="ExtraButtons">
+        </div>
+        <hr>
+        {% csrf_token %}
+        {% crispy search_form %}
+
+        <table id="sortTableExtraLarge" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th>{% trans "Code" %}</th>
+                    <th>{% trans "Product" %}</th>
+                    <th class="text-end">{% trans "Sell Price" %}</th>
+                    <th class="text-end">{% trans "Quantity" %}</th>
+                    <th class="text-end">{% trans "Min. Sell Price" %}</th>
+                    <th class="text-end">{% trans "Status" %}</th>
+                    <th class="text-end">{% trans "Actions" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for obj in object_list %}
+                    <tr data-id="{{ obj.id }}" class="row{{ obj.id }}">
+
+                        <td> <a href="{% url 'isis:product_details' obj.slug %}">
+                            {{ obj.code }} </a> </td>
+                        <td> <a href="{% url 'isis:product_details' obj.slug %}"> 
+                            {{ obj.name }} </a> 
+                        </td>
+                        <td class="text-end"> {{ obj.sell_price | floatformat:2 | intcomma  }} </td>
+                        <td class="text-end">
+                            {{ obj.qt | floatformat:2 | intcomma }}
+                        </td>
+                        <td class="text-end"> {{ obj.min_sell_price | floatformat:2 | intcomma }} </td>
+                        <td> {{ obj.is_active }} </td>
+                        <td>
+                            <a href="{% url 'isis:product_update' obj.slug %}" 
+                            class="fas fa-edit btn btn-secondary">
+                                    
+                            </a> 
+                        
+                            <a href="{% url 'isis:product_details' obj.slug %}" 
+                            class="fa fa-eye btn btn-secondary">
+                            </a> 
+                            <a href="{% url 'stock:stock_item_list' obj.slug  %}" 
+                                class="btn btn-primary"> <span class="fa fa fa-list"></span>
+                            </a>
+                            
+                        </td>
+                    </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
+    

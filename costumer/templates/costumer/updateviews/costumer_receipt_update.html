@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Update Receipt' %} {% endblock title %}
+
+{% block breadcrumb %}
+{% include 'breadcrumb.html' with title='Update Receipt' path='<a href="/receipts/"> Receipts </a>' dest='Update Receipt' %}
+{% endblock breadcrumb %}
+            
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="conteiner-fluid p-10 m-0" id="results"></div>
+                {% csrf_token %}
+                {% crispy form %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}

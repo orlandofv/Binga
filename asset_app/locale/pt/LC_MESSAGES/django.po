@@ -1,0 +1,1591 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-19 09:18-0200\n"
+"Last-Translator: None None <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\asset_app\forms.py:24
+msgid "Company Name"
+msgstr "Nome da Empresa"
+
+#: .\asset_app\forms.py:25 .\asset_app\models.py:28
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:26
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:25
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:36
+#: .\asset_app\templates\asset_app\listviews\costumer_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\division_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\vendor_list_view.html:31
+msgid "Address"
+msgstr "Endereço"
+
+#: .\asset_app\forms.py:26 .\asset_app\models.py:29
+msgid "Cell"
+msgstr "Cell"
+
+#: .\asset_app\forms.py:27 .\asset_app\models.py:30
+msgid "Cell 2"
+msgstr "Cell 2"
+
+#: .\asset_app\forms.py:28 .\asset_app\models.py:31
+msgid "Telephone"
+msgstr "Telefone"
+
+#: .\asset_app\forms.py:29 .\asset_app\models.py:32 .\asset_app\models.py:167
+msgid "Fax"
+msgstr "Fax"
+
+#: .\asset_app\forms.py:30 .\asset_app\models.py:33
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:29
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:37
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:27
+#: .\asset_app\templates\asset_app\listviews\costumer_list_view.html:33
+#: .\asset_app\templates\asset_app\listviews\vendor_list_view.html:34
+msgid "Email"
+msgstr "Email"
+
+#: .\asset_app\forms.py:31 .\asset_app\models.py:34
+msgid "Web Site"
+msgstr "Web Site"
+
+#: .\asset_app\forms.py:32 .\asset_app\models.py:35
+msgid "Logo"
+msgstr "Logotipo"
+
+#: .\asset_app\forms.py:33 .\asset_app\models.py:36
+msgid "Logo Square"
+msgstr "Logotipo Quadrado"
+
+#: .\asset_app\forms.py:34 .\asset_app\forms.py:91 .\asset_app\forms.py:180
+#: .\asset_app\forms.py:330 .\asset_app\forms.py:488 .\asset_app\forms.py:522
+#: .\asset_app\forms.py:559 .\asset_app\forms.py:597 .\asset_app\forms.py:662
+#: .\asset_app\forms.py:935 .\asset_app\forms.py:973 .\asset_app\models.py:37
+#: .\asset_app\models.py:92 .\asset_app\models.py:127 .\asset_app\models.py:180
+#: .\asset_app\models.py:213 .\asset_app\models.py:237
+#: .\asset_app\models.py:261 .\asset_app\models.py:285
+#: .\asset_app\models.py:319 .\asset_app\models.py:380
+#: .\asset_app\models.py:433 .\asset_app\models.py:492
+#: .\asset_app\models.py:536
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:74
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:33
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:39
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:29
+#: .\asset_app\templates\asset_app\detailviews\group_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:43
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:25
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:25
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:26
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:43
+#: .\asset_app\templates\asset_app\listviews\branch_list_view.html:33
+#: .\asset_app\templates\asset_app\listviews\group_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\maintenance_schedule_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\system_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\type_list_view.html:33
+msgid "Notes"
+msgstr "Notas"
+
+#: .\asset_app\forms.py:47
+msgid "Add/Update Settings"
+msgstr "Adicionar/Actualizar Configurações"
+
+#: .\asset_app\forms.py:49
+#: .\asset_app\templates\asset_app\createviews\settings_create.html:8
+msgid "Settings"
+msgstr "Configurações"
+
+#: .\asset_app\forms.py:70 .\asset_app\forms.py:122 .\asset_app\forms.py:234
+#: .\asset_app\forms.py:469 .\asset_app\forms.py:505 .\asset_app\forms.py:542
+#: .\asset_app\forms.py:579 .\asset_app\forms.py:617 .\asset_app\forms.py:740
+#: .\asset_app\forms.py:886 .\asset_app\forms.py:956
+msgid "Save & Close"
+msgstr "Gravar & Fechar"
+
+#: .\asset_app\forms.py:71
+msgid "Save & Edit"
+msgstr "Gravar & Editar"
+
+#: .\asset_app\forms.py:85
+#: .\asset_app\templates\asset_app\listviews\allocation_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\component_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\item_list_view.html:32
+msgid "System No."
+msgstr "No. do Sistema"
+
+#: .\asset_app\forms.py:86 .\asset_app\forms.py:635 .\asset_app\models.py:120
+msgid "Component Name"
+msgstr "Nome do Componente"
+
+#: .\asset_app\forms.py:87 .\asset_app\models.py:122
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:25
+#: .\asset_app\templates\asset_app\listviews\item_list_view.html:34
+msgid "Manufacturer"
+msgstr "Fabricante"
+
+#: .\asset_app\forms.py:88 .\asset_app\models.py:123
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:29
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:26
+msgid "Stock Code"
+msgstr "Cod. de Estoque"
+
+#: .\asset_app\forms.py:90
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:28
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:24
+#: .\asset_app\templates\asset_app\listviews\component_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\maintenance_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\maintenance_schedule_list_view.html:30
+msgid "Maintenance"
+msgstr "Manutenção"
+
+#: .\asset_app\forms.py:103
+msgid "Add/Update Component"
+msgstr "Adicionar/Actualizar Componente"
+
+#: .\asset_app\forms.py:105
+msgid "Component Data"
+msgstr "Dados da Componente"
+
+#: .\asset_app\forms.py:123 .\asset_app\forms.py:236 .\asset_app\forms.py:470
+#: .\asset_app\forms.py:506 .\asset_app\forms.py:543 .\asset_app\forms.py:580
+#: .\asset_app\forms.py:618 .\asset_app\forms.py:741 .\asset_app\forms.py:887
+#: .\asset_app\forms.py:957
+msgid "Save & New"
+msgstr "Gravar & Novo"
+
+#: .\asset_app\forms.py:149 .\asset_app\models.py:527
+msgid "Cm"
+msgstr "Cm"
+
+#: .\asset_app\forms.py:149 .\asset_app\models.py:527
+msgid "Kg"
+msgstr "Kg"
+
+#: .\asset_app\forms.py:149 .\asset_app\models.py:527
+msgid "L"
+msgstr "L"
+
+#: .\asset_app\forms.py:149 .\asset_app\models.py:527
+msgid "Gb"
+msgstr "Gb"
+
+#: .\asset_app\forms.py:150 .\asset_app\models.py:528
+msgid "Mb"
+msgstr "Mb"
+
+#: .\asset_app\forms.py:150 .\asset_app\models.py:528
+msgid "Piece"
+msgstr "Peça"
+
+#: .\asset_app\forms.py:150
+msgid "M³"
+msgstr "M³"
+
+#: .\asset_app\forms.py:150 .\asset_app\models.py:528
+msgid "Km"
+msgstr "Km"
+
+#: .\asset_app\forms.py:150 .\asset_app\models.py:528
+msgid "G"
+msgstr "g"
+
+#: .\asset_app\forms.py:182
+#: .\asset_app\templates\asset_app\listviews\item_list_view.html:36
+#: .\asset_app\templates\asset_app\listviews\maintenance_schedule_list_view.html:32
+msgid "Action"
+msgstr "Acção"
+
+#: .\asset_app\forms.py:183
+msgid "Item"
+msgstr "Item"
+
+#: .\asset_app\forms.py:184 .\asset_app\models.py:533 .\asset_app\models.py:564
+msgid "Cost"
+msgstr "Custo"
+
+#: .\asset_app\forms.py:185 .\asset_app\models.py:532 .\asset_app\models.py:563
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: .\asset_app\forms.py:205 .\asset_app\forms.py:344
+msgid "Add/Update Maintenance"
+msgstr "Adicionar/Actualizar Manutenção"
+
+#: .\asset_app\forms.py:207 .\asset_app\forms.py:346
+msgid "Maintenance Data"
+msgstr "Dados de Manutenção"
+
+#: .\asset_app\forms.py:222 .\asset_app\forms.py:1018
+msgid "Add Action"
+msgstr "Adicionar Acção"
+
+#: .\asset_app\forms.py:232
+msgid "Add Item"
+msgstr "Adicionar Artigo"
+
+#: .\asset_app\forms.py:264 .\asset_app\forms.py:374
+msgid "Maintenance frequency must not be empty."
+msgstr "A frequência de manutenção não deve estar vazia."
+
+#: .\asset_app\forms.py:267 .\asset_app\forms.py:377
+msgid "Maintenance frequency must be greater than zero."
+msgstr "A frequência de manutenção deve ser maior que zero."
+
+#: .\asset_app\forms.py:271 .\asset_app\forms.py:381
+msgid "Maintenance Time allocated must not be empty."
+msgstr "O tempo de manutenção alocado não deve estar vazio."
+
+#: .\asset_app\forms.py:275 .\asset_app\forms.py:385
+msgid "Maintenance Time allocated must be greater than zero."
+msgstr "O Tempo de Manutenção alocado deve ser maior que zero."
+
+#: .\asset_app\forms.py:279 .\asset_app\forms.py:389
+msgid "Maintenance name must no be empty."
+msgstr "O nome de manutenção não deve estar vazio."
+
+#: .\asset_app\forms.py:284
+msgid "Please add at least one action."
+msgstr "Adicione pelo menos uma ação."
+
+#: .\asset_app\forms.py:287
+msgid "Please add at least one item, cost and its quantity."
+msgstr "Por favor, adicione pelo menos um item, custo e sua quantidade."
+
+#: .\asset_app\forms.py:290
+msgid "Cost of Item must be greater than zero."
+msgstr "O custo do item deve ser maior que zero."
+
+#: .\asset_app\forms.py:293
+msgid "Quantity of Item must be greater than zero."
+msgstr "A quantidade do item deve ser maior que zero."
+
+#: .\asset_app\forms.py:358
+msgid "Save"
+msgstr "Gravar"
+
+#: .\asset_app\forms.py:393
+msgid "Maintenance Action must no be empty."
+msgstr "A Ação de Manutenção não deve estar vazia."
+
+#: .\asset_app\forms.py:407
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:31
+msgid "No"
+msgstr "Não"
+
+#: .\asset_app\forms.py:407
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:29
+msgid "Yes"
+msgstr "Sim"
+
+#: .\asset_app\forms.py:409 .\asset_app\forms.py:637 .\asset_app\models.py:25
+#: .\asset_app\models.py:156
+msgid "Costumer Name"
+msgstr "Nome do Cliente"
+
+#: .\asset_app\forms.py:411 .\asset_app\models.py:162
+msgid "Parent Costumer"
+msgstr "Cliente Principal"
+
+#: .\asset_app\forms.py:430
+msgid "Add/Update Costumer"
+msgstr "Adicionar/atualizar cliente"
+
+#: .\asset_app\forms.py:432
+msgid "Costumer Data"
+msgstr "Dados do cliente"
+
+#: .\asset_app\forms.py:486 .\asset_app\forms.py:521
+msgid "Group Name"
+msgstr "Nome do Grupo"
+
+#: .\asset_app\forms.py:500
+msgid "Add/Update Group"
+msgstr "Adicionar/atualizar Grupo"
+
+#: .\asset_app\forms.py:502
+msgid "Group Data"
+msgstr "Dados do Grupo"
+
+#: .\asset_app\forms.py:519 .\asset_app\forms.py:558
+msgid "System Name"
+msgstr "Nome do Sistema"
+
+#: .\asset_app\forms.py:535
+msgid "Add/Update System"
+msgstr "Adicionar/atualizar Sistema"
+
+#: .\asset_app\forms.py:537
+msgid "System Data"
+msgstr "Dados do Sistema"
+
+#: .\asset_app\forms.py:556 .\asset_app\forms.py:596
+msgid "Type Name"
+msgstr "Nome do Tipo"
+
+#: .\asset_app\forms.py:572
+msgid "Add/Update Type"
+msgstr "Adicionar/atualizar Tipo"
+
+#: .\asset_app\forms.py:574
+msgid "Type Data"
+msgstr "Dados do Tipo"
+
+#: .\asset_app\forms.py:594
+msgid "SubType Name"
+msgstr "Nome do Subtipo"
+
+#: .\asset_app\forms.py:610
+msgid "Add/Update SubType"
+msgstr "Adicionar/atualizar Subtipo"
+
+#: .\asset_app\forms.py:612
+msgid "SubType Data"
+msgstr "Dados do Subtipo"
+
+#: .\asset_app\forms.py:636 .\asset_app\forms.py:929 .\asset_app\models.py:311
+#: .\asset_app\models.py:353
+msgid "Vendor Name"
+msgstr "Nome do vendedor"
+
+#: .\asset_app\forms.py:638 .\asset_app\models.py:355
+msgid "Component Serial No."
+msgstr "No. de Série do Componente"
+
+#: .\asset_app\forms.py:639 .\asset_app\models.py:125 .\asset_app\models.py:357
+msgid "Image"
+msgstr "Imagem"
+
+#: .\asset_app\forms.py:641
+msgid "Purchase Amount"
+msgstr "Valor da Compra"
+
+#: .\asset_app\forms.py:643
+msgid "Date Purchased"
+msgstr "Data da Compra"
+
+#: .\asset_app\forms.py:644
+msgid "Date Allocated"
+msgstr "Data alocada"
+
+#: .\asset_app\forms.py:645 .\asset_app\models.py:363
+msgid "Depreciation %"
+msgstr "Depreciação"
+
+#: .\asset_app\forms.py:646 .\asset_app\models.py:364
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:49
+msgid "Start Value (Hours)"
+msgstr "Valor inicial (horas)"
+
+#: .\asset_app\forms.py:647 .\asset_app\forms.py:650 .\asset_app\forms.py:653
+#: .\asset_app\forms.py:656
+msgid "Years"
+msgstr "Anos"
+
+#: .\asset_app\forms.py:648 .\asset_app\forms.py:651 .\asset_app\forms.py:654
+#: .\asset_app\forms.py:657
+msgid "KM"
+msgstr "km"
+
+#: .\asset_app\forms.py:649 .\asset_app\models.py:367
+msgid "Warrantee Value (Hours)"
+msgstr "Valor da Garantia (Horas)"
+
+#: .\asset_app\forms.py:652 .\asset_app\models.py:370
+msgid "End of Life (Hours)"
+msgstr "Fim da Vida (Horas)"
+
+#: .\asset_app\forms.py:655 .\asset_app\models.py:373
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:61
+msgid "Warn Before (Hours)"
+msgstr "Avisar Antes (Horas)"
+
+#: .\asset_app\forms.py:658 .\asset_app\models.py:211
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:65
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:24
+#: .\asset_app\templates\asset_app\listviews\subtype_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\system_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\type_list_view.html:31
+msgid "Group"
+msgstr "Grupo"
+
+#: .\asset_app\forms.py:659 .\asset_app\models.py:234
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:67
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:25
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:25
+#: .\asset_app\templates\asset_app\listviews\subtype_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\type_list_view.html:32
+msgid "System"
+msgstr "Sistema"
+
+#: .\asset_app\forms.py:660 .\asset_app\models.py:258
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:69
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:26
+#: .\asset_app\templates\asset_app\listviews\maintenance_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\subtype_list_view.html:33
+msgid "Type"
+msgstr "Tipo"
+
+#: .\asset_app\forms.py:661
+msgid "SubType"
+msgstr "Subtipo"
+
+#: .\asset_app\forms.py:675
+msgid "Add/Update Allocation"
+msgstr "Adicionar/Actualizar Alocação"
+
+#: .\asset_app\forms.py:677
+msgid "ALLOCATE COMPONENT"
+msgstr "ALOCAR COMPONENTE"
+
+#: .\asset_app\forms.py:719
+msgid "ATTACH TO SYSTEM"
+msgstr "ANEXAR AO SISTEMA"
+
+#: .\asset_app\forms.py:734
+msgid "ATTACH TO LOCATION"
+msgstr "ANEXAR AO LOCAL"
+
+#: .\asset_app\forms.py:776
+msgid ""
+"Invalid Allocation Number.\n"
+"            \n"
+"Allocation Number must be from 1 to 4294967295."
+msgstr ""
+"Número de alocação inválido.\n"
+"\n"
+"O número de alocação deve ser de 1 a 4294967295."
+
+#: .\asset_app\forms.py:780
+msgid ""
+"Invalid Allocation Number.\n"
+"                \n"
+"Allocation Number must be from 1 to 4294967295."
+msgstr ""
+"Número de alocação inválido.\n"
+"\n"
+"O número de alocação deve ser de 1 a 4294967295."
+
+#: .\asset_app\forms.py:784
+msgid ""
+"Invalid Component.\n"
+"            \n"
+"Please choose Componet from the Dropdown."
+msgstr ""
+"Componente inválido.\n"
+"\n"
+"Por favor, escolha Componente no menu."
+
+#: .\asset_app\forms.py:788
+msgid ""
+"Invalid Vendor.\n"
+"            \n"
+"Please choose Vendor from the Dropdown."
+msgstr ""
+"Fornecedor inválido.\n"
+"\n"
+"Por favor, escolha o fornecedor no menu."
+
+#: .\asset_app\forms.py:792
+msgid ""
+"Invalid Costumer.\n"
+"            \n"
+"Please choose Costumer from the Dropdown."
+msgstr ""
+"Cliente inválido.\n"
+"\n"
+"Por favor, escolha Cliente no menu."
+
+#: .\asset_app\forms.py:796
+msgid ""
+"Invalid Group.\n"
+"            \n"
+"Please choose Group from the Dropdown."
+msgstr ""
+"Grupo inválido.\n"
+"\n"
+"Por favor, escolha Grupo no menu."
+
+#: .\asset_app\forms.py:800
+msgid ""
+"Invalid System.\n"
+"            \n"
+"Please choose System from the Dropdown."
+msgstr ""
+"Sistema inválido.\n"
+"\n"
+"Por favor, escolha Sistema no menu."
+
+#: .\asset_app\forms.py:804
+msgid ""
+"Invalid Type.\n"
+"            \n"
+"Please choose Type from the Dropdown."
+msgstr ""
+"Tipo inválido.\n"
+"\n"
+"Por favor, escolha Tipo no menu."
+
+#: .\asset_app\forms.py:808
+msgid ""
+"Invalid SubType.\n"
+"            \n"
+"Please choose SubType from the Dropdown."
+msgstr ""
+"Subtipo inválido.\n"
+"\n"
+"Por favor, escolha Subtipo no menu"
+
+#: .\asset_app\forms.py:811
+msgid ""
+"Invalid Depreciation Value.\n"
+"            Depreciation value must be from 0 to 100."
+msgstr ""
+"Valor de depreciação inválido.\n"
+"O valor da depreciação deve ser de 0 a 100."
+
+#: .\asset_app\forms.py:815
+msgid ""
+"Invalid Depreciation Value.\n"
+"                Depreciation value must be from 0 to 100."
+msgstr ""
+"Valor de depreciação inválido.\n"
+"O valor da depreciação deve ser de 0 a 100."
+
+#: .\asset_app\forms.py:819
+msgid ""
+"Invalid Serial Number.\n"
+"            Serial Number must not be empty"
+msgstr ""
+"Número de série inválido.\n"
+"O número de série não deve estar vazio"
+
+#: .\asset_app\forms.py:824
+msgid ""
+"Invalid Start Values.\n"
+"            At least one field of Start Values must be greater than zero."
+msgstr ""
+"Valores iniciais inválidos.\n"
+"Pelo menos um campo de valores iniciais deve ser maior que zero."
+
+#: .\asset_app\forms.py:829
+msgid ""
+"Invalid Garrantee Values.\n"
+"            At least one field of Garrantee Values must be greater than zero."
+msgstr ""
+"Valores de garantia inválidos.\n"
+"Pelo menos um campo de Valores de Garantia deve ser maior que zero."
+
+#: .\asset_app\forms.py:834
+msgid ""
+"Invalid End of life Values.\n"
+"            At least one field of End of life Values must be greater than "
+"zero."
+msgstr ""
+"Valores de fim de vida inválidos.\n"
+" Pelo menos um campo de Valores de fim de vida deve ser maior que zero."
+
+#: .\asset_app\forms.py:839
+msgid ""
+"Invalid Warning Values.\n"
+"            At least one field of Warning Values must be greater than zero."
+msgstr ""
+"Valores de aviso inválidos.\n"
+"Pelo menos um campo de Valores de Aviso deve ser maior que zero."
+
+#: .\asset_app\forms.py:848 .\asset_app\models.py:422
+msgid "Order Number"
+msgstr "Número do pedido"
+
+#: .\asset_app\forms.py:849 .\asset_app\models.py:427
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:35
+msgid "Person in Charge"
+msgstr "Pessoa encarregada"
+
+#: .\asset_app\forms.py:850 .\asset_app\models.py:428
+msgid "Start date"
+msgstr "Data de início"
+
+#: .\asset_app\forms.py:852 .\asset_app\models.py:429
+msgid "End date"
+msgstr "Data final"
+
+#: .\asset_app\forms.py:854 .\asset_app\models.py:430
+msgid "Warn After"
+msgstr "Avisar Depois"
+
+#: .\asset_app\forms.py:856 .\asset_app\models.py:432
+msgid "Work Progress (%)"
+msgstr "Progresso de trabalho (%)"
+
+#: .\asset_app\forms.py:870
+msgid "Add/Update Work Order"
+msgstr "Adicionar/Atualizar Ordem de Serviço"
+
+#: .\asset_app\forms.py:872
+msgid "Work Order Data"
+msgstr "Dados da Ordem de Serviço"
+
+#: .\asset_app\forms.py:910
+msgid ""
+"Invalid Order.\n"
+"            \n"
+"Order Number must be from 1 to 4294967295."
+msgstr ""
+"Pedido inválido.\n"
+"\n"
+"O número do pedido deve ser de 1 a 4294967295."
+
+#: .\asset_app\forms.py:914
+msgid ""
+"Invalid Person in Charge.\n"
+"            \n"
+"Please choose Person in Charge of the Work."
+msgstr ""
+"Responsável inválido.\n"
+"\n"
+"Por favor, escolha a pessoa responsável pelo trabalho."
+
+#: .\asset_app\forms.py:918
+msgid ""
+"Invalid Start Date.\n"
+"            \n"
+"End date must be greater than Start date."
+msgstr ""
+"Data de início inválida.\n"
+"\n"
+"A data de término deve ser maior que a data de início."
+
+#: .\asset_app\forms.py:922
+msgid ""
+"Invalid Warn Date.\n"
+"            \n"
+"Choose Warning date less than End date  and greater than Start date."
+msgstr ""
+"Data de aviso inválida.\n"
+"\n"
+"Escolha a data de aviso menor que a data de término e maior que a data de "
+"início."
+
+#: .\asset_app\forms.py:947
+msgid "Add/Update Vendor"
+msgstr "Adicionar/Atualizar Vendedor"
+
+#: .\asset_app\forms.py:949
+msgid "Vendor Data"
+msgstr "Adicionar/Atualizar Fornecedor"
+
+#: .\asset_app\forms.py:970 .\asset_app\forms.py:1005
+msgid "Item Name"
+msgstr "Nome do Item"
+
+#: .\asset_app\forms.py:985
+msgid "Item Data"
+msgstr "Dados do item"
+
+#: .\asset_app\forms.py:990
+msgid "Add"
+msgstr "Adicionar"
+
+#: .\asset_app\forms.py:1016
+msgid "Action Data"
+msgstr "Dados de ação"
+
+#: .\asset_app\models.py:21
+msgid "Active"
+msgstr "Ativo"
+
+#: .\asset_app\models.py:21
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\asset_app\models.py:26
+msgid "VAT number"
+msgstr "NUIT"
+
+#: .\asset_app\models.py:91 .\asset_app\models.py:126 .\asset_app\models.py:179
+#: .\asset_app\models.py:318 .\asset_app\models.py:356
+#: .\asset_app\models.py:381 .\asset_app\models.py:493
+#: .\asset_app\models.py:535 .\asset_app\models.py:565
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:41
+#: .\asset_app\templates\asset_app\listviews\workorder_list_view.html:33
+msgid "Status"
+msgstr "Estado"
+
+#: .\asset_app\models.py:119
+msgid "System no"
+msgstr "No. do Sistema"
+
+#: .\asset_app\models.py:151
+msgid "Governmental"
+msgstr "Governamental"
+
+#: .\asset_app\models.py:152
+msgid "Large Company"
+msgstr "Grande empresa"
+
+#: .\asset_app\models.py:152
+msgid "Medium Company"
+msgstr "Empresa Média"
+
+#: .\asset_app\models.py:153
+msgid "Small Company"
+msgstr "Pequena Empresa"
+
+#: .\asset_app\models.py:153
+msgid "Individual Company"
+msgstr "Empresa Individual"
+
+#: .\asset_app\models.py:154
+msgid "Other"
+msgstr "Outro"
+
+#: .\asset_app\models.py:157
+msgid "Name of the Costumer, Department, etc"
+msgstr "Nome do Cliente, Departamento, etc"
+
+#: .\asset_app\models.py:158
+msgid "Country"
+msgstr "País"
+
+#: .\asset_app\models.py:159
+msgid "Province/State"
+msgstr "Província/Estado"
+
+#: .\asset_app\models.py:160
+msgid "City"
+msgstr "Cidade"
+
+#: .\asset_app\models.py:161
+msgid "Zip Code"
+msgstr "Caixa Postal"
+
+#: .\asset_app\models.py:163
+msgid "Choose Parent Costumer"
+msgstr "Escolha o cliente pai"
+
+#: .\asset_app\models.py:166
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\asset_app\models.py:168
+msgid "Mobile"
+msgstr "Celular"
+
+#: .\asset_app\models.py:169
+msgid "Capital"
+msgstr "Capital"
+
+#: .\asset_app\models.py:187
+msgid "Default Warehouse"
+msgstr "Armazém Padrão"
+
+#: .\asset_app\models.py:189
+msgid "Company Type"
+msgstr "Tipo de Empresa"
+
+#: .\asset_app\models.py:191
+msgid "VAT Number"
+msgstr "NUIT"
+
+#: .\asset_app\models.py:282
+msgid "Subtype"
+msgstr "Subtipo"
+
+#: .\asset_app\models.py:312
+msgid "Name of the Vendor, Department, etc"
+msgstr "Nome do Fornecedor, Departamento, etc"
+
+#: .\asset_app\models.py:351
+msgid "Allocation No."
+msgstr "Alocação nº."
+
+#: .\asset_app\models.py:352
+msgid "component Name"
+msgstr "Nome do componente"
+
+#: .\asset_app\models.py:365
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:50
+msgid "Start Value (Years)"
+msgstr "Valor inicial (anos)"
+
+#: .\asset_app\models.py:366
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:51
+msgid "Start Value (KM)"
+msgstr "Valor inicial (KM)"
+
+#: .\asset_app\models.py:368
+msgid "Warrantee Value (Years)"
+msgstr "Valor da Garantia (Anos)"
+
+#: .\asset_app\models.py:369
+msgid "Warrantee Milliege (KM)"
+msgstr "Garantia de Quilometragem (KM)"
+
+#: .\asset_app\models.py:371
+msgid "End of Life (Years)"
+msgstr "Fim da Vida (Anos)"
+
+#: .\asset_app\models.py:372
+msgid "End of Life (KM)"
+msgstr "Fim da Vida (KM)"
+
+#: .\asset_app\models.py:374
+msgid "Warn Before (Years)"
+msgstr "Avisar Antes (Anos)"
+
+#: .\asset_app\models.py:375
+msgid "Warn Before (KM)"
+msgstr "Avisar Antes (KM)"
+
+#: .\asset_app\models.py:388
+msgid "QrCode"
+msgstr "Código Qr"
+
+#: .\asset_app\models.py:417
+msgid "Pending"
+msgstr "Pendente"
+
+#: .\asset_app\models.py:417
+msgid "InProgress"
+msgstr "Em Progresso"
+
+#: .\asset_app\models.py:418
+msgid "Finished"
+msgstr "Terminado"
+
+#: .\asset_app\models.py:418
+msgid "Abandoned"
+msgstr "Abandonado"
+
+#: .\asset_app\models.py:420
+msgid "Low"
+msgstr "Baixo"
+
+#: .\asset_app\models.py:420
+msgid "Medium"
+msgstr "Médio"
+
+#: .\asset_app\models.py:420
+msgid "High"
+msgstr "Alto"
+
+#: .\asset_app\models.py:423
+msgid "Priority"
+msgstr "Prioridade"
+
+#: .\asset_app\models.py:426
+#: .\asset_app\templates\asset_app\listviews\allocation_list_view.html:32
+msgid "Component"
+msgstr "Componente"
+
+#: .\asset_app\models.py:431
+msgid "Progress"
+msgstr "Progresso"
+
+#: .\asset_app\models.py:434
+msgid "Active Status"
+msgstr "Estado Ativo"
+
+#: .\asset_app\models.py:489 .\asset_app\models.py:530
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:27
+#: .\asset_app\templates\asset_app\listviews\branch_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\component_list_view.html:33
+#: .\asset_app\templates\asset_app\listviews\costumer_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\division_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\group_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\item_list_view.html:33
+#: .\asset_app\templates\asset_app\listviews\position_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\subtype_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\system_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\type_list_view.html:30
+#: .\asset_app\templates\asset_app\listviews\vendor_list_view.html:30
+msgid "Name"
+msgstr "Nome"
+
+#: .\asset_app\models.py:528
+msgid "M3"
+msgstr "M³"
+
+#: .\asset_app\models.py:534
+msgid "Unit"
+msgstr "Unidade"
+
+#: .\asset_app\templates\asset_app\createviews\allocation_create.html:8
+msgid "New Allocation"
+msgstr "Nova Alocação"
+
+#: .\asset_app\templates\asset_app\createviews\branch_create.html:8
+msgid "New Branch"
+msgstr "Nova Filial"
+
+#: .\asset_app\templates\asset_app\createviews\component_create.html:8
+#: .\asset_app\templates\asset_app\modals\component_update.html:8
+msgid "New Component"
+msgstr "Novo Componente"
+
+#: .\asset_app\templates\asset_app\createviews\costumer_create.html:8
+msgid "New Partner"
+msgstr "Novo Parceiro"
+
+#: .\asset_app\templates\asset_app\createviews\division_create.html:8
+msgid "New Division"
+msgstr "Nova Divisão"
+
+#: .\asset_app\templates\asset_app\createviews\group_create.html:8
+msgid "New Group"
+msgstr "Novo Grupo"
+
+#: .\asset_app\templates\asset_app\createviews\item_create.html:8
+msgid "New Maintenance Item"
+msgstr "Novo Item de Manutenção"
+
+#: .\asset_app\templates\asset_app\createviews\item_create.html:28
+#: .\asset_app\templates\asset_app\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de artigos"
+
+#: .\asset_app\templates\asset_app\createviews\maintenance_create.html:8
+#: .\asset_app\templates\asset_app\modals\maintenance_modal.html:8
+msgid "New Maintenance"
+msgstr "Nova Manutenção"
+
+#: .\asset_app\templates\asset_app\createviews\maintenance_schedule_create.html:8
+#: .\asset_app\templates\asset_app\modals\branch_modal.html:8
+#: .\asset_app\templates\asset_app\modals\component_modal.html:8
+#: .\asset_app\templates\asset_app\modals\costumer_modal.html:8
+#: .\asset_app\templates\asset_app\modals\division_modal.html:8
+#: .\asset_app\templates\asset_app\modals\group_modal.html:8
+#: .\asset_app\templates\asset_app\modals\position_modal.html:8
+#: .\asset_app\templates\asset_app\modals\subtype_modal.html:8
+#: .\asset_app\templates\asset_app\modals\system_modal.html:8
+#: .\asset_app\templates\asset_app\modals\type_modal.html:8
+msgid "New Maintenance Schedule"
+msgstr "Novo Cronograma de Manutenção"
+
+#: .\asset_app\templates\asset_app\createviews\position_create.html:8
+msgid "New Position"
+msgstr "Nova posição"
+
+#: .\asset_app\templates\asset_app\createviews\subtype_create.html:8
+msgid "New SubType"
+msgstr "Novo Subtipo"
+
+#: .\asset_app\templates\asset_app\createviews\system_create.html:8
+msgid "New System"
+msgstr "Novo Sistema"
+
+#: .\asset_app\templates\asset_app\createviews\type_create.html:8
+msgid "New Type"
+msgstr "Novo Tipo"
+
+#: .\asset_app\templates\asset_app\createviews\vendor_create.html:8
+#: .\asset_app\templates\asset_app\modals\vendor_modal.html:8
+msgid "New Vendor"
+msgstr "Novo Vendedor"
+
+#: .\asset_app\templates\asset_app\createviews\workorder_create.html:8
+msgid "New Work Order"
+msgstr "Nova ordem de Serviço"
+
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:6
+msgid "Components Dashboard"
+msgstr "Painel de Componentes"
+
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:13
+msgid "All Components"
+msgstr "Todos os componentes"
+
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:20
+msgid "Last 15 Components"
+msgstr "Últimos 15 componentes"
+
+#: .\asset_app\templates\asset_app\dashboardviews\component_dashboard.html:26
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:24
+msgid "System Number"
+msgstr "Número do sistema"
+
+#: .\asset_app\templates\asset_app\dashboardviews\maintenance_dashboard.html:6
+msgid "Maintenances Dashboard"
+msgstr "Painel de manutenções"
+
+#: .\asset_app\templates\asset_app\dashboardviews\maintenance_dashboard.html:13
+msgid "All Maintenances"
+msgstr "Todas as manutenções"
+
+#: .\asset_app\templates\asset_app\dashboardviews\maintenance_dashboard.html:20
+msgid "Last 15 Maintenances"
+msgstr "Últimas 15 manutenções"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:8
+msgid "Allocation Details"
+msgstr "Detalhes de alocação"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:26
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:24
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:34
+#: .\asset_app\templates\asset_app\listviews\allocation_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\branch_list_view.html:31
+#: .\asset_app\templates\asset_app\listviews\division_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\position_list_view.html:31
+msgid "Costumer"
+msgstr "Cliente"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:25
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:25
+#: .\asset_app\templates\asset_app\listviews\branch_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\position_list_view.html:32
+msgid "Division"
+msgstr "Divisão"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:26
+#: .\asset_app\templates\asset_app\listviews\position_list_view.html:33
+msgid "Branch"
+msgstr "Filial"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:32
+msgid "Position"
+msgstr "Posição"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:35
+msgid "Serial Number"
+msgstr "Número de Série"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:36
+msgid "Vendor"
+msgstr "Vendedor"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:37
+msgid "Purchased"
+msgstr "Comprado"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:38
+msgid "Price"
+msgstr "Preço"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:39
+msgid "Date allocated"
+msgstr "Data alocada"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:40
+msgid "Depreciation"
+msgstr "Depreciação"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:43
+msgid "GOOD"
+msgstr "BOM"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:45
+msgid "BROKEN"
+msgstr "ESTRAGADO"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:53
+msgid "Garrantee Value (Hours)"
+msgstr "Valor da garantia (horas)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:54
+msgid "Garrantee Value (Years)"
+msgstr "Valor da garantia (anos)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:55
+msgid "Garrantee Value (KM)"
+msgstr "Valor da garantia (KM)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:57
+msgid "End of Life Value (Hours)"
+msgstr "Valor de fim de vida (horas)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:58
+msgid "End of Life Value (Years)"
+msgstr "Valor de fim de vida (anos)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:59
+msgid "End of Life Value (KM)"
+msgstr "Valor de fim de vida (KM)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:62
+msgid "Warn Before Value (Years)"
+msgstr "Avisar antes do valor (anos)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:63
+msgid "Warn Before Value (KM)"
+msgstr "Avisar antes do valor (KM)"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:71
+msgid "Sub Type"
+msgstr "Sub Tipo"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:76
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:32
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:35
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:42
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:32
+#: .\asset_app\templates\asset_app\detailviews\group_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:45
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:29
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:31
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:46
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:77
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:33
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:36
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:43
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:33
+#: .\asset_app\templates\asset_app\detailviews\group_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:46
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:31
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:31
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:29
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:32
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:47
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:78
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:34
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:37
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:44
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:34
+#: .\asset_app\templates\asset_app\detailviews\group_detail_view.html:29
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:47
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:29
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:32
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:32
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:31
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:33
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:48
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\asset_app\templates\asset_app\detailviews\allocation_detail_view.html:79
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:35
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:38
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:45
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:35
+#: .\asset_app\templates\asset_app\detailviews\group_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:48
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:30
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:33
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:33
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:31
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:32
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:34
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:49
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:8
+msgid "Branch Details"
+msgstr "Detalhes da Filial"
+
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:25
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:26
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:25
+#: .\asset_app\templates\asset_app\listviews\costumer_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\division_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\vendor_list_view.html:32
+msgid "Contacts"
+msgstr "Contatos"
+
+#: .\asset_app\templates\asset_app\detailviews\branch_detail_view.html:28
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:27
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:26
+#: .\asset_app\templates\asset_app\listviews\division_list_view.html:33
+#: .\asset_app\templates\asset_app\listviews\vendor_list_view.html:33
+msgid "Manager"
+msgstr "Gerente"
+
+#: .\asset_app\templates\asset_app\detailviews\component_detail_view.html:8
+msgid "Component Details"
+msgstr "Detalhes do componente"
+
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:8
+msgid "Partner Details"
+msgstr "Detalhes do parceiro"
+
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:26
+msgid "Is Supplier"
+msgstr "É Fornecedor"
+
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:35
+msgid "Current Debit"
+msgstr "Débito atual"
+
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:36
+msgid "Max Credit"
+msgstr "Crédito Máximo"
+
+#: .\asset_app\templates\asset_app\detailviews\costumer_detail_view.html:38
+msgid "Website"
+msgstr "Website"
+
+#: .\asset_app\templates\asset_app\detailviews\division_detail_view.html:8
+msgid "Division Details"
+msgstr "Detalhes da Divisão"
+
+#: .\asset_app\templates\asset_app\detailviews\group_detail_view.html:8
+msgid "Group Details"
+msgstr "Detalhes do Grupo"
+
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:8
+msgid "Maintenance Details"
+msgstr "Detalhes de manutenção"
+
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:34
+msgid "List"
+msgstr "Lista"
+
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:39
+msgid "Maintenance Type"
+msgstr "Tipo de manutenção"
+
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:40
+msgid "Maintenance frequency"
+msgstr "Frequência de manutenção"
+
+#: .\asset_app\templates\asset_app\detailviews\maintenance_detail_view.html:41
+#: .\asset_app\templates\asset_app\listviews\maintenance_list_view.html:33
+msgid "Time Allocated"
+msgstr "Tempo Alocado"
+
+#: .\asset_app\templates\asset_app\detailviews\maintenance_schedule_detail_view.html:8
+msgid "Schedule Details"
+msgstr "Detalhes do cronograma"
+
+#: .\asset_app\templates\asset_app\detailviews\position_detail_view.html:8
+msgid "Position Details"
+msgstr "Detalhes da posição"
+
+#: .\asset_app\templates\asset_app\detailviews\subtype_detail_view.html:8
+msgid "SubType Details"
+msgstr "Detalhes do subtipo"
+
+#: .\asset_app\templates\asset_app\detailviews\system_detail_view.html:8
+msgid "System Details"
+msgstr "Detalhes do sistema"
+
+#: .\asset_app\templates\asset_app\detailviews\type_detail_view.html:8
+msgid "Type Details"
+msgstr "Detalhes do tipo"
+
+#: .\asset_app\templates\asset_app\detailviews\vendor_detail_view.html:8
+msgid "Vendor Details"
+msgstr "Detalhes do fornecedor"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:8
+msgid "Work Order Details"
+msgstr "Detalhes da Ordem de Serviço"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:32
+msgid "Ramaining Time"
+msgstr "Tempo restante"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:33
+#: .\asset_app\templates\asset_app\listviews\workorder_list_view.html:31
+msgid "Allocation"
+msgstr "Alocação"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:37
+msgid "Start Date"
+msgstr "Data de início"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:38
+msgid "End Date"
+msgstr "Data final"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:39
+msgid "Warning Date"
+msgstr "Data de aviso"
+
+#: .\asset_app\templates\asset_app\detailviews\workorder_detail_view.html:40
+msgid "Work Status"
+msgstr "Status de trabalho"
+
+#: .\asset_app\templates\asset_app\listviews\allocation_list_view.html:33
+msgid "Serial No."
+msgstr "Número de Série"
+
+#: .\asset_app\templates\asset_app\listviews\allocation_list_view.html:35
+#: .\asset_app\templates\asset_app\listviews\branch_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\component_list_view.html:36
+#: .\asset_app\templates\asset_app\listviews\costumer_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\division_list_view.html:35
+#: .\asset_app\templates\asset_app\listviews\group_list_view.html:32
+#: .\asset_app\templates\asset_app\listviews\maintenance_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\position_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\subtype_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\system_list_view.html:33
+#: .\asset_app\templates\asset_app\listviews\type_list_view.html:34
+#: .\asset_app\templates\asset_app\listviews\vendor_list_view.html:35
+msgid "Actions"
+msgstr "Ações"
+
+#: .\asset_app\templates\asset_app\listviews\component_list_view.html:35
+#: .\asset_app\templates\asset_app\listviews\item_list_view.html:35
+msgid "Stock Cod."
+msgstr "Cod. de Estoque"
+
+#: .\asset_app\templates\asset_app\listviews\component_list_view.html:64
+#: .\asset_app\templates\asset_app\listviews\item_list_view.html:62
+#: .\asset_app\templates\asset_app\listviews\maintenance_schedule_list_view.html:60
+msgid "No Items to Show"
+msgstr "Nenhum item para mostrar"
+
+#: .\asset_app\templates\asset_app\listviews\maintenance_list_view.html:32
+msgid "Frequency"
+msgstr "Frequência"
+
+#: .\asset_app\templates\asset_app\listviews\maintenance_schedule_list_view.html:29
+msgid "Schedule"
+msgstr "Detalhes do cronograma"
+
+#: .\asset_app\templates\asset_app\listviews\workorder_list_view.html:30
+msgid "Order"
+msgstr "Compra"
+
+#: .\asset_app\templates\asset_app\listviews\workorder_list_view.html:32
+msgid "In Charge"
+msgstr "Responsável"
+
+#: .\asset_app\templates\asset_app\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\asset_app\templates\asset_app\updateviews\allocation_update.html:8
+msgid "Update Allocation"
+msgstr "Atualizar alocação"
+
+#: .\asset_app\templates\asset_app\updateviews\branch_update.html:8
+msgid "Update Branch"
+msgstr "Atualizar Filial"
+
+#: .\asset_app\templates\asset_app\updateviews\component_update.html:8
+msgid "Update Component"
+msgstr "Atualizar Componente"
+
+#: .\asset_app\templates\asset_app\updateviews\costumer_update.html:8
+msgid "Update Partner"
+msgstr "Atualizar parceiro"
+
+#: .\asset_app\templates\asset_app\updateviews\division_update.html:8
+msgid "Update Division"
+msgstr "Atualizar Divisão"
+
+#: .\asset_app\templates\asset_app\updateviews\group_update.html:8
+msgid "Update Group"
+msgstr "Atualizar Grupo"
+
+#: .\asset_app\templates\asset_app\updateviews\maintenance_update.html:8
+msgid "Update Maintenance"
+msgstr "Atualizar Manutenção"
+
+#: .\asset_app\templates\asset_app\updateviews\position_update.html:8
+msgid "Update Position"
+msgstr "Atualizar Posição"
+
+#: .\asset_app\templates\asset_app\updateviews\settings_update.html:8
+msgid "Update Settings"
+msgstr "Atualizar configurações"
+
+#: .\asset_app\templates\asset_app\updateviews\subtype_update.html:8
+msgid "Update SubType"
+msgstr "Atualizar subtipo"
+
+#: .\asset_app\templates\asset_app\updateviews\system_update.html:8
+msgid "Update System"
+msgstr "Atualizar Sistema"
+
+#: .\asset_app\templates\asset_app\updateviews\type_update.html:8
+msgid "Update Type"
+msgstr "Atualizar Tipo"
+
+#: .\asset_app\templates\asset_app\updateviews\vendor_update.html:8
+msgid "Update Vendor"
+msgstr "Atualizar Fornecedor"
+
+#: .\asset_app\templates\asset_app\updateviews\workorder_update.html:8
+msgid "Update Work Order"
+msgstr "Atualizar Ordem de Serviço"
+
+#: .\asset_app\views.py:56
+msgid "Settings added successfully!"
+msgstr "Configurações adicionadas com sucesso!"
+
+#: .\asset_app\views.py:112
+msgid "Maintenance added successfully!"
+msgstr "Manutenção adicionada com sucesso!"
+
+#: .\asset_app\views.py:214
+msgid "Maintenance updated successfully!"
+msgstr "Manutenção atualizada com sucesso!"
+
+#: .\asset_app\views.py:243 .\asset_app\views.py:381 .\asset_app\views.py:523
+#: .\asset_app\views.py:634 .\asset_app\views.py:724 .\asset_app\views.py:825
+#: .\asset_app\views.py:925 .\asset_app\views.py:1026 .\asset_app\views.py:1116
+#: .\asset_app\views.py:1318 .\asset_app\views.py:1410
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\asset_app\views.py:246
+msgid "Maintenance delete successfully!"
+msgstr "Manutenção apagada com sucesso!"
+
+#: .\asset_app\views.py:326 .\asset_app\views.py:342
+msgid "Item with this name already exists"
+msgstr "O item com este nome já existe"
+
+#: .\asset_app\views.py:346
+msgid "'{}' added successfully!"
+msgstr "'{}' adicionado com sucesso!"
+
+#: .\asset_app\views.py:365
+msgid "Not Deleted! {}."
+msgstr "Não excluído! {}."
+
+#: .\asset_app\views.py:435
+msgid "Component added successfully!"
+msgstr "Componente adicionado com sucesso!"
+
+#: .\asset_app\views.py:497
+msgid "Component updated successfully!"
+msgstr "Componente atualizado com sucesso!"
+
+#: .\asset_app\views.py:526
+msgid "Component delete successfully!"
+msgstr "Componente deletado com sucesso!"
+
+#: .\asset_app\views.py:568
+msgid "Costumer added successfully!"
+msgstr "Cliente adicionado com sucesso!"
+
+#: .\asset_app\views.py:607
+msgid "Costumer updated successfully!"
+msgstr "Cliente atualizado com sucesso!"
+
+#: .\asset_app\views.py:637
+msgid "Costumer delete successfully!"
+msgstr "Cliente excluido com sucesso!"
+
+#: .\asset_app\views.py:668
+msgid "Group added successfully!"
+msgstr "Cliente excluído com sucesso!"
+
+#: .\asset_app\views.py:698
+msgid "Group updated successfully!"
+msgstr "Grupo atualizado com sucesso!"
+
+#: .\asset_app\views.py:727
+msgid "Group delete successfully!"
+msgstr "Grupo excluído com sucesso!"
+
+#: .\asset_app\views.py:767
+msgid "System added successfully!"
+msgstr "Sistema adicionado com sucesso!"
+
+#: .\asset_app\views.py:799
+msgid "System updated successfully!"
+msgstr "Sistema atualizado com sucesso!"
+
+#: .\asset_app\views.py:828
+msgid "System delete successfully!"
+msgstr "Exclusão do sistema com sucesso!"
+
+#: .\asset_app\views.py:867
+msgid "Type added successfully!"
+msgstr "Tipo adicionado com sucesso!"
+
+#: .\asset_app\views.py:899
+msgid "Type updated successfully!"
+msgstr "Tipo atualizado com sucesso!"
+
+#: .\asset_app\views.py:928
+msgid "Type delete successfully!"
+msgstr "Tipo eliminado com sucesso!"
+
+#: .\asset_app\views.py:968
+msgid "SubType added successfully!"
+msgstr "Subtipo adicionado com sucesso!"
+
+#: .\asset_app\views.py:1000
+msgid "SubType updated successfully!"
+msgstr "Subtipo atualizado com sucesso!"
+
+#: .\asset_app\views.py:1029
+msgid "SubType delete successfully!"
+msgstr "Exclusão de subtipo com sucesso!"
+
+#: .\asset_app\views.py:1060
+msgid "Vendor added successfully!"
+msgstr "Fornecedor adicionado com sucesso!"
+
+#: .\asset_app\views.py:1090
+msgid "Vendor updated successfully!"
+msgstr "Fornecedor atualizado com sucesso!"
+
+#: .\asset_app\views.py:1119
+msgid "Vendor delete successfully!"
+msgstr "Fornecedor excluído com sucesso!"
+
+#: .\asset_app\views.py:1189 .\asset_app\views.py:1285
+msgid "Allocation created successfully!"
+msgstr "Alocação criada com sucesso!"
+
+#: .\asset_app\views.py:1321
+msgid "Allocation delete successfully!"
+msgstr "Alocação excluída com sucesso!"
+
+#: .\asset_app\views.py:1353
+msgid "WorkOrder added successfully!"
+msgstr "Ordem de Serviço adicionado com sucesso!"
+
+#: .\asset_app\views.py:1381
+msgid "WorkOrder updated successfully!"
+msgstr "Ordem de Serviço atualizado com sucesso!"
+
+#: .\asset_app\views.py:1413
+msgid "WorkOrder delete successfully!"
+msgstr "Exclusão da ordem de trabalho com sucesso!"
+
+#: .\asset_app\views.py:1448
+#, python-brace-format
+msgid "There is a issue with {component}"
+msgstr "Há um problema com {component}"
+
+#, python-format
+#~ msgid "Depreciation (%%)"
+#~ msgstr "Depreciação (%)"

@@ -1,0 +1,76 @@
+{% load i18n %}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="alert alert-info mt-2"> <strong> {% trans 'List of Actions' %} </strong> </div>
+        <hr>
+        <table id="sortTableSmaller" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th style="padding-left: 11px;">
+                        <input type="checkbox" id="checkall" name="main_Checkbox" 
+                        value="" style="vertical-align: middle"> 
+                    </th>
+                    <th>Name</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for action in actions %}
+                    <tr data-id="{{ action.id }}"  class="row{{ action.id }}">    
+                        <td with="10"> <input type="checkbox" id="{{ action.id }}" class="rowcheckbox" 
+                            value="" style="vertical-align: middle">
+                        </td>
+                        <td>{{ action.name }}</td>
+                        <td>{{ action.notes }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <button class="btn btn-danger delete-btn fa fa-minus-square" data-toggle="modal"
+            onclick="DeleteItems('#sortTableSmaller','{% url 'asset_app:action_delete' %}', 
+            '{% url 'asset_app:maintenance_update' maintenance.slug %}')">
+             
+        </button>
+
+    </div>
+    <div class="col-md-6">
+        <div class="alert alert-info mt-2"> <strong> {% trans 'List of Items' %} </strong> </div>
+        <hr>
+        <table id="sortTableSmall" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th style="padding-left: 11px;">
+                        <input type="checkbox" id="checkall" name="main_Checkbox" 
+                        value="" style="vertical-align: middle"> 
+                    </th>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                    <tr data-id="{{ item.id }}"  class="row{{ item.id }}">    
+                        <td with="10"> <input type="checkbox" id="{{ item.id }}" class="rowcheckbox" 
+                            value="" style="vertical-align: middle">
+                        </td>
+                        <td>{{ item.item }}</td>
+                        <td>{{ item.cost }}</td>
+                        <td>{{ item.quantity }}</td>
+                        <td>{{ item.item.unit }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <button class="btn btn-danger delete-btn fa fa-minus-square" data-toggle="modal"
+            onclick="DeleteItems('#sortTableSmall','{% url 'asset_app:item_delete' %}', 
+            '{% url 'asset_app:maintenance_update' maintenance.slug %}')">
+             
+        </button>
+
+    </div>
+</div>

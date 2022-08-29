@@ -1,0 +1,697 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-19 09:23-0200\n"
+"Last-Translator: None None <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\templates\document_template.html:13 .\templates\document_template.html:184
+msgid "Print Document"
+msgstr "Imprimir Documento"
+
+#: .\templates\document_template.html:15 .\templates\document_template.html:186
+msgid "Close"
+msgstr "Fechar"
+
+#: .\templates\document_template.html:27
+msgid "Document"
+msgstr "Documento"
+
+#: .\templates\document_template.html:29
+msgid "Date"
+msgstr "Data"
+
+#: .\templates\document_template.html:30
+msgid "Due Date"
+msgstr "Data de Vencimento"
+
+#: .\templates\document_template.html:38
+msgid "From"
+msgstr "De"
+
+#: .\templates\document_template.html:45 .\templates\document_template.html:77
+#: .\templates\document_template.html:108
+msgid "VAT Number"
+msgstr ""
+
+#: .\templates\document_template.html:49 .\templates\document_template.html:93
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\document_template.html:53 .\templates\document_template.html:96
+msgid "Website"
+msgstr "Website"
+
+#: .\templates\document_template.html:57 .\templates\document_template.html:81
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\templates\document_template.html:61 .\templates\document_template.html:85
+msgid "Fax"
+msgstr "Fax"
+
+#: .\templates\document_template.html:65 .\templates\document_template.html:89
+msgid "Cell"
+msgstr "Celular"
+
+#: .\templates\document_template.html:70
+msgid "To"
+msgstr "Para"
+
+#: .\templates\document_template.html:105
+msgid "Description"
+msgstr "Descrição"
+
+#: .\templates\document_template.html:106
+msgid "Price"
+msgstr "Preço"
+
+#: .\templates\document_template.html:107
+msgid "Qty"
+msgstr "Qt."
+
+#: .\templates\document_template.html:109
+#: .\templates\document_template.html:147
+msgid "Discount"
+msgstr "Desconto"
+
+#: .\templates\document_template.html:110
+msgid "Total"
+msgstr "Total"
+
+#: .\templates\document_template.html:128
+msgid "The are no items for this Document"
+msgstr "Não há artigos para este documento"
+
+#: .\templates\document_template.html:141
+#, fuzzy
+#| msgid "Total"
+msgid "Subtotal"
+msgstr "Total"
+
+#: .\templates\document_template.html:153
+msgid "VAT"
+msgstr "IVA"
+
+#: .\templates\document_template.html:159
+msgid "TOTAL"
+msgstr ""
+
+#: .\templates\index.html:8 .\templates\sidebar.html:10
+msgid "Dashboard"
+msgstr "Painel de Controlo"
+
+#: .\templates\index.html:35
+msgid "Go"
+msgstr "Ir"
+
+#: .\templates\index.html:43
+msgid "Sign out"
+msgstr "Sair"
+
+#: .\templates\product.html:127
+#, fuzzy
+#| msgid "Products"
+msgid "Our Products"
+msgstr "Produtos"
+
+#: .\templates\sidebar.html:17
+msgid "Customers"
+msgstr "Clientes"
+
+#: .\templates\sidebar.html:23 .\templates\sidebar.html:43
+msgid "Invoices"
+msgstr "Facturas"
+
+#: .\templates\sidebar.html:29 .\templates\sidebar.html:49
+msgid "Receipts"
+msgstr "Recibos"
+
+#: .\templates\sidebar.html:37
+msgid "Suppliers"
+msgstr "Fornecedores"
+
+#: .\templates\sidebar.html:58
+msgid "Categories"
+msgstr "Categorias"
+
+#: .\templates\sidebar.html:64
+msgid "Products"
+msgstr "Produtos"
+
+#: .\templates\sidebar.html:70
+msgid "Warehouses"
+msgstr "Armazéns"
+
+#: .\templates\sidebar.html:76
+msgid "Stock"
+msgstr "Estoque"
+
+#: .\templates\sidebar.html:82
+msgid "Stock Movement"
+msgstr "Movimento de Estoque"
+
+#: .\templates\sidebar.html:89
+msgid "Banks"
+msgstr "Bancos"
+
+#: .\templates\sidebar.html:95
+msgid "Bank Accounts"
+msgstr "Contas Bancárias"
+
+#: .\templates\sidebar.html:102
+msgid "Documents"
+msgstr "Documentos"
+
+#: .\templates\sidebar.html:108
+#, fuzzy
+#| msgid "Invoices"
+msgid "Invoicing"
+msgstr "Facturas"
+
+#: .\templates\sidebar.html:114
+msgid "Return Note"
+msgstr ""
+
+#: .\templates\sidebar.html:121
+msgid "Settings"
+msgstr "Configurações"
+
+#: .\templates\subscribe.html:5
+msgid "SUBSCRIBE"
+msgstr ""
+
+#: .\templates\subscribe.html:7
+msgid "Please subscribe to get the latest articles in your mailbox."
+msgstr ""
+
+#: .\templates\subscribe.html:12
+msgid "Your Email ID Please"
+msgstr ""
+
+#: .\utilities\utilities.py:99
+#, python-brace-format
+msgid "Invoice #{invoice.number} payment."
+msgstr "Pagamento da Factura #{invoice.number} "
+
+#~ msgid "About"
+#~ msgstr "Sobre"
+
+#~ msgid "Nossa Visão"
+#~ msgstr "Nossa Visão"
+
+#~ msgid "Nossa Missão"
+#~ msgstr "Nossa Missão"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "Nossos Produtos"
+#~ msgstr "Produtos"
+
+#~ msgid "No products found."
+#~ msgstr "Sem Produtos"
+
+#~ msgid "View More"
+#~ msgstr "Mais"
+
+#~ msgid "Information"
+#~ msgstr "Informação"
+
+#~ msgid "Useful Links"
+#~ msgstr "Ligações Importantes"
+
+#~ msgid "Newsletter"
+#~ msgstr "Notícias"
+
+#~ msgid "Contacts"
+#~ msgstr "Contactos"
+
+#~ msgid "Permission denied!"
+#~ msgstr "Permissão rejeitada!"
+
+#~ msgid "We're sorry but you are not permitted to access this page."
+#~ msgstr "Desculpe mas não é permitido acessar esta página."
+
+#~ msgid "Page not found"
+#~ msgstr "Página não encontrada!"
+
+#~ msgid "Page not found!"
+#~ msgstr "Página não encontrada!"
+
+#~ msgid "We're sorry but the page you are looking for can't be found."
+#~ msgstr "Desculpe mas a página que está a procura não foi encontrada"
+
+#~ msgid "Basket"
+#~ msgstr "Cesto"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "    <strong>%(title)s</strong> has been added to your basket.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "<strong>%(title)s</strong> foi adicionado ao seu cesto."
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "    <strong>%(quantity)s</strong> copies of <strong>%(title)s</strong>\n"
+#~ "    have been added to your basket.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "<strong>%(quantity)s</strong> copies of <strong>%(title)s</strong>\n"
+#~ "foi adicionado ao seu cesto."
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "<strong>%(title)s</strong> has been moved back to your basket.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<strong>%(title)s</strong> foi movido de volta para o cesto.\n"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "<strong>%(title)s</strong> has been saved for later\n"
+#~ msgstr ""
+#~ "\n"
+#~ "strong>%(title)s</strong> foi gravado para depois\n"
+
+#~ msgid "Your basket is now empty"
+#~ msgstr "Seu Cesto está vazio"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "        Total <strong>%(total)s</strong>\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "Total <strong>%(total)s</strong>"
+
+#~ msgid "View basket"
+#~ msgstr "Ver Cesto"
+
+#~ msgid "Checkout now"
+#~ msgstr "Processar"
+
+#, fuzzy
+#~| msgid "Save & Close"
+#~ msgid "Save for later"
+#~ msgstr "Gravar & Fechar"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Totals"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Total:"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Fax"
+#~ msgid "Tax"
+#~ msgstr "Fax"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Product Description"
+#~ msgstr "Descrição"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product Type"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "Customer Reviews"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "Customer reviews"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Contacts"
+#~ msgid "Contact"
+#~ msgstr "Contactos"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgid "Date sent"
+#~ msgstr "Data"
+
+#, fuzzy
+#~| msgid "Price"
+#~ msgid "price:"
+#~ msgstr "Preço"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Due Date"
+#~ msgid "Date created"
+#~ msgstr "Data de Vencimento"
+
+#, fuzzy
+#~| msgid "Contacts"
+#~ msgid "Contact number"
+#~ msgstr "Contactos"
+
+#, fuzzy
+#~| msgid "Bank Accounts"
+#~ msgid "Account"
+#~ msgstr "Contas Bancárias"
+
+#, fuzzy
+#~| msgid "Contacts"
+#~ msgid "Contact Number"
+#~ msgstr "Contactos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product Alerts"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "View product"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Sections"
+#~ msgstr "Descrição"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category details"
+#~ msgstr "Categorias"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product type"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product attributes"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product types"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product Types"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "New Product"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Search Products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product details"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Category"
+#~ msgstr "Categorias"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product Type:"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Stock Movement"
+#~ msgid "Stock alerts"
+#~ msgstr "Movimento de Estoque"
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgid "Closed"
+#~ msgstr "Fechar"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgid "Emails"
+#~ msgstr "Email"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgid "Edit email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~| msgid "The are no items for this Receipt"
+#~ msgid "There are no defined emails to edit."
+#~ msgstr "Não há artigos para este Recibo"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "New Customers"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "Total Customers"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Total Products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Total lines"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "Total customers"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "New customers"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Total products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Sign out"
+#~ msgid "Log out"
+#~ msgstr "Sair"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Total cost:"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Restrictions"
+#~ msgstr "Descrição"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "4. Restrictions"
+#~ msgstr "Descrição"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product Options"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Order Total"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Discount"
+#~ msgid "Discounts"
+#~ msgstr "Desconto"
+
+#, fuzzy
+#~| msgid "Suppliers"
+#~ msgid "Supplier"
+#~ msgstr "Fornecedores"
+
+#, fuzzy
+#~| msgid "Suppliers"
+#~ msgid "Supplier SKU"
+#~ msgstr "Fornecedores"
+
+#, fuzzy
+#~| msgid "Go"
+#~ msgid "Go!"
+#~ msgstr "Ir"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product:"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Save & Close"
+#~ msgid "Save note"
+#~ msgstr "Gravar & Fechar"
+
+#, fuzzy
+#~| msgid "Customers"
+#~ msgid "Customer"
+#~ msgstr "Clientes"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Num products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Edit products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Add products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "New products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Products in range"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Products in Range"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Dashboard"
+#~ msgid "Reporting Dashboard"
+#~ msgstr "Painel de Controlo"
+
+#, fuzzy
+#~| msgid "Discount"
+#~ msgid "Total discount"
+#~ msgstr "Desconto"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product views"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Total spent"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product alerts"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Products viewed"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Total"
+#~ msgid "Total value"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product ID"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Bank Accounts"
+#~ msgid "Bulk Actions"
+#~ msgstr "Contas Bancárias"
+
+#, fuzzy
+#~| msgid "The are no items for this Document"
+#~ msgid "There are no site offers at the moment."
+#~ msgstr "Não há artigos para este documento"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "All products"
+#~ msgstr "Produtos"
+
+#, fuzzy
+#~| msgid "Email"
+#~ msgid "Email sent"
+#~ msgstr "Email"
+
+#~ msgid "Add/Update Bank Account"
+#~ msgstr "Adicionar/Actualizar Conta Bancária"
+
+#~ msgid "BANK ACCOUNT MAIN DATA"
+#~ msgstr "DADOS PRINCIPAIS"
+
+#~ msgid "Save & Close"
+#~ msgstr "Gravar & Fechar"
+
+#~ msgid "Save & Edit"
+#~ msgstr "Gravar & Editar"
+
+#~ msgid "Receipt"
+#~ msgstr "Recibo"
+
+#~ msgid "Print Receipt"
+#~ msgstr "Imprimir Recibo"

@@ -1,0 +1,97 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Product Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Product Details' path='<a href="/products/"> Products</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                {% if product.image.url %}
+                    <img src="{{ product.image.url }}">
+                {% endif %}
+                <h1><span id="id_name">{{ product.name }}</span> ( <span id="id_code">{{ product.code }}</span> )</h1>
+                <a href="{% url 'isis:product_create' %}" 
+                    class="fa fa-plus btn btn-primary">
+                   
+                </a> 
+                <a href="{% url 'isis:product_update' product.slug %}" 
+                    class="fas fa-edit btn btn-secondary">
+                     
+                </a> 
+                <a href="{% url 'isis:product_list' %}" 
+                    class="btn btn-info">
+                    <i class="fas fa-list"></i>
+                    {% trans 'List' %} 
+                </a>
+              
+                <hr>
+                <h6>{% trans 'Category' %}: <strong><a href="{% url 'isis:category_details' product.category.slug %}">
+                    <span id="id_category">{{ product.category }}</span></a></strong></h6>
+                <h6>{% trans 'Item Type' %}: <strong> <span id="id_type">{{ product_type }}</span></> </strong></h6>
+                <h6>{% trans 'Active' %}: <strong> 
+                    <span id="id_active_status">  
+                        {% if product.active_status %} {% trans 'Active' %}
+                        {% else %} {% trans 'Inactive' %}
+                        {% endif %}
+                    </span> </strong>
+                </h6>
+
+                <h6>{% trans 'Sell Status' %}: <strong> <span id="id_sell_status">
+                    {% if product.sell_status %} {% trans 'For Sale' %}
+                    {% else %} {% trans 'Not For Sale' %}
+                    {% endif %}
+                </span> </strong></h6>
+                <h6>{% trans 'Purchase Status' %}: <strong> <span id="id_purchase_status">
+                    {% if product.purchase_status %} {% trans 'For Purchase' %}
+                    {% else %} {% trans 'Not For Purchase' %}
+                    {% endif %}
+                </span> </strong></h6>
+                <hr>
+                <h6>{% trans 'Physical Stock' %}: <strong> <span id="id_physical_stock">{{ product.physical_stock | floatformat:2 }}</span></> </strong></h6>
+                <h6>{% trans 'Desired Stock' %}: <strong> <span id="id_desired_stock">{{ product.desired_stock | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Stock Limit' %}: <strong> <span id="id_stock_limit">{{ product.stock_limit | floatformat:2 }}</span> </strong></h6>
+                <hr>
+                <h6>{% trans 'Barcode' %}: <strong> <span id="id_barcode">{{ product.barcode }}</span> </strong></h6>
+                <h6>{% trans 'Tax' %}: <strong> <span id="id_tax">{{ product.tax.name }}</span>  
+                    ({{ product.tax.rate }}%)</strong></h6>
+                <h6>{% trans 'Default Warehouse' %}: <strong> <span id="id_warehouse">{{ product.warehouse }}</span> </strong></h6>
+                <hr>
+                <h6>{% trans 'Selling Price' %}: <strong> <span id="id_sell_price">{{ product.sell_price | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Min. Selling Price' %}: <strong> <span id="id_min_sell_price">{{ product.min_sell_price | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Selling Price 2' %}: <strong> <span id="id_sell_price2">{{ product.sell_price2 | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Selling Price 3' %}: <strong> <span id="id_sell_price3">{{ product.sell_price3 | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Selling Price 4' %}: <strong> <span id="id_sell_price4">{{ product.sell_price4 | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Selling Price 5' %}: <strong> <span id="id_sell_price5">{{ product.sell_price5 | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Purchase Price' %}: <strong> <span id="id_purchase_price">{{ product.purchase_price | floatformat:2 }}</span> </strong></h6>
+                <h6>{% trans 'Max. Purchase Price' %}: <strong> <span id="id_max_purchase_price">{{ product.max_purchase_price | floatformat:2 }}</span> </strong></h6>
+                <hr>
+                <h6>{% trans 'Product Nature' %}: <strong> <span id="id_product_nature">{{ product.product_nature }}</span> </strong></h6>
+                <h6>{% trans 'Product Url' %}: <strong> <span id="id_product_url">{{ product.product_url }}</span> </strong></h6>
+                <h6>{% trans 'Length X Width X Height' %}: <strong> <span id="id_length">
+                {{ product.length | floatformat:2 }}</span> X <span id="id_width">{{ product.width | floatformat:2 }}</span> X 
+                    <span id="id_height">{{ product.height | floatformat:2 }}</span> <span id="id_length_units">{{ product.length_units }}</span> </strong></h6>
+                <h6>{% trans 'Area' %}: <strong> <span id="id_area">{{ product.area | floatformat:2 }}</span> <span id="id_area_units">{{ product.area_units }}</span> </strong></h6>
+                <h6>{% trans 'Volume' %}: <strong> <span id="id_volume">{{ product.volume | floatformat:2 }}</span> <span id="id_volume_units">{{ product.volume_units }}</span> </strong></h6>
+                <h6>{% trans 'Weight' %}: <strong> <span id="id_weight">{{ product.weight | floatformat:2 }}</span> <span id="id_weight_units">{{ product.weight_units }}</span> </strong></h6>
+                <hr>
+                <h6>{% trans 'Description' %}: <strong> <span id="id_description">{{ product.description }}</span> </strong></h6>
+                <h6>{% trans 'Notes' %}: <strong><span id="id_notes">{{ product.notes }}</span></strong></h6>
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ product.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ product.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ product.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ product.modified_by }}</i></p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

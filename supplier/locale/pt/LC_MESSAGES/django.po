@@ -1,0 +1,752 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-28 23:15-0200\n"
+"Last-Translator:   <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\supplier\forms.py:33
+msgid "Service"
+msgstr "Serviço"
+
+#: .\supplier\forms.py:33
+msgid "Product"
+msgstr "Produto"
+
+#: .\supplier\forms.py:36
+msgid "Product code / Barcode"
+msgstr "Código do Produto / Cod. de Barras"
+
+#: .\supplier\forms.py:59
+msgid "INVOICE ITEMS"
+msgstr "ARTIGOS DA FACTURA"
+
+#: .\supplier\forms.py:70
+msgid "Add Item"
+msgstr "Adicionar Artigo"
+
+#: .\supplier\forms.py:86
+msgid ""
+"\n"
+"                Price is lower than the product Minimum selling price {}."
+msgstr ""
+"\n"
+" O preço é inferior ao preço mínimo de venda do produto {}."
+
+#: .\supplier\forms.py:93
+msgid ""
+"\n"
+"            discount must be between 0 and 99.99."
+msgstr ""
+"\n"
+" o desconto deve estar entre 0 e 99,99."
+
+#: .\supplier\forms.py:96
+msgid ""
+"\n"
+"            discount must be between 0 and 100."
+msgstr ""
+"\n"
+" o desconto deve estar entre 0 e 100."
+
+#: .\supplier\forms.py:117 .\supplier\forms.py:249
+msgid "Please choose Supplier"
+msgstr "Escolha Fornecedor"
+
+#: .\supplier\forms.py:129
+msgid "Add/Update SupplierInvoice"
+msgstr "Adicionar/atualizar factura do fornecedor"
+
+#: .\supplier\forms.py:131
+msgid "INVOICE DATA"
+msgstr "DADOS DA FATURA"
+
+#: .\supplier\forms.py:152 .\supplier\forms.py:275
+msgid "Next"
+msgstr "Próximo"
+
+#: .\supplier\forms.py:167
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:46
+msgid "No"
+msgstr "Não"
+
+#: .\supplier\forms.py:167
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:44
+msgid "Yes"
+msgstr "Sim"
+
+#: .\supplier\forms.py:169
+msgid "Supplier Name"
+msgstr "Nome do Fornecedor"
+
+#: .\supplier\forms.py:171
+msgid "Parent Supplier"
+msgstr "Fornecedor principal"
+
+#: .\supplier\forms.py:174
+msgid "Is Costumer?"
+msgstr "É Cliente?"
+
+#: .\supplier\forms.py:191
+msgid "Add/Update Supplier"
+msgstr "Adicionar/atualizar Fornecedor"
+
+#: .\supplier\forms.py:193
+msgid "Supplier Data"
+msgstr "Dados do Fornecedor"
+
+#: .\supplier\forms.py:230
+msgid "Save & Close"
+msgstr "Gravar & Fechar"
+
+#: .\supplier\forms.py:231
+msgid "Save & New"
+msgstr "Gravar & Novo"
+
+#: .\supplier\forms.py:266
+msgid "Add/Update SupplierReceipt"
+msgstr "Adicionar/atualizar Recibo"
+
+#: .\supplier\forms.py:268
+msgid "RECEIPT DATA"
+msgstr "DADOS DO RECIBO"
+
+#: .\supplier\forms.py:292
+msgid ""
+"\n"
+"            Please choose Supplier or create Invoices First."
+msgstr ""
+"\n"
+"Por favor, escolha Fornecedor ou crie Facturas primeiro"
+
+#: .\supplier\models.py:22 .\supplier\models.py:94
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:54
+msgid "Delivered"
+msgstr "Entregue"
+
+#: .\supplier\models.py:22
+msgid "Not delivered"
+msgstr "Não Entregue"
+
+#: .\supplier\models.py:27
+msgid "Payment method"
+msgstr "Método de pagamento"
+
+#: .\supplier\models.py:28
+msgid "Payment term"
+msgstr "Termo de pagamento"
+
+#: .\supplier\models.py:29
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:41
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:35
+#: .\supplier\templates\supplier\listviews\invoice_list.html:36
+msgid "Supplier"
+msgstr "Fornecedor"
+
+#: .\supplier\models.py:30
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:36
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:41
+#: .\supplier\templates\supplier\documents\invoice.html:29
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:29
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:32
+msgid "Date"
+msgstr "Data"
+
+#: .\supplier\models.py:31
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:38
+#: .\supplier\templates\supplier\documents\invoice.html:31
+msgid "Due Date"
+msgstr "Data de Vencimento"
+
+#: .\supplier\models.py:44
+msgid "Private Notes"
+msgstr "Notas Privadas"
+
+#: .\supplier\models.py:45
+msgid "Public Notes"
+msgstr "Notas Públicas"
+
+#: .\supplier\models.py:50 .\supplier\models.py:171
+msgid "Bank Account"
+msgstr "Conta Bancária"
+
+#: .\supplier\models.py:63
+msgid "Overdue"
+msgstr "Vencimento"
+
+#: .\supplier\models.py:65
+msgid "On date"
+msgstr "Em dia"
+
+#: .\supplier\models.py:77
+msgid "Not paid"
+msgstr "Não pago"
+
+#: .\supplier\models.py:96
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:56
+msgid "Not Delivered"
+msgstr "Não Entregue"
+
+#: .\supplier\models.py:102
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:71
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:73
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:42
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:44
+#: .\supplier\templates\supplier\listviews\invoice_list.html:68
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:59
+msgid "Active"
+msgstr "Ativo"
+
+#: .\supplier\models.py:104
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:74
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: .\supplier\models.py:164
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:79
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:54
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:49
+msgid "Notes"
+msgstr "Notas"
+
+#: .\supplier\models.py:169
+msgid "Active status"
+msgstr "Ativo"
+
+#: .\supplier\models.py:170
+msgid "Finished status"
+msgstr "Estado de Finalização"
+
+#: .\supplier\models.py:203
+#: .\supplier\templates\supplier\documents\invoice.html:90
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:88
+msgid "Description"
+msgstr "Descrição"
+
+#: .\supplier\models.py:209
+msgid "Supplier Receipt Invoice"
+msgstr "Factura do Fornecedor"
+
+#: .\supplier\models.py:210
+msgid "Supplier Receipt Invoices"
+msgstr "Factura do Fornecedor"
+
+#: .\supplier\templates\supplier\createviews\invoice_create.html:8
+msgid "New Supplier Invoice"
+msgstr "Nova factura de fornecedor"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:9
+msgid "New Invoice Item"
+msgstr "Novo Artigo da factura"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:29
+msgid "Invoice Total"
+msgstr "Total da Factura"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:39
+msgid "Sub Total"
+msgstr "Sub Total"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:47
+msgid "Discount Total"
+msgstr "Desconto Geral"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:49
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:39
+msgid "Payment Method"
+msgstr "Método de pagamento"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:51
+msgid "Invoice Date"
+msgstr "Data da Factura"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:56
+msgid "Tax Total"
+msgstr "Taxa Total"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:58
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:40
+msgid "Payment Term"
+msgstr "Termo de pagamento"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:60
+msgid "Due on"
+msgstr "Vencimento"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:70
+#: .\supplier\templates\supplier\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de artigos"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:79
+#: .\supplier\templates\supplier\listviews\supplier_list_view.html:30
+msgid "Name"
+msgstr "Nome"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:80
+#: .\supplier\templates\supplier\documents\invoice.html:91
+msgid "Price"
+msgstr "Preço"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:81
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:82
+msgid "Tax"
+msgstr "Taxa"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:83
+#: .\supplier\templates\supplier\documents\invoice.html:94
+#: .\supplier\templates\supplier\documents\invoice.html:132
+msgid "Discount"
+msgstr "Desconto"
+
+#: .\supplier\templates\supplier\createviews\invoice_item_create.html:112
+msgid "Finish"
+msgstr "Finalizar"
+
+#: .\supplier\templates\supplier\createviews\supplier_create.html:8
+msgid "New Partner"
+msgstr "Novo parceiro"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_create.html:8
+msgid "New Receipt"
+msgstr "Novo Recibo"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:9
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:9
+msgid "Receipt Details"
+msgstr "Detalhes da Factura"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:27
+msgid "Invoice #"
+msgstr "Factura"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:30
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:40
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:67
+#: .\supplier\templates\supplier\documents\invoice.html:95
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:89
+msgid "Total"
+msgstr "Sub Total"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:33
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:44
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:68
+#: .\supplier\templates\supplier\listviews\invoice_list.html:38
+msgid "Paid"
+msgstr "Pago"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:36
+msgid "UnPaid"
+msgstr "Pago"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:39
+msgid "Payment"
+msgstr "Termo de pagamento"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:63
+msgid "This costumer has no Invoice(s)"
+msgstr "Este cliente não tem Facturas"
+
+#: .\supplier\templates\supplier\createviews\supplier_receipt_invoice.html:68
+msgid "Make Payment"
+msgstr "Faça pagemento"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:8
+msgid "Invoice Details"
+msgstr "Detalhes da Factura"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:31
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:33
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:33
+msgid "List"
+msgstr "Lista"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:41
+msgid "Paid Status"
+msgstr "Estado de pagamento"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:46
+msgid "Not Paid"
+msgstr "Não pago"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:51
+msgid "Delivered Status"
+msgstr "Estado de Entrega"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:61
+msgid "Finished Status"
+msgstr "Estado de Finalização"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:64
+msgid "Validated"
+msgstr "Validado"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:66
+msgid "Not Validated"
+msgstr "Não Validado"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:82
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:57
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:52
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:83
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:58
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:53
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:84
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:59
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:54
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:85
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:60
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:55
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:91
+msgid "Last 5 Supplier Paid Invoices"
+msgstr "Atualizar Factura do Fornecedor"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:105
+msgid "Supplier Noit Paid Invoices"
+msgstr "Factura do Fornecedor"
+
+#: .\supplier\templates\supplier\detailviews\invoice_detail_view.html:119
+msgid "Overdue Invoices"
+msgstr "Facturas Vencidas"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:8
+msgid "Partner Details"
+msgstr "Detalhes do Parceiro"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:39
+#: .\supplier\templates\supplier\listviews\supplier_list_view.html:31
+msgid "Address"
+msgstr "Endereço"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:40
+#: .\supplier\templates\supplier\documents\invoice.html:43
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:41
+#: .\supplier\templates\supplier\listviews\supplier_list_view.html:32
+msgid "Contacts"
+msgstr "Contactos"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:41
+msgid "Is Costumer"
+msgstr "É Cliente"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:50
+msgid "Current Debit"
+msgstr "Crédito atual"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:51
+msgid "Max Credit"
+msgstr "Crédito Máximo"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:52
+#: .\supplier\templates\supplier\documents\invoice.html:46
+#: .\supplier\templates\supplier\documents\invoice.html:64
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:44
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:63
+#: .\supplier\templates\supplier\listviews\supplier_list_view.html:33
+msgid "Email"
+msgstr "E-mail"
+
+#: .\supplier\templates\supplier\detailviews\supplier_detail_view.html:53
+#: .\supplier\templates\supplier\documents\invoice.html:49
+#: .\supplier\templates\supplier\documents\invoice.html:68
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:47
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:67
+msgid "Website"
+msgstr "Pág. Web"
+
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:37
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:31
+msgid "Costumer"
+msgstr "É Cliente"
+
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:45
+#: .\supplier\templates\supplier\listviews\invoice_list.html:70
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:61
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:59
+msgid "Payments"
+msgstr "Termo de pagamento"
+
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:66
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:78
+#: .\supplier\templates\supplier\documents\invoice.html:7
+#: .\supplier\templates\supplier\documents\invoice.html:27
+#: .\supplier\templates\supplier\listviews\invoice_list.html:35
+msgid "Invoice"
+msgstr "Factura"
+
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:69
+msgid "Remaining"
+msgstr "Saldo"
+
+#: .\supplier\templates\supplier\detailviews\supplier_receipt_detail_view.html:87
+msgid "Totals"
+msgstr "Sub Total"
+
+#: .\supplier\templates\supplier\documents\invoice.html:13
+#: .\supplier\templates\supplier\documents\invoice.html:169
+msgid "Print Invoice"
+msgstr "Factura"
+
+#: .\supplier\templates\supplier\documents\invoice.html:15
+#: .\supplier\templates\supplier\documents\invoice.html:171
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:15
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:143
+msgid "Close"
+msgstr "Fechar"
+
+#: .\supplier\templates\supplier\documents\invoice.html:39
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:37
+msgid "From"
+msgstr "De"
+
+#: .\supplier\templates\supplier\documents\invoice.html:53
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:51
+msgid "To"
+msgstr "Para"
+
+#: .\supplier\templates\supplier\documents\invoice.html:60
+#: .\supplier\templates\supplier\documents\invoice.html:93
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:58
+msgid "VAT Number"
+msgstr "NUIT"
+
+#: .\supplier\templates\supplier\documents\invoice.html:72
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:71
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\supplier\templates\supplier\documents\invoice.html:76
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:75
+msgid "Fax"
+msgstr "Taxa"
+
+#: .\supplier\templates\supplier\documents\invoice.html:80
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:79
+msgid "Cell"
+msgstr "Celular"
+
+#: .\supplier\templates\supplier\documents\invoice.html:92
+msgid "Qty"
+msgstr "Qt."
+
+#: .\supplier\templates\supplier\documents\invoice.html:113
+msgid "The are no items for this Invoice"
+msgstr "Não há artigos neste factura"
+
+#: .\supplier\templates\supplier\documents\invoice.html:126
+msgid "Subtotal"
+msgstr "SubTotal"
+
+#: .\supplier\templates\supplier\documents\invoice.html:138
+msgid "VAT"
+msgstr "IVA"
+
+#: .\supplier\templates\supplier\documents\invoice.html:144
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:116
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:7
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:27
+#: .\supplier\views.py:781
+msgid "Receipt"
+msgstr "Recibo"
+
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:13
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:141
+msgid "Print Receipt"
+msgstr "Imprimir Recibo"
+
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:97
+msgid "Payment of Invoice #"
+msgstr "Pagamento da Factura #"
+
+#: .\supplier\templates\supplier\documents\supplier_receipt.html:103
+msgid "The are no items for this Receipt"
+msgstr "Não há facturas para este recibo"
+
+#: .\supplier\templates\supplier\listviews\invoice_list.html:37
+msgid "Amount"
+msgstr "Valor"
+
+#: .\supplier\templates\supplier\listviews\invoice_list.html:39
+msgid "Debit"
+msgstr "Débito"
+
+#: .\supplier\templates\supplier\listviews\invoice_list.html:40
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:33
+msgid "Status"
+msgstr "Estado"
+
+#: .\supplier\templates\supplier\listviews\invoice_list.html:41
+#: .\supplier\templates\supplier\listviews\supplier_list_view.html:34
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:34
+msgid "Actions"
+msgstr "Ações"
+
+#: .\supplier\templates\supplier\listviews\supplier_receipt_list.html:30
+msgid "Number"
+msgstr "Número"
+
+#: .\supplier\templates\supplier\modals\supplier_modal.html:8
+msgid "New Supplier"
+msgstr "Novo Fornecedor"
+
+#: .\supplier\templates\supplier\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\supplier\templates\supplier\updateviews\invoice_update.html:8
+msgid "Update Supplier Invoice"
+msgstr "Atualizar Factura do Fornecedor"
+
+#: .\supplier\templates\supplier\updateviews\supplier_receipt_update.html:8
+msgid "Update Receipt"
+msgstr "Atualizar Recibo"
+
+#: .\supplier\templates\supplier\updateviews\supplier_update.html:8
+msgid "Update Partner"
+msgstr "Atualizar Parceiro"
+
+#: .\supplier\views.py:71
+msgid "Supplier added successfully!"
+msgstr "Fornecedor adicionado com sucesso!"
+
+#: .\supplier\views.py:99
+msgid "Parent Supplier and Supplier must be different!"
+msgstr "Fornecedor Principal e Fornecedor devem ser diferentes!"
+
+#: .\supplier\views.py:106
+msgid "Supplier updated successfully!"
+msgstr "Fornecedor atualizado com sucesso!"
+
+#: .\supplier\views.py:130 .\supplier\views.py:451 .\supplier\views.py:891
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\supplier\views.py:133
+msgid "Supplier delete successfully!"
+msgstr "Fornecedor excluído com sucesso!"
+
+#: .\supplier\views.py:454
+msgid "Supplier Invoice delete successfully!"
+msgstr "Factura do Fornecedor excluído com sucesso!"
+
+#: .\supplier\views.py:507
+msgid "Supplier Invoice is closed and cannot be edited."
+msgstr "Factura do Fornecedor está fechada e não pode ser editada"
+
+#: .\supplier\views.py:521
+msgid "SupplierInvoice"
+msgstr "Factura do Fornecedor"
+
+#: .\supplier\views.py:525
+msgid "Please create Invoice Items First"
+msgstr "Por favor crie artigos primeiro"
+
+#: .\supplier\views.py:558
+msgid ""
+"No product matches the given barcode. Please choose product from the "
+"dropdown below."
+msgstr ""
+"Nenhum produto encotrado com esse código de barras. Por favor escolha "
+"produto na lista abaixo."
+
+#: .\supplier\views.py:572
+msgid ""
+"Please use numbers that do not contain commas (','), and use dot ('.') for "
+"decimals.\n"
+"{}."
+msgstr ""
+"Use números que não contenham vírgulas (',') e use ponto ('.') para "
+"decimais.\n"
+"{}."
+
+#: .\supplier\views.py:576
+msgid "Please choose product from the dropdown, or add a new product."
+msgstr "Por favor escolha produto ou crie um novo"
+
+#: .\supplier\views.py:580
+msgid "This product is inactive and cannot be sold."
+msgstr "Este produdo está inativo e não pode ser vendido."
+
+#: .\supplier\views.py:584
+msgid "This product is not for purchase."
+msgstr "Este produto não é para compra."
+
+#: .\supplier\views.py:638
+msgid "Not Deleted! {}."
+msgstr "Não excluído! {}."
+
+#: .\supplier\views.py:676 .\supplier\views.py:774
+msgid "Please enter at least one payment!"
+msgstr "Por favor faça pelomenos um pagamento!"
+
+#: .\supplier\views.py:698 .\supplier\views.py:736 .\supplier\views.py:855
+msgid "Supplier Receipt is closed and cannot be edited."
+msgstr "Factura do Fornecedor está fechada e não pode ser editada"
+
+#: .\supplier\views.py:703 .\supplier\views.py:741 .\supplier\views.py:860
+msgid "Supplier Receipt is inactive and cannot be edited."
+msgstr "Factura do Fornecedor está fechada e não pode ser editada"
+
+#: .\supplier\views.py:711 .\supplier\views.py:749 .\supplier\views.py:817
+msgid "This supplier has no pending invoices!"
+msgstr "Este fornecedor não tem facturas pendentes!"
+
+#: .\supplier\views.py:810
+msgid ""
+"There are no invoices with pending payments! Please create Supplier Invoice "
+"First."
+msgstr ""
+"Não há facturas com pagamentos pendentes! Por favor crie facturas do "
+"fornecedor primeiro."
+
+#: .\supplier\views.py:894
+msgid "Supplier Receipt delete successfully!"
+msgstr "Fornecedor excluído com sucesso!"
+
+#~ msgid "Grand Total"
+#~ msgstr "Total geral"
+
+#, python-brace-format
+#~ msgid "Invoice #{invoice.number} payment."
+#~ msgstr "Pagamento da factura #{invoice.number}."
+
+#~ msgid "SupplierInvoice added successfully!"
+#~ msgstr "Factura do Fornecedor adicionado com sucesso!"
+
+#~ msgid "Supplier Invoice updated successfully!"
+#~ msgstr "Factura do Fornecedor atualizado com sucesso!"

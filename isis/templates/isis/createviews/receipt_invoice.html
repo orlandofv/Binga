@@ -1,0 +1,87 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% load humanize %}
+
+{% block title %} {{ block.super }} | {% trans 'Receipt Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+{% include 'breadcrumb.html' with title='Receipt Details' path='<a href="/receipts/"> Receipts </a>' dest='New Receipt' %}
+{% endblock breadcrumb %}
+            
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <!--This Line will show messages-->
+            <div class="conteiner-fluid p-10 m-0" id="results"></div>
+
+            <div class="col-md-12">
+                <table class='table table-bordered'>
+                    <thead>
+                        <tr>
+                            <th>
+                                {% trans "Invoice #" %}
+                            </th>
+                            <th>
+                                {% trans "Date" %}
+                            </th>
+                            <th>
+                                {% trans "Due on" %}
+                            </th>
+                            <th class="text-end">
+                                {% trans "Total" %}
+                            </th>
+                            <th class="text-end">
+                                {% trans "Paid" %}
+                            </th>
+                            <th class="text-end">
+                                {% trans "UnPaid" %}
+                            </th>
+                            <th class="text-end">
+                                {% trans "Payment" %}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <form id='invoice-item' method="post" action="{% url 'isis:receipt_invoice' receipt.slug %}"> 
+                            {% csrf_token %}
+
+                            {% for invoice in invoices  %}
+                                <tr class="form-group">
+                                    <td>{{ invoice.number }}</td>
+                                    <td><span class="text-end"> {{ invoice.date | date:"SHORT_DATE_FORMAT" }} </span>
+</td>
+                                    <td>{{ invoice.due_date | date:"SHORT_DATE_FORMAT" }}</td>
+                                    <td class="text-end">{{ invoice.total | floatformat:2 |intcomma }}</td>
+                                    <td class="text-end">{{ invoice.credit | floatformat:2 |intcomma }}</td>
+                                    <td class="text-end">{{ invoice.debit | floatformat:2 |intcomma }}</td>
+                                    <td class="text-end">
+                                        <input type="hidden" name="invoices" value="{{ invoice.id }}">
+                                        <input type="hidden" name="invoice_total" value="{{ invoice.total }}">
+                                        <input type="hidden" name="invoice_debit" value="{{ invoice.debit }}">
+                                        <input type="hidden" name="invoice_credit" value="{{ invoice.credit }}">
+                                        <input class="text-end" type="number" name="payment" value="0" step="any" 
+                                        class="numberinput form-control" id="id_total">
+                                    </td>
+                                </tr>
+                            {% empty %}
+                                <p> {% trans 'This costumer has no Invoice(s)' %} </p>       
+                            {% endfor %}
+
+                            <tr class="form-group">
+                                <td>
+                                    <input class="form-control btn btn-primary" type="submit" value="{% trans 'Make Payment' %}"/>
+                                </td>
+                            </tr>
+                        </form>
+                    </tbody>
+                </table>  
+            </div>
+            
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% load static %}
+{% load i18n %}
+
+<div style="border: 1px solid #055a54; border-radius: 5px; padding:10px; text-align: center;">
+    <div><strong>{% trans "SUBSCRIBE" %}</strong></div>
+    <div style="margin-bottom: 10px;">
+        {% trans "Please subscribe to get the latest articles in your mailbox." %}
+    </div>
+    <div>
+        <form action="#" method="post" class="form-horizontal">
+            {% csrf_token %}
+            <input type="email" name="email" class="form-control" placeholder="{% trans 'Your Email ID Please' %}" required>
+            <br>
+            <input type="submit" value="Subscribe" class="btn btn-primary btn-sm">
+        </form>
+    </div>
+</div>

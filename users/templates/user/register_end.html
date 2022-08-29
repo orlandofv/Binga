@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} {{ block.super }} - Contactos
+{% endblock %}
+
+
+{% block menu_categorias %}
+{% endblock %}
+
+{% block content %}
+    <!-- ##### Breadcrumb Area End ##### -->
+<div class="container" style="padding-top: 70px; padding-bottom: 70px;
+background-repeat: no-repeat; background-position: center center; background-size: 100%;">
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8" style="border: 1px solid #5285F4;
+        border-radius: 5px; padding: 30px; ">
+            <h2 style="align: center; margin-left: 10px;">Registre-se para o nosso Site</h2>
+            <hr style="border: 0.2px solid #5285F4;"/>
+
+            <form method="post" id="contact_form">
+
+                {% csrf_token %}
+
+                {% for hidden_field in uform.hidden_fields %}
+                    {{ hidden_field }}
+                  {% endfor %}
+
+                {% for hidden_field in pform.hidden_fields %}
+                    {{ hidden_field }}
+                {% endfor %}
+
+                {% if uform.non_field_errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for error in form.non_field_errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if pform.non_field_errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for error in form.non_field_errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% for field in uform.visible_fields %}
+                    <div class="form-group">
+                        {{ field.label_tag }}
+
+                        {% if form.is_bound %}
+                            {% if field.errors %}
+                                {% render_field field class="form-control is-invalid" %}
+                                {% for error in field.errors %}
+                                    <div class="invalid-feedback">
+                                        {{ error }}
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                {% render_field field class="form-control is-valid" %}
+                            {% endif %}
+                        {% else %}
+                            {% render_field field class="form-control" %}
+                        {% endif %}
+
+                        {% if field.help_text %}
+                            <small class="form-text text-muted">{{ field.help_text }}</small>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+
+                {% for field in pform.visible_fields %}
+                    <div class="form-group">
+                        {{ field.label_tag }}
+
+                        {% if form.is_bound %}
+                            {% if field.errors %}
+                                {% render_field field class="form-control is-invalid" %}
+                                {% for error in field.errors %}
+                                    <div class="invalid-feedback">
+                                        {{ error }}
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                {% render_field field class="form-control is-valid" %}
+                            {% endif %}
+                        {% else %}
+                            {% render_field field class="form-control" %}
+                        {% endif %}
+
+                      {% if field.help_text %}
+                        <small class="form-text text-muted">{{ field.help_text }}</small>
+                      {% endif %}
+                    </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block noticias %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+{% block vistos %}
+{% endblock %}
+{% block banner %}
+{% endblock %}
+
+{% block negocio_da_semana %}
+{% endblock %}
+
+{% block categorias %}
+{% endblock %}
+
+{% block ratings %}
+{% endblock %}
+
+{% block novidades %}
+{% endblock %}
+
+{% block melhores_vendas %}
+{% endblock %}
+
+{% block anuncios %}
+{% endblock %}
+
+{% block trends %}
+{% endblock %}
+
+{% block reviews %}
+{% endblock %}
+
+{% block marcas %}
+{% endblock %}

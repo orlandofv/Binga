@@ -1,0 +1,72 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Category Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Category Details' path='<a href="/Categories/"> Categories</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ category.name }}</h1>
+                <a href="{% url 'isis:category_create' %}" 
+                    class="fa fa-plus btn btn-primary">
+                   
+                </a> 
+                <a href="{% url 'isis:category_update' category.slug %}" 
+                    class="fas fa-edit btn btn-secondary">
+                     
+                </a> 
+                <a href="{% url 'isis:category_list' %}" 
+                    class="btn btn-info">
+                    <i class="fas fa-list"></i>
+                    {% trans 'List' %} 
+                </a>
+                
+            
+                <hr>
+                <h6>{% trans 'Name' %}: <strong> <span>{{ category.name }}</span></strong></h6>
+                <h6>{% trans 'Parent' %}: <strong> <span>{{ parent_category }}</span></strong></h6>
+                <h6>{% trans 'Active' %}: <strong> 
+                    <span>  
+                        {% if category.active_status %} {% trans 'Active' %}
+                        {% else %} {% trans 'Inactive' %}
+                        {% endif %}
+                    </span> </strong>
+                </h6>
+                <h6>{% trans 'Notes' %}: <strong> <span>{{ category.notes }}</span></strong></h6>
+    
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ category.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ category.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ category.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ category.modified_by }}</i></p>
+            </div>
+        </div>
+        
+        {% if child_categories %}
+        <div class="panel panel-primary mt-2">
+            <div class="panel-title">Child Categories <span class="badge">{{ child_categories | length }}</span></div>
+            <div class='card-body'>
+                {% for rel in child_categories %}
+                    <a href="{% url 'isis:category_details' rel.slug %}" 
+                    class="fa fa-book btn btn-default card-text">
+                        {{ rel }}
+                    </a> 
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    </div>
+
+    
+{% endblock content %}

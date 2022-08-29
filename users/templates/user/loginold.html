@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} {{ block.super }} - Contactos
+{% endblock %}
+
+{% block menu_categorias %}
+{% endblock %}
+
+{% block content %}
+    <!-- ##### Breadcrumb Area End ##### -->
+    <div class="container" style="padding-top: 70px; padding-bottom: 70px;
+    background-image: url({% static 'images/login.png' %}); background-repeat: no-repeat;
+    background-position: center center; background-size: 100%;">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4" style="border: 1px solid #5285F4;
+            border-radius: 5px; padding: 30px; ">
+                <h2 style="align: center; margin-left: 10px;">Login</h2>
+                <hr style="border: 0.2px solid #5285F4;"/>
+
+                    <form method="post" id="contact_form">
+
+                        {% csrf_token %}
+
+                        {% for hidden_field in form.hidden_fields %}
+                            {{ hidden_field }}
+                          {% endfor %}
+
+                          {% for field in form.visible_fields %}
+                            <div class="form-group">
+                              {{ field.label_tag }}
+                              {% render_field field class="form-control" %}
+                              {% if field.help_text %}
+                                <small class="form-text text-muted">{{ field.help_text }}</small>
+                              {% endif %}
+                            </div>
+                          {% endfor %}
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                <hr style="border: 0.2px solid #5285F4;"/>
+                <p style="margin-left: 10px;">Don't have Account? <a href="{% url 'user:register' %}"> <span> Register </span> </a> </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block noticias %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+{% block vistos %}
+{% endblock %}
+{% block banner %}
+{% endblock %}
+
+{% block negocio_da_semana %}
+{% endblock %}
+
+{% block categorias %}
+{% endblock %}
+
+{% block ratings %}
+{% endblock %}
+
+{% block novidades %}
+{% endblock %}
+
+{% block melhores_vendas %}
+{% endblock %}
+
+{% block anuncios %}
+{% endblock %}
+
+{% block trends %}
+{% endblock %}
+
+{% block reviews %}
+{% endblock %}
+
+{% block marcas %}
+{% endblock %}

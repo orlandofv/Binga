@@ -1,0 +1,998 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-31 00:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\forms.py:29 .\models.py:165
+#: .\templates\isis\detailviews\product_detail_view.html:69
+msgid "Default Warehouse"
+msgstr ""
+
+#: .\forms.py:31
+msgid "Selling Price"
+msgstr ""
+
+#: .\forms.py:32
+msgid "Min. Selling Price"
+msgstr ""
+
+#: .\forms.py:33
+msgid "Selling Price 2"
+msgstr ""
+
+#: .\forms.py:34
+msgid "Selling Price 3"
+msgstr ""
+
+#: .\forms.py:35
+msgid "Selling Price 4"
+msgstr ""
+
+#: .\forms.py:36
+msgid "Selling Price 5"
+msgstr ""
+
+#: .\forms.py:37 .\forms.py:38
+#: .\templates\isis\detailviews\product_detail_view.html:77
+#: .\templates\isis\listviews\product_list.html:33
+msgid "Purchase Price"
+msgstr ""
+
+#: .\forms.py:39 .\templates\isis\detailviews\product_detail_view.html:64
+msgid "Stock Limit"
+msgstr ""
+
+#: .\forms.py:40 .\templates\isis\detailviews\product_detail_view.html:63
+msgid "Desired Stock"
+msgstr ""
+
+#: .\forms.py:56
+msgid "Other Images"
+msgstr ""
+
+#: .\forms.py:68
+msgid "Add/Update product"
+msgstr ""
+
+#: .\forms.py:70
+msgid "PRODUCT MAIN DATA"
+msgstr ""
+
+#: .\forms.py:103
+msgid "OTHER PRICES"
+msgstr ""
+
+#: .\forms.py:114
+msgid "IMAGES"
+msgstr ""
+
+#: .\forms.py:122
+msgid "AREA - VOLUME - WEIGHT"
+msgstr ""
+
+#: .\forms.py:138
+msgid "STOCKS"
+msgstr ""
+
+#: .\forms.py:144
+msgid "PRIVATE NOTES"
+msgstr ""
+
+#: .\forms.py:151 .\forms.py:205 .\forms.py:260 .\forms.py:298 .\forms.py:333
+#: .\forms.py:368
+msgid "Save & Close"
+msgstr ""
+
+#: .\forms.py:152 .\forms.py:206 .\forms.py:261 .\forms.py:299 .\forms.py:334
+#: .\forms.py:369
+msgid "Save & Edit"
+msgstr ""
+
+#: .\forms.py:166
+msgid ""
+"\n"
+"            The Code of Product must not be empty."
+msgstr ""
+
+#: .\forms.py:170
+msgid ""
+"\n"
+"            The Name of Product must not be empty."
+msgstr ""
+
+#: .\forms.py:191
+msgid "Add/Update Tax"
+msgstr ""
+
+#: .\forms.py:193
+msgid "TAX MAIN DATA"
+msgstr ""
+
+#: .\forms.py:231
+msgid "Add/Update Warehouse"
+msgstr ""
+
+#: .\forms.py:233
+msgid "WAREHOUSE MAIN DATA"
+msgstr ""
+
+#: .\forms.py:286
+msgid "Add/Update Payment Method"
+msgstr ""
+
+#: .\forms.py:288
+msgid "PAYMENT METHOD DATA"
+msgstr ""
+
+#: .\forms.py:321
+msgid "Add/Update Payment Term"
+msgstr ""
+
+#: .\forms.py:323
+msgid "PAYMENT TERM DATA"
+msgstr ""
+
+#: .\forms.py:356
+msgid "Add/Update Receipt"
+msgstr ""
+
+#: .\forms.py:358
+msgid "RECEIPT DATA"
+msgstr ""
+
+#: .\forms.py:384 .\models.py:103
+msgid "Service"
+msgstr ""
+
+#: .\forms.py:384 .\models.py:103
+msgid "Product"
+msgstr ""
+
+#: .\forms.py:405
+msgid "INVOICE ITEMS"
+msgstr ""
+
+#: .\forms.py:415
+msgid "Add Item"
+msgstr ""
+
+#: .\forms.py:431
+msgid ""
+"\n"
+"                Price is lower than the product Minimum selling price {}."
+msgstr ""
+
+#: .\forms.py:438
+msgid ""
+"\n"
+"            discount must be between 0 and 99.99."
+msgstr ""
+
+#: .\forms.py:441
+msgid ""
+"\n"
+"            discount must be between 0 and 100."
+msgstr ""
+
+#: .\forms.py:469
+msgid "Add/Update Invoice"
+msgstr ""
+
+#: .\forms.py:471
+msgid "INVOICE DATA"
+msgstr ""
+
+#: .\forms.py:489
+msgid "Next"
+msgstr ""
+
+#: .\models.py:21 .\templates\isis\detailviews\invoice_detail_view.html:72
+#: .\templates\isis\detailviews\invoice_detail_view.html:74
+#: .\templates\isis\detailviews\payment_method_detail_view.html:38
+#: .\templates\isis\detailviews\payment_method_detail_view.html:40
+#: .\templates\isis\detailviews\payment_term_detail_view.html:38
+#: .\templates\isis\detailviews\payment_term_detail_view.html:40
+#: .\templates\isis\detailviews\product_detail_view.html:43
+#: .\templates\isis\detailviews\product_detail_view.html:45
+#: .\templates\isis\detailviews\receipt_detail_view.html:38
+#: .\templates\isis\detailviews\receipt_detail_view.html:40
+#: .\templates\isis\detailviews\tax_detail_view.html:38
+#: .\templates\isis\detailviews\tax_detail_view.html:40
+#: .\templates\isis\detailviews\warehouse_detail_view.html:45
+#: .\templates\isis\detailviews\warehouse_detail_view.html:47
+#: .\templates\isis\listviews\invoice_list.html:50
+#: .\templates\isis\listviews\payment_method_list.html:50
+#: .\templates\isis\listviews\payment_term_list.html:50
+#: .\templates\isis\listviews\receipt_list.html:50
+#: .\templates\isis\listviews\tax_list.html:50
+msgid "Active"
+msgstr ""
+
+#: .\models.py:21
+msgid "Deactivated"
+msgstr ""
+
+#: .\models.py:28 .\templates\isis\listviews\invoice_list.html:32
+#: .\templates\isis\listviews\payment_method_list.html:32
+#: .\templates\isis\listviews\payment_term_list.html:32
+#: .\templates\isis\listviews\receipt_list.html:32
+#: .\templates\isis\listviews\tax_list.html:32
+msgid "Status"
+msgstr ""
+
+#: .\models.py:87
+msgid "Image"
+msgstr ""
+
+#: .\models.py:139
+msgid "Kg"
+msgstr ""
+
+#: .\models.py:139
+msgid "G"
+msgstr ""
+
+#: .\models.py:139
+msgid "MG"
+msgstr ""
+
+#: .\models.py:139
+msgid "ounce"
+msgstr ""
+
+#: .\models.py:140
+msgid "pound"
+msgstr ""
+
+#: .\models.py:140
+msgid "ton"
+msgstr ""
+
+#: .\models.py:142
+msgid "m"
+msgstr ""
+
+#: .\models.py:142
+msgid "dm"
+msgstr ""
+
+#: .\models.py:142
+msgid "cm"
+msgstr ""
+
+#: .\models.py:142
+msgid "mm"
+msgstr ""
+
+#: .\models.py:142
+msgid "ft"
+msgstr ""
+
+#: .\models.py:143
+msgid "in"
+msgstr ""
+
+#: .\models.py:145
+msgid "m²"
+msgstr ""
+
+#: .\models.py:145
+msgid "dm²"
+msgstr ""
+
+#: .\models.py:145
+msgid "cm²"
+msgstr ""
+
+#: .\models.py:145
+msgid "mm²"
+msgstr ""
+
+#: .\models.py:145
+msgid "ft²"
+msgstr ""
+
+#: .\models.py:146
+msgid "in²"
+msgstr ""
+
+#: .\models.py:148
+msgid "m³"
+msgstr ""
+
+#: .\models.py:148
+msgid "dm³"
+msgstr ""
+
+#: .\models.py:148
+msgid "cm³"
+msgstr ""
+
+#: .\models.py:148
+msgid "mm³"
+msgstr ""
+
+#: .\models.py:148
+msgid "ft³"
+msgstr ""
+
+#: .\models.py:149
+msgid "in³"
+msgstr ""
+
+#: .\models.py:149
+msgid "litre"
+msgstr ""
+
+#: .\models.py:149
+msgid "gallon"
+msgstr ""
+
+#: .\models.py:154 .\templates\isis\detailviews\product_detail_view.html:52
+msgid "For Sale"
+msgstr ""
+
+#: .\models.py:154
+msgid "Not for Sale"
+msgstr ""
+
+#: .\models.py:155 .\templates\isis\detailviews\product_detail_view.html:57
+msgid "For Purchase"
+msgstr ""
+
+#: .\models.py:155
+msgid "Not for Purchase"
+msgstr ""
+
+#: .\models.py:157
+msgid "Raw Product"
+msgstr ""
+
+#: .\models.py:157
+msgid "Manufactured Product"
+msgstr ""
+
+#: .\models.py:159
+msgid "Product Code"
+msgstr ""
+
+#: .\models.py:160
+msgid "Name of Product"
+msgstr ""
+
+#: .\models.py:161
+msgid "Type"
+msgstr ""
+
+#: .\models.py:163
+msgid "Parent Product"
+msgstr ""
+
+#: .\models.py:166
+msgid "Detailed Description"
+msgstr ""
+
+#: .\models.py:167 .\templates\isis\detailviews\product_detail_view.html:66
+msgid "Barcode"
+msgstr ""
+
+#: .\models.py:179
+msgid "Primary Image"
+msgstr ""
+
+#: .\models.py:220 .\templates\isis\detailviews\invoice_detail_view.html:26
+#: .\templates\isis\detailviews\payment_method_detail_view.html:26
+#: .\templates\isis\detailviews\payment_term_detail_view.html:26
+#: .\templates\isis\detailviews\product_detail_view.html:29
+#: .\templates\isis\detailviews\receipt_detail_view.html:26
+#: .\templates\isis\detailviews\tax_detail_view.html:26
+#: .\templates\isis\detailviews\warehouse_detail_view.html:29
+#: .\templates\isis\listviews\invoice_list.html:58
+#: .\templates\isis\listviews\payment_method_list.html:58
+#: .\templates\isis\listviews\payment_term_list.html:58
+#: .\templates\isis\listviews\product_list.html:56
+#: .\templates\isis\listviews\receipt_list.html:58
+#: .\templates\isis\listviews\tax_list.html:58
+#: .\templates\isis\listviews\warehouse_list.html:52
+#: .\templates\isis\utilities\edit_detail_buttons.html:5
+msgid "Modify"
+msgstr ""
+
+#: .\models.py:220
+msgid "Not Modify"
+msgstr ""
+
+#: .\models.py:248 .\models.py:272
+#: .\templates\isis\createviews\invoice_item_create.html:58
+#: .\templates\isis\listviews\invoice_list.html:30
+#: .\templates\isis\listviews\payment_method_list.html:30
+#: .\templates\isis\listviews\payment_term_list.html:30
+#: .\templates\isis\listviews\product_list.html:31
+#: .\templates\isis\listviews\receipt_list.html:30
+#: .\templates\isis\listviews\tax_list.html:30
+#: .\templates\isis\listviews\warehouse_list.html:30
+msgid "Name"
+msgstr ""
+
+#: .\models.py:311
+msgid "Receipt"
+msgstr ""
+
+#: .\models.py:327 .\templates\isis\detailviews\invoice_detail_view.html:55
+msgid "Delivered"
+msgstr ""
+
+#: .\models.py:327
+msgid "Not delivered"
+msgstr ""
+
+#: .\models.py:334 .\templates\isis\detailviews\invoice_detail_view.html:37
+msgid "Costumer"
+msgstr ""
+
+#: .\models.py:335
+msgid "Invoice Date"
+msgstr ""
+
+#: .\models.py:336 .\templates\isis\detailviews\invoice_detail_view.html:39
+msgid "Due Date"
+msgstr ""
+
+#: .\models.py:342
+msgid "Invoice Notes"
+msgstr ""
+
+#: .\models.py:343
+msgid "Public Notes"
+msgstr ""
+
+#: .\models.py:356 .\templates\isis\documents\invoice.html:33 .\views.py:525
+msgid "Invoice"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_create.html:8
+#: .\templates\isis\createviews\product_create.html:8
+msgid "New Product"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:8
+msgid "New Invoice Item"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:25
+msgid "Grand Total"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:31
+msgid "Sub Total"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:35
+msgid "Discount Total"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:39
+msgid "Tax Total"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:49
+#: .\templates\isis\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:59
+#: .\templates\isis\documents\invoice.html:62
+msgid "Price"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:60
+msgid "Quantity"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:61
+#: .\templates\isis\detailviews\product_detail_view.html:67
+msgid "Tax"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:62
+msgid "Discount"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:84
+#: .\templates\isis\partials\action_item_list.html:34
+#: .\templates\isis\partials\action_item_list.html:72
+#: .\templates\isis\utilities\new_delete_extra_buttons.html:9
+msgid "Delete Selected"
+msgstr ""
+
+#: .\templates\isis\createviews\invoice_item_create.html:92
+msgid "Finish"
+msgstr ""
+
+#: .\templates\isis\createviews\payment_method_create.html:8
+#: .\templates\isis\createviews\payment_term_create.html:8
+#: .\templates\isis\createviews\receipt_create.html:8
+#: .\templates\isis\createviews\tax_create.html:8
+#: .\templates\isis\modals\payment_method_modal.html:8
+#: .\templates\isis\modals\payment_term_modal.html:8
+#: .\templates\isis\modals\tax_modal.html:8
+msgid "New Tax"
+msgstr ""
+
+#: .\templates\isis\createviews\warehouse_create.html:8
+#: .\templates\isis\modals\warehouse_modal.html:8
+msgid "New Warehouse"
+msgstr ""
+
+#: .\templates\isis\dashboardviews\product_dashboard.html:6
+msgid "Products Dashboard"
+msgstr ""
+
+#: .\templates\isis\dashboardviews\product_dashboard.html:13
+msgid "All Products"
+msgstr ""
+
+#: .\templates\isis\dashboardviews\product_dashboard.html:20
+msgid "Last 15 Products"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:8
+msgid "Invoice Details"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:22
+#: .\templates\isis\detailviews\payment_method_detail_view.html:22
+#: .\templates\isis\detailviews\payment_term_detail_view.html:22
+#: .\templates\isis\detailviews\product_detail_view.html:25
+#: .\templates\isis\detailviews\receipt_detail_view.html:22
+#: .\templates\isis\detailviews\tax_detail_view.html:22
+#: .\templates\isis\detailviews\warehouse_detail_view.html:25
+#: .\templates\isis\utilities\new_delete_extra_buttons.html:4
+msgid "New"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:30
+#: .\templates\isis\detailviews\payment_method_detail_view.html:30
+#: .\templates\isis\detailviews\payment_term_detail_view.html:30
+#: .\templates\isis\detailviews\product_detail_view.html:33
+#: .\templates\isis\detailviews\receipt_detail_view.html:30
+#: .\templates\isis\detailviews\tax_detail_view.html:30
+#: .\templates\isis\detailviews\warehouse_detail_view.html:33
+msgid "List"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:38
+#: .\templates\isis\documents\invoice.html:34
+msgid "Date"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:40
+msgid "Payment Method"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:41
+msgid "Payment Term"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:42
+msgid "Paid Status"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:45
+msgid "Paid"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:47
+msgid "Not Paid"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:52
+msgid "Delivered Status"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:57
+msgid "Not Delivered"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:62
+msgid "Finished Status"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:65
+msgid "Validated"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:67
+msgid "Not Validated"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:75
+msgid "Canceled"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:80
+#: .\templates\isis\detailviews\payment_method_detail_view.html:45
+#: .\templates\isis\detailviews\payment_term_detail_view.html:45
+#: .\templates\isis\detailviews\product_detail_view.html:90
+#: .\templates\isis\detailviews\receipt_detail_view.html:45
+#: .\templates\isis\detailviews\tax_detail_view.html:45
+#: .\templates\isis\detailviews\warehouse_detail_view.html:53
+msgid "Notes"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:83
+#: .\templates\isis\detailviews\payment_method_detail_view.html:48
+#: .\templates\isis\detailviews\payment_term_detail_view.html:48
+#: .\templates\isis\detailviews\product_detail_view.html:92
+#: .\templates\isis\detailviews\receipt_detail_view.html:48
+#: .\templates\isis\detailviews\tax_detail_view.html:48
+#: .\templates\isis\detailviews\warehouse_detail_view.html:56
+msgid "Created on"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:84
+#: .\templates\isis\detailviews\payment_method_detail_view.html:49
+#: .\templates\isis\detailviews\payment_term_detail_view.html:49
+#: .\templates\isis\detailviews\product_detail_view.html:93
+#: .\templates\isis\detailviews\receipt_detail_view.html:49
+#: .\templates\isis\detailviews\tax_detail_view.html:49
+#: .\templates\isis\detailviews\warehouse_detail_view.html:57
+msgid "Created by"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:85
+#: .\templates\isis\detailviews\payment_method_detail_view.html:50
+#: .\templates\isis\detailviews\payment_term_detail_view.html:50
+#: .\templates\isis\detailviews\product_detail_view.html:94
+#: .\templates\isis\detailviews\receipt_detail_view.html:50
+#: .\templates\isis\detailviews\tax_detail_view.html:50
+#: .\templates\isis\detailviews\warehouse_detail_view.html:58
+msgid "Modified on"
+msgstr ""
+
+#: .\templates\isis\detailviews\invoice_detail_view.html:86
+#: .\templates\isis\detailviews\payment_method_detail_view.html:51
+#: .\templates\isis\detailviews\payment_term_detail_view.html:51
+#: .\templates\isis\detailviews\product_detail_view.html:95
+#: .\templates\isis\detailviews\receipt_detail_view.html:51
+#: .\templates\isis\detailviews\tax_detail_view.html:51
+#: .\templates\isis\detailviews\warehouse_detail_view.html:59
+msgid "Modified by"
+msgstr ""
+
+#: .\templates\isis\detailviews\payment_method_detail_view.html:8
+#: .\templates\isis\detailviews\payment_term_detail_view.html:8
+#: .\templates\isis\detailviews\receipt_detail_view.html:8
+#: .\templates\isis\detailviews\tax_detail_view.html:8
+msgid "Tax Details"
+msgstr ""
+
+#: .\templates\isis\detailviews\payment_method_detail_view.html:37
+#: .\templates\isis\detailviews\payment_term_detail_view.html:37
+#: .\templates\isis\detailviews\receipt_detail_view.html:37
+#: .\templates\isis\detailviews\tax_detail_view.html:37
+#, python-format
+msgid "Rate (%)"
+msgstr ""
+
+#: .\templates\isis\detailviews\payment_method_detail_view.html:41
+#: .\templates\isis\detailviews\payment_term_detail_view.html:41
+#: .\templates\isis\detailviews\product_detail_view.html:46
+#: .\templates\isis\detailviews\receipt_detail_view.html:41
+#: .\templates\isis\detailviews\tax_detail_view.html:41
+#: .\templates\isis\detailviews\warehouse_detail_view.html:48
+#: .\templates\isis\listviews\invoice_list.html:52
+#: .\templates\isis\listviews\payment_method_list.html:52
+#: .\templates\isis\listviews\payment_term_list.html:52
+#: .\templates\isis\listviews\receipt_list.html:52
+#: .\templates\isis\listviews\tax_list.html:52
+msgid "Inactive"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:8
+msgid "Product Details"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:41
+#: .\templates\isis\detailviews\warehouse_detail_view.html:41
+msgid "Parent"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:42
+msgid "Item Type"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:51
+msgid "Sell Status"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:53
+msgid "Not For Sale"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:56
+msgid "Purchase Status"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:58
+msgid "Not For Purchase"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:62
+#: .\templates\isis\listviews\product_list.html:34
+msgid "Physical Stock"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:71
+#: .\templates\isis\listviews\product_list.html:32
+msgid "Selling Price"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:72
+msgid "Min. Selling Price"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:73
+msgid "Selling Price 2"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:74
+msgid "Selling Price 3"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:75
+msgid "Selling Price 4"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:76
+msgid "Selling Price 5"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:78
+msgid "Max. Purchase Price"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:80
+msgid "Product Nature"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:81
+msgid "Product Url"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:82
+msgid "Length X Width X Height"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:85
+msgid "Area"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:86
+msgid "Volume"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:87
+msgid "Weight"
+msgstr ""
+
+#: .\templates\isis\detailviews\product_detail_view.html:89
+#: .\templates\isis\detailviews\warehouse_detail_view.html:52
+#: .\templates\isis\documents\invoice.html:61
+msgid "Description"
+msgstr ""
+
+#: .\templates\isis\detailviews\warehouse_detail_view.html:8
+msgid "Warehouse Details"
+msgstr ""
+
+#: .\templates\isis\detailviews\warehouse_detail_view.html:42
+#: .\templates\isis\listviews\warehouse_list.html:31
+msgid "Address"
+msgstr ""
+
+#: .\templates\isis\detailviews\warehouse_detail_view.html:43
+#: .\templates\isis\listviews\warehouse_list.html:32
+msgid "Contacts"
+msgstr ""
+
+#: .\templates\isis\detailviews\warehouse_detail_view.html:44
+msgid "Open Status"
+msgstr ""
+
+#: .\templates\isis\documents\invoice.html:44
+msgid "Email"
+msgstr ""
+
+#: .\templates\isis\documents\invoice.html:45
+msgid "Phone"
+msgstr ""
+
+#: .\templates\isis\documents\invoice.html:63
+msgid "Qty"
+msgstr ""
+
+#: .\templates\isis\documents\invoice.html:64
+msgid "Total"
+msgstr ""
+
+#: .\templates\isis\documents\invoice.html:80
+msgid "The are no items for this Invoice"
+msgstr ""
+
+#: .\templates\isis\listviews\invoice_list.html:31
+#: .\templates\isis\listviews\payment_method_list.html:31
+#: .\templates\isis\listviews\payment_term_list.html:31
+#: .\templates\isis\listviews\receipt_list.html:31
+#: .\templates\isis\listviews\tax_list.html:31
+msgid "Rate"
+msgstr ""
+
+#: .\templates\isis\listviews\invoice_list.html:33
+#: .\templates\isis\listviews\payment_method_list.html:33
+#: .\templates\isis\listviews\payment_term_list.html:33
+#: .\templates\isis\listviews\product_list.html:35
+#: .\templates\isis\listviews\receipt_list.html:33
+#: .\templates\isis\listviews\tax_list.html:33
+#: .\templates\isis\listviews\warehouse_list.html:33
+msgid "Actions"
+msgstr ""
+
+#: .\templates\isis\listviews\invoice_list.html:62
+#: .\templates\isis\listviews\payment_method_list.html:62
+#: .\templates\isis\listviews\payment_term_list.html:62
+#: .\templates\isis\listviews\product_list.html:61
+#: .\templates\isis\listviews\receipt_list.html:62
+#: .\templates\isis\listviews\tax_list.html:62
+#: .\templates\isis\listviews\warehouse_list.html:57
+#: .\templates\isis\utilities\edit_detail_buttons.html:9
+msgid "Details"
+msgstr ""
+
+#: .\templates\isis\listviews\product_list.html:30
+msgid "Code"
+msgstr ""
+
+#: .\templates\isis\listviews\warehouse_list.html:61
+msgid "Movements"
+msgstr ""
+
+#: .\templates\isis\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr ""
+
+#: .\templates\isis\updateviews\invoice_update.html:8
+#: .\templates\isis\updateviews\product_update.html:8
+msgid "Update Product"
+msgstr ""
+
+#: .\templates\isis\updateviews\payment_method_update.html:8
+#: .\templates\isis\updateviews\payment_term_update.html:8
+#: .\templates\isis\updateviews\receipt_update.html:8
+#: .\templates\isis\updateviews\tax_update.html:8
+msgid "Update Tax"
+msgstr ""
+
+#: .\templates\isis\updateviews\warehouse_update.html:8
+msgid "Update Warehouse"
+msgstr ""
+
+#: .\views.py:89
+msgid "Product added successfully!"
+msgstr ""
+
+#: .\views.py:161
+msgid "Product updated successfully!"
+msgstr ""
+
+#: .\views.py:189 .\views.py:333 .\views.py:439 .\views.py:639 .\views.py:895
+#: .\views.py:979 .\views.py:1063
+msgid "Not Deleted! {}"
+msgstr ""
+
+#: .\views.py:192
+msgid "Product delete successfully!"
+msgstr ""
+
+#: .\views.py:224 .\views.py:351
+msgid "No parent"
+msgstr ""
+
+#: .\views.py:254
+msgid "Warehouse added successfully!"
+msgstr ""
+
+#: .\views.py:307
+msgid "Warehouse updated successfully!"
+msgstr ""
+
+#: .\views.py:336
+msgid "Warehouse delete successfully!"
+msgstr ""
+
+#: .\views.py:375
+msgid "Tax added successfully!"
+msgstr ""
+
+#: .\views.py:413
+msgid "Tax updated successfully!"
+msgstr ""
+
+#: .\views.py:442
+msgid "Tax delete successfully!"
+msgstr ""
+
+#: .\views.py:534
+msgid "Invoice added successfully!"
+msgstr ""
+
+#: .\views.py:611
+msgid "Invoice updated successfully!"
+msgstr ""
+
+#: .\views.py:642
+msgid "Invoice delete successfully!"
+msgstr ""
+
+#: .\views.py:772
+msgid "Add some algo!"
+msgstr ""
+
+#: .\views.py:791
+msgid "'{}' added successfully!"
+msgstr ""
+
+#: .\views.py:812
+msgid "Not Deleted! {}."
+msgstr ""
+
+#: .\views.py:831
+msgid "PaymentMethod added successfully!"
+msgstr ""
+
+#: .\views.py:869
+msgid "PaymentMethod updated successfully!"
+msgstr ""
+
+#: .\views.py:898
+msgid "PaymentMethod delete successfully!"
+msgstr ""
+
+#: .\views.py:915
+msgid "PaymentTerm added successfully!"
+msgstr ""
+
+#: .\views.py:953
+msgid "PaymentTerm updated successfully!"
+msgstr ""
+
+#: .\views.py:982
+msgid "PaymentTerm delete successfully!"
+msgstr ""
+
+#: .\views.py:999
+msgid "Receipt added successfully!"
+msgstr ""
+
+#: .\views.py:1037
+msgid "Receipt updated successfully!"
+msgstr ""
+
+#: .\views.py:1066
+msgid "Receipt delete successfully!"
+msgstr ""

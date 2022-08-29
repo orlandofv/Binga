@@ -1,0 +1,127 @@
+{% load i18n %}
+
+{% with request.resolver_match.url_name as url_name %}
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <div class="position-sticky pt-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'home' %}active{% endif %}" aria-current="page" href="/">
+            <span class="align-text-bottom fas fa-home"></span>
+            {% trans "Dashboard" %}
+          </a>
+        </li>
+        <hr>
+        <li class="nav-item mb-0 p-0">
+          <a class="nav-link {% if url_name == 'costumer_list' %}active{% endif %}" href="{% url 'asset_app:costumer_list' %}">
+            <span class="align-text-bottom fas fa-people-line"></span>
+            {% trans "Customers" %}
+          </a>
+            <ul class="position-sticky m-0 pt-0 pb-0" style="list-style-type: none;">
+              <li class="nav-item">
+                <a class="nav-link {% if url_name == 'costumer:costumer_invoice_list' %}active{% endif %}" href="{% url 'costumer:costumer_invoice_list' %}">
+                  <span class="align-text-bottom fas fa-file"></span>
+                  {% trans "Invoices" %}
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if url_name == 'costumer:costumer_receipt_list' %}active{% endif %}" href="{% url 'costumer:costumer_receipt_list' %}">
+                  <span class="align-text-bottom fas fa-receipt"></span>
+                  {% trans "Receipts" %}
+                </a>
+              </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'supplier_list' %}active{% endif %}" href="{% url 'supplier:supplier_list' %}">
+            <span class="align-text-bottom fa fa-people-roof"></span>
+            {% trans "Suppliers" %}
+          </a>
+          <ul class="position-sticky m-0 pt-0 pb-0" style="list-style-type: none;">
+            <li class="nav-item">
+              <a class="nav-link {% if url_name == 'supplier:supplier_invoice_list' %}active{% endif %}" href="{% url 'supplier:supplier_invoice_list' %}">
+                <span class="align-text-bottom fas fa-file"></span>
+                {% trans "Invoices" %}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if url_name == 'supplier:supplier_receipt_list' %}active{% endif %}" href="{% url 'supplier:supplier_receipt_list' %}">
+                <span class="align-text-bottom fas fa-receipt"></span>
+                {% trans "Receipts" %}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'category_list' %}active{% endif %}" href="{% url 'isis:category_list' %}">
+            <span class="align-text-bottom fa fa-folder-closed"></span>
+            {% trans "Categories" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'product_list' %}active{% endif %}" href="{% url 'isis:product_list' %}">
+            <span class="align-text-bottom fas fa-shopping-cart"></span>
+            {% trans "Products" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'warehouse_list' %}active{% endif %}" href="{% url 'warehouse:warehouse_list' %}">
+            <span class="align-text-bottom fas fa-warehouse"></span>
+            {% trans "Warehouses" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'stock_summary_list' %}active{% endif %}" href="{% url 'stock:stock_summary_list' %}">
+            <span class="align-text-bottom fas fa-truck-front"></span>
+            {% trans "Stock" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'stock_summary_list' %}active{% endif %}" href="{% url 'stock:stock_movement' %}">
+            <span class="align-text-bottom fas fa-truck-front"></span>
+            {% trans "Stock Movement" %}
+          </a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'bank_list' %}active{% endif %}" href="{% url 'bank:bank_list' %}">
+            <span class="align-text-bottom fas fa-bank"></span>
+            {% trans "Banks" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'bank_account_list' %}active{% endif %}" href="{% url 'bank:bank_account_list' %}">
+            <span class="align-text-bottom fas fa-money-bills"></span>
+            {% trans "Bank Accounts" %}
+          </a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'document_list' %}active{% endif %}" href="{% url 'isis:document_list' %}">
+            <span class="align-text-bottom fas fa-laptop-file"></span>
+            {% trans "Documents" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'isis:invoicing_list' %}active{% endif %}" href="{% url 'isis:invoicing_list' %}">
+            <span class="align-text-bottom fas fa-money-check"></span>
+            {% trans "Invoicing" %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'isis:product_return_list' %}active{% endif %}" href="{% url 'isis:product_return_list' %}">
+            <span class="align-text-bottom fas fa-money-bill"></span>
+            {% trans "Return Note" %}
+          </a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link {% if url_name == 'asset_app:ettings_create' %}active{% endif %}" href="{% url 'asset_app:settings_create' %}">
+            <span class="align-text-bottom fas fa-toolbox"></span>
+            {% trans "Settings" %}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  {% endwith %}

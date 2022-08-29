@@ -1,0 +1,13 @@
+{% load i18n %}
+
+<div id="ExtraButtons">
+    <div class="btn-group" role="group" aria-label="Extra buttons">
+        <a href="{{ create_url }}" class="btn btn-info fa fa-plus">
+        </a>
+
+        <button class="btn btn-danger delete-btn fa fa-minus-square" data-toggle="modal" 
+        onclick="DeleteItems('{{ table_id }}', '{{ delete_url }}', '{{ redirect_url }}')">
+
+        </button>
+    </div>
+</div>

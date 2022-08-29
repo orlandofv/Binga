@@ -1,0 +1,739 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-28 23:00-0200\n"
+"Last-Translator:   <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\costumer\forms.py:27
+msgid "Service"
+msgstr "Serviço"
+
+#: .\costumer\forms.py:27
+msgid "Product"
+msgstr "Produto"
+
+#: .\costumer\forms.py:30
+msgid "Product code / Barcode"
+msgstr "Código do Produto / Cod. de Barras"
+
+#: .\costumer\forms.py:65
+msgid "INVOICE ITEMS"
+msgstr "ARTIGOS DA FACTURA"
+
+#: .\costumer\forms.py:76
+msgid "Add Item"
+msgstr "ADICIONAR ARTIGO"
+
+#: .\costumer\forms.py:91
+msgid ""
+"\n"
+"                Price is lower than the product Minimum selling price {}."
+msgstr ""
+"\n"
+"O preço é inferior ao preço mínimo de venda do produto {}."
+
+#: .\costumer\forms.py:99
+msgid ""
+"\n"
+"                discount must be between 0 and 100."
+msgstr ""
+"\n"
+"Desconto deve estar entre 0 e 100."
+
+#: .\costumer\forms.py:130
+msgid "Add/Update CostumerInvoice"
+msgstr "Adicionar/atualizar factura do cliente"
+
+#: .\costumer\forms.py:132
+msgid "INVOICE DATA"
+msgstr "DADOS DA FATURA"
+
+#: .\costumer\forms.py:152 .\costumer\forms.py:269
+msgid "Next"
+msgstr "Próximo"
+
+#: .\costumer\forms.py:167
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:31
+msgid "No"
+msgstr "NÃO"
+
+#: .\costumer\forms.py:167
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:29
+msgid "Yes"
+msgstr "SIM"
+
+#: .\costumer\forms.py:169
+msgid "Costumer Name"
+msgstr "Nome do Cliente"
+
+#: .\costumer\forms.py:171
+msgid "Parent Costumer"
+msgstr "Cliente Principal"
+
+#: .\costumer\forms.py:174
+msgid "Is Supplier?"
+msgstr "é Fornecedor?"
+
+#: .\costumer\forms.py:191
+msgid "Add/Update Costumer"
+msgstr "Adicionar/atualizar cliente"
+
+#: .\costumer\forms.py:193
+msgid "Costumer Data"
+msgstr "Dados do cliente"
+
+#: .\costumer\forms.py:224
+msgid "Save & Close"
+msgstr "Salvar & fechar"
+
+#: .\costumer\forms.py:225
+msgid "Save & New"
+msgstr "Salvar & Novo"
+
+#: .\costumer\forms.py:243
+msgid "Please choose Costumer"
+msgstr "Escolha Cliente"
+
+#: .\costumer\forms.py:260
+msgid "Add/Update CostumerReceipt"
+msgstr "Adicionar/atualizar recibo do cliente"
+
+#: .\costumer\forms.py:262
+msgid "RECEIPT DATA"
+msgstr "DADOS DE RECIBO"
+
+#: .\costumer\forms.py:286
+msgid ""
+"\n"
+"            Please choose Costumer or create Invoices First."
+msgstr ""
+"\n"
+"Por favor, escolha Cliente ou crie faturas primeiro."
+
+#: .\costumer\models.py:22 .\costumer\models.py:92
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:53
+msgid "Delivered"
+msgstr "Entregue"
+
+#: .\costumer\models.py:22
+msgid "Not delivered"
+msgstr "Não Entregue"
+
+#: .\costumer\models.py:25
+msgid "Payment method"
+msgstr "Método de pagamento"
+
+#: .\costumer\models.py:26
+msgid "Payment term"
+msgstr "Termo de Pagamento"
+
+#: .\costumer\models.py:27
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:41
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:36
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:34
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:30
+#: .\costumer\templates\costumer\listviews\invoice_list.html:36
+msgid "Costumer"
+msgstr "Cliente"
+
+#: .\costumer\models.py:28
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:40
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:35
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:29
+#: .\costumer\templates\costumer\documents\invoice.html:29
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:31
+msgid "Date"
+msgstr "Data"
+
+#: .\costumer\models.py:29
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:37
+#: .\costumer\templates\costumer\documents\invoice.html:31
+msgid "Due Date"
+msgstr "Data de Vencimento"
+
+#: .\costumer\models.py:42
+msgid "Private Notes"
+msgstr "Notas Privadas"
+
+#: .\costumer\models.py:43
+msgid "Public Notes"
+msgstr "Notas Públicas"
+
+#: .\costumer\models.py:48 .\costumer\models.py:168
+msgid "Bank Account"
+msgstr "Conta bancária"
+
+#: .\costumer\models.py:61
+msgid "Overdue"
+msgstr "Vencimento"
+
+#: .\costumer\models.py:63
+msgid "On date"
+msgstr "Em dia"
+
+#: .\costumer\models.py:75
+msgid "Not paid"
+msgstr "Não pago"
+
+#: .\costumer\models.py:94
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:55
+msgid "Not Delivered"
+msgstr "Não Entregue"
+
+#: .\costumer\models.py:100
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:41
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:43
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:70
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:72
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:58
+#: .\costumer\templates\costumer\listviews\invoice_list.html:68
+msgid "Active"
+msgstr "Ativo"
+
+#: .\costumer\models.py:102
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:73
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: .\costumer\models.py:161
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:39
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:48
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:78
+msgid "Notes"
+msgstr "Notas"
+
+#: .\costumer\models.py:166
+msgid "Active status"
+msgstr "Ativo"
+
+#: .\costumer\models.py:167
+msgid "Finished status"
+msgstr "Estado de Finalização"
+
+#: .\costumer\models.py:200
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:104
+#: .\costumer\templates\costumer\documents\invoice.html:106
+msgid "Description"
+msgstr "Descrição"
+
+#: .\costumer\models.py:206
+msgid "Costumer Receipt Invoice"
+msgstr "Recibo do Cliente"
+
+#: .\costumer\models.py:207
+msgid "Costumer Receipt Invoices"
+msgstr "Recibos do Cliente"
+
+#: .\costumer\templates\costumer\createviews\costumer_create.html:8
+msgid "New Partner"
+msgstr "Novo Parceiro"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_create.html:8
+msgid "New Receipt"
+msgstr "Novo Recibo"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:9
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:9
+msgid "Receipt Details"
+msgstr "Detalhes do Recibo"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:27
+msgid "Invoice #"
+msgstr "Factura #"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:30
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:39
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:64
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:105
+#: .\costumer\templates\costumer\documents\invoice.html:111
+msgid "Total"
+msgstr "Total"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:33
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:65
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:43
+#: .\costumer\templates\costumer\listviews\invoice_list.html:38
+msgid "Paid"
+msgstr "Pago"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:36
+msgid "UnPaid"
+msgstr "Não Pago"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:39
+msgid "Payment"
+msgstr "Pagamento"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:63
+msgid "This costumer has no Invoice(s)"
+msgstr "Este cliente não tem fatura(s)"
+
+#: .\costumer\templates\costumer\createviews\costumer_receipt_invoice.html:69
+msgid "Make Payment"
+msgstr "Fazer Pagamento"
+
+#: .\costumer\templates\costumer\createviews\invoice_create.html:8
+msgid "New Costumer Invoice"
+msgstr "Nova Factura"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:9
+msgid "New Invoice Item"
+msgstr "Novo Artigo"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:29
+msgid "Invoice Total"
+msgstr "Total da Factura"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:39
+msgid "Sub Total"
+msgstr "Sub Total"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:47
+msgid "Discount Total"
+msgstr "Desconto Total"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:49
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:38
+msgid "Payment Method"
+msgstr "Método de pagamento"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:51
+msgid "Invoice Date"
+msgstr "Data da Factura"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:56
+msgid "Tax Total"
+msgstr "Total da Taxa"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:58
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:39
+msgid "Payment Term"
+msgstr "Termo de Pagamento"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:60
+msgid "Due on"
+msgstr "Vencimento em"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:70
+#: .\costumer\templates\costumer\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de Artigos"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:79
+#: .\costumer\templates\costumer\listviews\costumer_list_view.html:30
+msgid "Name"
+msgstr "Nome"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:80
+#: .\costumer\templates\costumer\documents\invoice.html:107
+msgid "Price"
+msgstr "Preço"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:81
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:82
+msgid "Tax"
+msgstr "Taxa"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:83
+#: .\costumer\templates\costumer\documents\invoice.html:110
+#: .\costumer\templates\costumer\documents\invoice.html:148
+msgid "Discount"
+msgstr "Desconto"
+
+#: .\costumer\templates\costumer\createviews\invoice_item_create.html:112
+msgid "Finish"
+msgstr "Finalizar"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:8
+msgid "Partner Details"
+msgstr "Detalhes do parceiro"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:24
+#: .\costumer\templates\costumer\listviews\costumer_list_view.html:31
+msgid "Address"
+msgstr "Endereço"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:25
+#: .\costumer\templates\costumer\listviews\costumer_list_view.html:32
+msgid "Contacts"
+msgstr "Contactos"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:26
+msgid "Is Costumer"
+msgstr "é cliente"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:35
+msgid "Current Debit"
+msgstr "Débito atual"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:36
+msgid "Max Credit"
+msgstr "Crédito Max."
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:37
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:60
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:79
+#: .\costumer\templates\costumer\documents\invoice.html:50
+#: .\costumer\templates\costumer\documents\invoice.html:94
+#: .\costumer\templates\costumer\listviews\costumer_list_view.html:33
+msgid "Email"
+msgstr "E-mail"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:38
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:63
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:83
+#: .\costumer\templates\costumer\documents\invoice.html:54
+#: .\costumer\templates\costumer\documents\invoice.html:97
+msgid "Website"
+msgstr "Website"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:42
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:51
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:81
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:43
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:52
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:82
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:44
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:53
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:83
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\costumer\templates\costumer\detailviews\costumer_detail_view.html:45
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:54
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:84
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:32
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:30
+msgid "List"
+msgstr "Lista"
+
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:44
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:60
+#: .\costumer\templates\costumer\listviews\invoice_list.html:70
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:58
+msgid "Payments"
+msgstr "Pagamento"
+
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:63
+#: .\costumer\templates\costumer\documents\invoice.html:7
+#: .\costumer\templates\costumer\documents\invoice.html:27
+#: .\costumer\templates\costumer\listviews\invoice_list.html:35
+#: .\costumer\views.py:540
+msgid "Invoice"
+msgstr "Factura"
+
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:66
+msgid "Remaining"
+msgstr "Remanescente"
+
+#: .\costumer\templates\costumer\detailviews\costumer_receipt_detail_view.html:84
+msgid "Totals"
+msgstr "Totais"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:8
+msgid "Invoice Details"
+msgstr "Detalhes da Factura"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:40
+msgid "Paid Status"
+msgstr "Estado de Pagamento"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:45
+msgid "Not Paid"
+msgstr "Não Pago"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:50
+msgid "Delivered Status"
+msgstr "Estado de Entrega"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:60
+msgid "Finished Status"
+msgstr "Estado de Finalização"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:63
+msgid "Validated"
+msgstr "Validado"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:65
+msgid "Not Validated"
+msgstr "Não Validado"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:90
+msgid "Last 5 Costumer Paid Invoices"
+msgstr "Últimas 5 faturas pagas pelo cliente"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:104
+msgid "Costumer Noit Paid Invoices"
+msgstr "Faturas não pagas pelo cliente"
+
+#: .\costumer\templates\costumer\detailviews\invoice_detail_view.html:118
+msgid "Overdue Invoices"
+msgstr "Facturas Vencidas"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:7
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:27
+msgid "Receipt"
+msgstr "Recibo"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:13
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:157
+msgid "Print Receipt"
+msgstr "Imprimir recibo"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:15
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:159
+#: .\costumer\templates\costumer\documents\invoice.html:15
+#: .\costumer\templates\costumer\documents\invoice.html:192
+msgid "Close"
+msgstr "Fechar"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:37
+#: .\costumer\templates\costumer\documents\invoice.html:39
+msgid "From"
+msgstr "De"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:44
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:74
+#: .\costumer\templates\costumer\documents\invoice.html:46
+#: .\costumer\templates\costumer\documents\invoice.html:78
+#: .\costumer\templates\costumer\documents\invoice.html:109
+msgid "VAT Number"
+msgstr "NUIT"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:48
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:87
+#: .\costumer\templates\costumer\documents\invoice.html:58
+#: .\costumer\templates\costumer\documents\invoice.html:82
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:52
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:91
+#: .\costumer\templates\costumer\documents\invoice.html:62
+#: .\costumer\templates\costumer\documents\invoice.html:86
+msgid "Fax"
+msgstr "Fax"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:56
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:95
+#: .\costumer\templates\costumer\documents\invoice.html:66
+#: .\costumer\templates\costumer\documents\invoice.html:90
+msgid "Cell"
+msgstr "Celular"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:67
+#: .\costumer\templates\costumer\documents\invoice.html:71
+msgid "To"
+msgstr "Para"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:113
+msgid "Payment of Invoice #"
+msgstr "Pagamento da Factura #"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:119
+msgid "The are no items for this Receipt"
+msgstr "Não há itens para este Recibo"
+
+#: .\costumer\templates\costumer\documents\costumer_receipt.html:132
+#: .\costumer\templates\costumer\documents\invoice.html:160
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: .\costumer\templates\costumer\documents\invoice.html:13
+#: .\costumer\templates\costumer\documents\invoice.html:190
+msgid "Print Invoice"
+msgstr "Imprimir Factura"
+
+#: .\costumer\templates\costumer\documents\invoice.html:108
+msgid "Qty"
+msgstr "Qt."
+
+#: .\costumer\templates\costumer\documents\invoice.html:129
+msgid "The are no items for this Invoice"
+msgstr "Não há itens para esta factura"
+
+#: .\costumer\templates\costumer\documents\invoice.html:142
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: .\costumer\templates\costumer\documents\invoice.html:154
+msgid "VAT"
+msgstr "IVA"
+
+#: .\costumer\templates\costumer\listviews\costumer_list_view.html:34
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:33
+#: .\costumer\templates\costumer\listviews\invoice_list.html:41
+msgid "Actions"
+msgstr "Ações"
+
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:29
+msgid "Number"
+msgstr "Número"
+
+#: .\costumer\templates\costumer\listviews\costumer_receipt_list.html:32
+#: .\costumer\templates\costumer\listviews\invoice_list.html:40
+msgid "Status"
+msgstr "Estado"
+
+#: .\costumer\templates\costumer\listviews\invoice_list.html:37
+msgid "Amount"
+msgstr "Valor"
+
+#: .\costumer\templates\costumer\listviews\invoice_list.html:39
+msgid "Debit"
+msgstr "Débito"
+
+#: .\costumer\templates\costumer\modals\costumer_modal.html:8
+msgid "New Costumer"
+msgstr "Novo Cliente"
+
+#: .\costumer\templates\costumer\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\costumer\templates\costumer\updateviews\costumer_receipt_update.html:8
+msgid "Update Receipt"
+msgstr "Atualizar Recibp"
+
+#: .\costumer\templates\costumer\updateviews\costumer_update.html:8
+msgid "Update Partner"
+msgstr "Atualizar Parceiro"
+
+#: .\costumer\templates\costumer\updateviews\invoice_update.html:8
+msgid "Update Costumer Invoice"
+msgstr "Atualizar Fatura"
+
+#: .\costumer\views.py:71
+msgid "Costumer added successfully!"
+msgstr "Cliente adicionado com sucesso!"
+
+#: .\costumer\views.py:99
+msgid "Parent Costumer and Costumer must be different!"
+msgstr "O cliente parente e o cliente devem ser diferentes!"
+
+#: .\costumer\views.py:106
+msgid "Costumer updated successfully!"
+msgstr "Cliente atualizado com sucesso!"
+
+#: .\costumer\views.py:130 .\costumer\views.py:452 .\costumer\views.py:918
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\costumer\views.py:133
+msgid "Costumer delete successfully!"
+msgstr "Cliente excluído com sucesso!"
+
+#: .\costumer\views.py:455
+msgid "Costumer Invoice delete successfully!"
+msgstr "A fatura do cliente foi excluída com sucesso!"
+
+#: .\costumer\views.py:508
+msgid "Costumer Invoice is closed and cannot be edited."
+msgstr "A fatura do cliente está fechada e não pode ser editada."
+
+#: .\costumer\views.py:523
+msgid "CostumerInvoice"
+msgstr "Factura do Cliente"
+
+#: .\costumer\views.py:527
+msgid "Please create Invoice Items First"
+msgstr "Por favor, crie artigos de fatura primeiro"
+
+#: .\costumer\views.py:566
+msgid ""
+"No product matches the given barcode. Please choose product from the "
+"dropdown below."
+msgstr ""
+"Nenhum produto encontrado com esse cod. de barras. Por favor escolha o "
+"produto na lista abaixo."
+
+#: .\costumer\views.py:580
+msgid ""
+"Please use numbers that do not contain commas (','), and use dot ('.') for "
+"decimals.\n"
+"{}."
+msgstr ""
+"Use números que não contenham vírgulas (',') e use ponto ('.') para "
+"decimais.\n"
+"{}."
+
+#: .\costumer\views.py:584
+msgid "Please choose product from the dropdown, or add a new product."
+msgstr "Escolha o produto na lista suspensa ou adicione um novo produto."
+
+#: .\costumer\views.py:588
+msgid "This product is inactive and cannot be sold."
+msgstr "O produto está inativo e não pode ser vendido."
+
+#: .\costumer\views.py:592
+msgid "This product is not for sale."
+msgstr "Esse produto não é para venda"
+
+#: .\costumer\views.py:646
+msgid "Not Deleted! {}."
+msgstr "Não excluído! {}."
+
+#: .\costumer\views.py:721 .\costumer\views.py:808
+msgid "Please enter at least one payment!"
+msgstr "Insira pelo menos um pagamento!"
+
+#: .\costumer\views.py:743 .\costumer\views.py:770 .\costumer\views.py:882
+msgid "Costumer Receipt is closed and cannot be edited."
+msgstr "O Recibo do Cliente está fechado e não pode ser editado."
+
+#: .\costumer\views.py:748 .\costumer\views.py:775 .\costumer\views.py:887
+msgid "Costumer Receipt is inactive and cannot be edited."
+msgstr "O Recibo do Cliente está inativo e não pode ser editado."
+
+#: .\costumer\views.py:756 .\costumer\views.py:783 .\costumer\views.py:844
+msgid "This costumer has no pending invoices!"
+msgstr "Este cliente não tem faturas pendentes!"
+
+#: .\costumer\views.py:837
+msgid ""
+"There are no invoices with pending payments! Please create Costumer Invoice "
+"First."
+msgstr ""
+"Não há faturas com pagamentos pendentes! Por favor, crie a fatura do cliente "
+"primeiro."
+
+#: .\costumer\views.py:921
+msgid "Costumer Receipt delete successfully!"
+msgstr "Recibo do cliente excluído com sucesso!"
+
+#~ msgid ""
+#~ "\n"
+#~ "            discount must be between 0 and 99.99."
+#~ msgstr ""
+#~ "\n"
+#~ "o desconto deve estar entre 0 e 99,99."

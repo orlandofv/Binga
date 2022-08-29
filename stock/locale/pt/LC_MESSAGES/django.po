@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-19 09:24-0200\n"
+"Last-Translator: None None <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\stock\forms.py:16 .\stock\forms.py:37
+msgid "Start date"
+msgstr "Data de início"
+
+#: .\stock\forms.py:19 .\stock\forms.py:40
+msgid "End date"
+msgstr "Data Final"
+
+#: .\stock\forms.py:44
+#: .\stock\templates\stock\listviews\stock_item_list.html:29
+#: .\stock\templates\stock\listviews\stock_movement.html:28
+msgid "Warehouse"
+msgstr "Armazém"
+
+#: .\stock\templates\stock\createviews\warehouse_create.html:8
+msgid "New Warehouse"
+msgstr "Novo Armazém"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:8
+msgid "Warehouse Details"
+msgstr "Detalhes do Armazém"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:34
+msgid "List"
+msgstr "Lista"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:40
+msgid "Parent"
+msgstr "Parente"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:41
+msgid "Address"
+msgstr "Endereço"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:42
+msgid "Contacts"
+msgstr "Contactos"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:43
+msgid "Open Status"
+msgstr "Estado de Aberto"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:44
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:46
+msgid "Active"
+msgstr "Ativo"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:47
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:51
+msgid "Description"
+msgstr "Descrição"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:52
+msgid "Notes"
+msgstr "Notas"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:55
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:56
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:57
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\stock\templates\stock\detailviews\warehouse_detail_view.html:58
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\stock\templates\stock\listviews\stock_item_list.html:24
+#: .\stock\templates\stock\listviews\stock_movement.html:23
+msgid "Date"
+msgstr "Data"
+
+#: .\stock\templates\stock\listviews\stock_item_list.html:25
+#: .\stock\templates\stock\listviews\stock_movement.html:24
+msgid "Document"
+msgstr "Documento"
+
+#: .\stock\templates\stock\listviews\stock_item_list.html:26
+#: .\stock\templates\stock\listviews\stock_movement.html:25
+#: .\stock\templates\stock\listviews\stock_summary_list.html:27
+msgid "Product"
+msgstr "Produto"
+
+#: .\stock\templates\stock\listviews\stock_item_list.html:27
+#: .\stock\templates\stock\listviews\stock_movement.html:26
+msgid "Entity"
+msgstr "Entidade"
+
+#: .\stock\templates\stock\listviews\stock_item_list.html:28
+#: .\stock\templates\stock\listviews\stock_movement.html:27
+#: .\stock\templates\stock\listviews\stock_summary_list.html:29
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: .\stock\templates\stock\listviews\stock_summary_list.html:26
+msgid "Code"
+msgstr "Código"
+
+#: .\stock\templates\stock\listviews\stock_summary_list.html:28
+msgid "Sell Price"
+msgstr "Preço de Venda"
+
+#: .\stock\templates\stock\listviews\stock_summary_list.html:30
+msgid "Min. Sell Price"
+msgstr "Preço de venda Min."
+
+#: .\stock\templates\stock\listviews\stock_summary_list.html:31
+msgid "Status"
+msgstr "Estado"
+
+#: .\stock\templates\stock\listviews\stock_summary_list.html:32
+msgid "Actions"
+msgstr "Ações"
+
+#: .\stock\templates\stock\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\stock\templates\stock\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de artigos"
+
+#: .\stock\templates\stock\updateviews\warehouse_update.html:8
+msgid "Update Warehouse"
+msgstr "Atualizar Armazém"
+
+#~ msgid "3rd Party"
+#~ msgstr "Terceiro"
+
+#~ msgid "Products Dashboard"
+#~ msgstr "Painel de Produtos"
+
+#~ msgid "All Products"
+#~ msgstr "Todos Produtos"
+
+#~ msgid "Last 15 Products"
+#~ msgstr "Últimos 15 produtos"
+
+#~ msgid "Print Invoice"
+#~ msgstr "Imprimir Factura"
+
+#~ msgid "Due Date"
+#~ msgstr "Data de Vencimento"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Website"
+#~ msgstr "Pág. Web"
+
+#~ msgid "Phone"
+#~ msgstr "Telefone"
+
+#~ msgid "Fax"
+#~ msgstr "Fax"
+
+#~ msgid "Cell"
+#~ msgstr "Celular"
+
+#~ msgid "Qty"
+#~ msgstr "Qt."
+
+#~ msgid "VAT"
+#~ msgstr "IVA"
+
+#~ msgid "Discount"
+#~ msgstr "Desconto"
+
+#~ msgid "Total"
+#~ msgstr "Total"

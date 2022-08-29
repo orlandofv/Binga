@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-04 15:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\passenger_wsgi.py:8
+msgid "Add/Update Bank Account"
+msgstr ""
+
+#: .\passenger_wsgi.py:10
+msgid "BANK ACCOUNT MAIN DATA"
+msgstr ""
+
+#: .\passenger_wsgi.py:33
+msgid "Save & Close"
+msgstr ""
+
+#: .\passenger_wsgi.py:34
+msgid "Save & Edit"
+msgstr ""
+
+#: .\templates\document_template.html:13 .\templates\document_template.html:160
+msgid "Print Document"
+msgstr ""
+
+#: .\templates\document_template.html:15 .\templates\document_template.html:162
+#: .\templates\documents\receipt.html:15 .\templates\documents\receipt.html:135
+msgid "Close"
+msgstr ""
+
+#: .\templates\document_template.html:27
+msgid "Document"
+msgstr ""
+
+#: .\templates\document_template.html:28 .\templates\documents\receipt.html:28
+msgid "Date"
+msgstr ""
+
+#: .\templates\document_template.html:29
+msgid "Due Date"
+msgstr ""
+
+#: .\templates\document_template.html:41 .\templates\document_template.html:69
+#: .\templates\documents\receipt.html:40 .\templates\documents\receipt.html:68
+msgid "Email"
+msgstr ""
+
+#: .\templates\document_template.html:45 .\templates\document_template.html:72
+#: .\templates\documents\receipt.html:44 .\templates\documents\receipt.html:71
+msgid "Website"
+msgstr ""
+
+#: .\templates\document_template.html:49 .\templates\documents\receipt.html:48
+msgid "Phone"
+msgstr ""
+
+#: .\templates\document_template.html:53 .\templates\documents\receipt.html:52
+msgid "Fax"
+msgstr ""
+
+#: .\templates\document_template.html:57 .\templates\documents\receipt.html:56
+msgid "Cell"
+msgstr ""
+
+#: .\templates\document_template.html:66 .\templates\documents\receipt.html:65
+msgid "Contacts"
+msgstr ""
+
+#: .\templates\document_template.html:81 .\templates\documents\receipt.html:80
+msgid "Description"
+msgstr ""
+
+#: .\templates\document_template.html:82
+msgid "Price"
+msgstr ""
+
+#: .\templates\document_template.html:83
+msgid "Qty"
+msgstr ""
+
+#: .\templates\document_template.html:84
+msgid "VAT"
+msgstr ""
+
+#: .\templates\document_template.html:85
+msgid "Discount"
+msgstr ""
+
+#: .\templates\document_template.html:86 .\templates\documents\receipt.html:81
+msgid "Total"
+msgstr ""
+
+#: .\templates\document_template.html:104
+msgid "The are no items for this Document"
+msgstr ""
+
+#: .\templates\documents\receipt.html:7 .\templates\documents\receipt.html:27
+msgid "Receipt"
+msgstr ""
+
+#: .\templates\documents\receipt.html:13 .\templates\documents\receipt.html:133
+msgid "Print Receipt"
+msgstr ""
+
+#: .\templates\documents\receipt.html:95
+msgid "The are no items for this Receipt"
+msgstr ""
+
+#: .\templates\index.html:6 .\templates\sidebar.html:10
+msgid "Dashboard"
+msgstr ""
+
+#: .\templates\index.html:39
+msgid "Sign out"
+msgstr ""
+
+#: .\templates\sidebar.html:17
+msgid "Customers"
+msgstr ""
+
+#: .\templates\sidebar.html:23
+msgid "Suppliers"
+msgstr ""
+
+#: .\templates\sidebar.html:30
+msgid "Categories"
+msgstr ""
+
+#: .\templates\sidebar.html:36
+msgid "Products"
+msgstr ""
+
+#: .\templates\sidebar.html:42
+msgid "Warehouses"
+msgstr ""
+
+#: .\templates\sidebar.html:48
+msgid "Stock"
+msgstr ""
+
+#: .\templates\sidebar.html:55
+msgid "Invoices"
+msgstr ""
+
+#: .\templates\sidebar.html:61
+msgid "Receipts"
+msgstr ""
+
+#: .\templates\sidebar.html:68
+msgid "Banks"
+msgstr ""
+
+#: .\templates\sidebar.html:74
+msgid "Bank Accounts"
+msgstr ""
+
+#: .\templates\sidebar.html:81
+msgid "Documents"
+msgstr ""
+
+#: .\templates\sidebar.html:88
+msgid "Settings"
+msgstr ""

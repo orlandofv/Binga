@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Update Allocation' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Update Allocation' path='<a href="/allocations/"> Allocations</a> > Update Allocation' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                {% csrf_token %}
+                {% crispy form %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'asset_app/modals/modal.html' with title="Add Costumer" template='asset_app/modals/costumer_modal.html' id='costumer' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Division" template='asset_app/modals/division_modal.html' id='division' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Branch" template='asset_app/modals/branch_modal.html' id='branch' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Position" template='asset_app/modals/position_modal.html' id='position' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Group" template='asset_app/modals/group_modal.html' id='group' %}
+    {% include 'asset_app/modals/modal.html' with title="Add System" template='asset_app/modals/system_modal.html' id='system' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Type" template='asset_app/modals/type_modal.html' id='type' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Sub Type" template='asset_app/modals/subtype_modal.html' id='subtype' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Vendor" template='asset_app/modals/vendor_modal.html' id='vendor' %}
+    {% include 'asset_app/modals/modal.html' with title="Add Component" template='asset_app/modals/component_modal.html' id='component' %}
+ 
+{% endblock content %}

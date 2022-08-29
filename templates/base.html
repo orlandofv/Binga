@@ -1,0 +1,77 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+
+    <title>
+        {% block title %}
+        MixERP
+        {% endblock title %}
+    </title>
+    
+    <link href="{% static 'assets/plugins/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/plugins/materialdesign-6.9.96/css/materialdesignicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/plugins/fontawesome-free-6.1.1-web/css/all.min.css' %}" rel="stylesheet"> <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/plugins/DataTables/datatables.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/plugins/DataTables/DataTables-1.12.1/css/dataTables.bootstrap5.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/plugins/DataTables/Buttons-2.2.3/css/buttons.bootstrap5.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/dselect/css/dselect.css' %}" />
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'assets/css/dashboard.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/receipt_style.css' %}" />
+</head>
+<body>
+
+{% block header %}
+{% for message in messages %}
+<div class="messagesClass p-0 m-0" id="alert_id{{ forloop.counter }}" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 20%;
+z-index: 1999; /* Will check about this later */
+border-radius: 0px;">
+  <div class="alert {{ message.tags }} alert-dismissible" role="alert" 
+  style="margin:0px; padding:0px;">
+      <button type="button" class="btn close" style="vertical-align: center; 
+      horizontal-align: right;" data-dismiss="alert" aria-label="Close"
+      <span aria-hidden="True" onclick="Hide(alert_id{{ forloop.counter }})">&times;</span>
+      </button>
+      {{ message|striptags }}
+  </div>
+</div>
+{% endfor %}
+
+{% endblock header %}
+
+{% block layout %}
+    <div class="container-fluid">
+        <div class="row">
+            {% block sidebar %}    
+            {% endblock sidebar %}
+            
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
+{% endblock layout %}
+
+    {% block scripts %}
+        {% include 'scripts.html' %}
+        <script type="text/javascript">    
+          
+        </script>
+        
+    {% endblock scripts %}
+        
+  </body>
+</html>

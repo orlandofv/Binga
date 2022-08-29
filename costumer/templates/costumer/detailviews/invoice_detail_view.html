@@ -1,0 +1,133 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Invoice Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Invoice Details' path='<a href="/costumer/invoices/"> Invoices</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ invoice.name }}</h1>
+                <a href="{% url 'costumer:costumer_invoice_create' %}" 
+                    class="fa fa-plus btn btn-primary">
+                </a> 
+                <a href="{% url 'costumer:costumer_invoice_update' invoice.pk %}" 
+                    class="fas fa-edit btn btn-secondary">
+                
+                </a> 
+                <a href="{% url 'costumer:costumer_invoice_list' %}" 
+                    class="btn btn-info">
+                    <i class="fas fa-list"></i>
+                    {% trans 'List' %} 
+                </a>
+                
+                <hr>
+                <h6>{% trans 'Costumer' %}: <strong> <span><a href="{% url 'costumer:costumer_details' invoice.costumer.pk  %}"> {{ invoice.costumer.name }}</a></span></strong></h6>
+                <h6>{% trans 'Date' %}: <strong> <span><span class="text-end"> {{ invoice.date | date:"SHORT_DATE_FORMAT" }} </span>
+</span></strong></h6>
+                <h6>{% trans 'Due Date' %}: <strong> <span>{{ invoice.due_date | date:"SHORT_DATE_FORMAT" }}</span></strong></h6>
+                <h6>{% trans 'Payment Method' %}: <strong> <span>{{ invoice.payment_method }}</span></strong></h6>
+                <h6>{% trans 'Payment Term' %}: <strong> <span>{{ invoice.payment_term }}</span></strong></h6>
+                <h6>{% trans 'Paid Status' %}: <strong> 
+                    <span>
+                        {% if invoice.paid_status %}
+                            {% trans "Paid" %}
+                        {% else %}
+                            {% trans "Not Paid" %}
+                        {% endif %}
+                    </span></strong>
+                </h6>
+                
+                <h6>{% trans 'Delivered Status' %}: <strong> 
+                    <span>
+                        {% if invoice.delivered_status %}
+                            {% trans "Delivered" %}
+                        {% else %}
+                            {% trans "Not Delivered" %}
+                        {% endif %}
+                    </span></strong>
+                </h6>
+                
+                <h6>{% trans 'Finished Status' %}: <strong> 
+                    <span>
+                        {% if invoice.finished_status %}
+                            {% trans "Validated" %}
+                        {% else %}
+                            {% trans "Not Validated" %}
+                        {% endif %}
+                    </span></strong>
+                </h6>
+                
+                <h6>{% trans 'Active' %}: <strong> 
+                    <span>  
+                        {% if invoice.active_status %} {% trans 'Active' %}
+                        {% else %} {% trans 'Canceled' %}
+                        {% endif %}
+                    </span> </strong>
+                </h6>
+
+                <h6>{% trans 'Notes' %}: <strong> <span>{{ invoice.notes }}</span></strong></h6>
+    
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ invoice.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ invoice.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ invoice.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ invoice.modified_by }}</i></p>
+            </div>
+        </div>
+        
+        {% if paid_invoices %}
+        <div class="panel panel-primary mt-2">
+            <div class="panel-title">{% trans "Last 5 Costumer Paid Invoices" %}</div>
+            <div class='card-body'>
+                {% for paid in paid_invoices %}
+                    <a href="{% url 'costumer:costumer_invoice_details' paid.pk %}" 
+                    class="fa fa-book btn btn-default card-text">
+                        {{ paid }}
+                    </a> 
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if not_paid_invoices %}
+        <div class="panel panel-warning mt-2">
+            <div class="panel-title">{% trans "Costumer Noit Paid Invoices" %}</div>
+            <div class='card-body'>
+                {% for not_paid in not_paid_invoices %}
+                    <a href="{% url 'costumer:costumer_invoice_details' not_paid.pk %}" 
+                    class="fa fa-book btn btn-warning card-text">
+                        {{ not_paid }}
+                    </a> 
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if overdue_invoices %}
+        <div class="panel panel-warning mt-2">
+            <div class="panel-title"> {% trans "Overdue Invoices" %}
+                <span class="badge bg-secondary">{{ overdue_invoices | length }}</span>
+            </div>
+            <div class='card-body'>
+                {% for overdue_paid in overdue_invoices %}
+                    <a href="{% url 'costumer:costumer_invoice_details' overdue_paid.pk %}" 
+                    class="fa fa-book btn btn-danger card-text">
+                        {{ overdue_paid }}
+                    </a> 
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+{% endblock content %}

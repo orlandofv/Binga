@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load humanize %}
+
+<option id="sell_price_option" value="{{ prices.sell_price | floatformat:2 }}">  {{ prices.sell_price | floatformat:2 |intcomma }}</option>
+
+{% if prices.sell_price2 %} 
+    <option value="{{ prices.sell_price2 | floatformat:2 }}">
+        {{ prices.sell_price2 | floatformat:2 |intcomma }} 
+    </option>
+{% endif %}
+
+{% if prices.sell_price3 %} 
+    <option value="{{ prices.sell_price3 | floatformat:2 }}">
+        {{ prices.sell_price3 | floatformat:2 |intcomma }} 
+    </option>
+{% endif %}
+
+{% if prices.sell_price4 %} 
+    <option value="{{ prices.sell_price4 | floatformat:2 }}">
+        {{ prices.sell_price4 | floatformat:2 |intcomma }} 
+    </option>
+{% endif %}
+
+{% if prices.sell_price5 %} 
+    <option value="{{ prices.sell_price5 | floatformat:2 }}">
+        {{ prices.sell_price5 | floatformat:2 |intcomma }} 
+    </option>
+{% endif %}
+
+{% if prices.min_sell_price %} 
+    <option value="{{ prices.min_sell_price | floatformat:2 }}">
+        {{ prices.min_sell_price | floatformat:2 |intcomma }} 
+    </option>
+{% endif %}
+
+<input type="hidden" id="tax" value="{{ prices.tax }}"></input>
+<input type="hidden" id="type" value="{{ prices.type }}"></input>

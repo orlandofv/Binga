@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}
+  {{ block.super }} | {% trans "Dashboard" %}
+{% endblock title %}
+
+{% block header %}
+  {{ block.super }}
+  
+  <header class="navbar navbar-light sticky-top bg-success flex-md-nowrap p-0 shadow">
+
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" 
+    href="/" style="color: white; font-weight: bold" >BINGA</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <nav class="navbar">
+      <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <div class="" style="background-color: #fff; padding: 4px; border-radius:2px;">
+          <select name="language" style="border-width: 0px;">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+              <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                  {{ language.name_local }}
+              </option>
+            {% endfor %}
+          </select>
+          <input type="submit" value="{% trans "Go" %}" style="border:none; background-color: #198754; color:#fff; font-weight:bold;">
+        </div>
+    </form>
+      {% if user.is_authenticated %}
+        <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" style="color: #fff;" href="/profile"><i class="fa fa-user"></i></a>
+        </div>
+        <div class="nav-item text-nowrap">  
+          <a class="nav-link px-3" style="color: #fff;" href="{% url 'users:logout' %}">{% trans "Sign out" %}</a>  
+      </div>
+      {% endif %}
+    </nav>
+  </header>
+{% endblock header %}
+
+{% block sidebar %}
+  {% include 'sidebar.html' %}
+{% endblock sidebar %}
+
+{% block content %}
+  
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2" 
+    style="padding: 0px;  background-image: url('{% static 'assets/img/bk1.jpg' %}');
+    background-repeat: repeat-y; /* for vertical repeat */
+    background-repeat: repeat-x; /* for horizontal repeat */
+    height: 1000px;
+    width:100%;">
+  
+    </div>
+ 
+{% endblock content %}

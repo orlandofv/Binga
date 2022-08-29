@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Update Component' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Update Component' path='<a href="/components/"> Components</a> > Update Component' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+        <div class="row">
+            <div class="col-md-12">
+                {% csrf_token %}
+                {% crispy form %}
+
+                {% if items %}
+                    {% for item in items %}
+                        
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'asset_app/modals/modal.html' with title="Add Maintenance" template='asset_app/modals/maintenance_modal.html' id='maintenance' %}
+
+{% endblock content %}

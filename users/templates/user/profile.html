@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} {{ block.super }} - Contactos
+{% endblock %}
+
+{% block menu_categorias %}
+{% endblock %}
+
+{% block content %}
+    {% for message in messages %}
+    <div class="container p-0 m-0" id="alert_id{{ forloop.counter }}">
+        <div class="alert {{ message.tags }} alert-dismissible" role="alert" 
+        style="margin:0px; padding:0px;">
+            <button type="button" class="btn close" style="vertical-align: center; 
+            horizontal-align: right;" data-dismiss="alert" aria-label="Close"
+            <span aria-hidden="True" onclick="Hide(alert_id{{ forloop.counter }})">&times;</span>
+            </button>
+            {{ message|striptags }}
+        </div>
+    </div>
+    {% endfor %}
+
+     <!-- ##### Breadcrumb Area Start ##### -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Register</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'mozlaserapp:home' %}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Register</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <div class="container" align="center">
+        <div class="row" style="border: 5px" >
+
+                <form action="#" method="post" class="p-sm-3">
+                    <h2 style="align: center-right;">Edit Profile</h2>
+                    <hr/>
+
+                        {% csrf_token %}
+                        {{ form.as_ul }}
+
+                    <button type="submit" class="btn btn-primary">
+                        Update
+                    </button>
+
+                </form>
+        </div>
+     </div>
+
+{% endblock %}
+
+{% block vistos %}
+{% endblock %}
+{% block banner %}
+{% endblock %}
+
+{% block negocio_da_semana %}
+{% endblock %}
+
+{% block categorias %}
+{% endblock %}
+
+{% block ratings %}
+{% endblock %}
+
+{% block novidades %}
+{% endblock %}
+
+{% block melhores_vendas %}
+{% endblock %}
+
+{% block anuncios %}
+{% endblock %}
+
+{% block trends %}
+{% endblock %}
+
+{% block reviews %}
+{% endblock %}
+
+{% block marcas %}
+{% endblock %}
+

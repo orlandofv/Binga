@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='List of Schedules' path='Maintenance Schedule' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    {% csrf_token %}
+
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        {% url 'asset_app:maintenance_schedule_delete' as delete %}
+        {% url 'asset_app:maintenance_schedule_create' as create %}
+        {% url 'asset_app:maintenance_schedule_list_view' as redirect %}
+        
+        {% include 'new_delete_extra_buttons.html' with table_id='#sortTableMedium' delete_url=delete redirect_url=redirect create_url=create %}
+        
+        <hr>
+        <table id="sortTableMedium" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th style="padding-left: 11px;">
+                        <input type="checkbox" id="checkall" name="main_Checkbox" 
+                        value="" style="vertical-align: middle"> 
+                    </th>
+                    <th style="text-align: left;">{% trans 'Schedule' %}</th>
+                    <th>{% trans 'Maintenance' %}</th>
+                    <th>{% trans 'Notes' %}</th>
+                    <th>{% trans 'Action' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for obj in object_list %}
+                    <tr data-id="{{ obj.id }}" class="row{{ obj.id }}">
+                        
+                        <td with="10"> <input type="checkbox" id="{{ obj.id }}" class="rowcheckbox" 
+                            value="" style="vertical-align: middle">
+                        </td>
+                        <td>{{ obj.name }}</td>
+                        <td>{{ obj.maintenance }}</td>
+                        <td>{{ obj.notes }}</td>
+                        <td>
+                            <a href="{% url 'asset_app:schedule_update' obj.slug %}" 
+                                    class="fas fa-edit btn btn-secondary">
+                                     
+                                </a> 
+                           
+                                <a href="{% url 'asset_app:schedule_details' obj.slug %}" 
+                                class="fa fa-eye btn btn-secondary">
+                                     
+                                </a> 
+                        </td>
+                        
+                    </tr>
+            {% empty %}
+                    <p>{% trans 'No Items to Show' %} </p>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
+    

@@ -1,0 +1,192 @@
+{% extends 'document_base.html' %}
+
+{% load i18n %}
+{% load humanize %}
+{% load static %}
+
+{% block title %} Document - {{ document.number }} {% endblock title %}
+
+{% block layout %}
+  
+<div class='container ml-5 mt-5'> 
+  <input type='button' id="convert-to-pdf" onclick="CreatePDFfromHTML()"
+  value="{% trans 'Print Document' %}" class="btn btn-success">
+
+  <a href=" {% url 'isis:document_list' %}" class="btn fa fa-stop-circle">{% trans 'Close' %}</a>
+</div>
+
+<hr>
+  <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 p-6 html-content" id="section-to-print">
+    <div class="card">
+      <div class="card-header p-4">
+        <div class="row">
+        <div class="col-md-6 float-start">
+          <img height=120 width="120" src="{{ company.logo.url }}"/>
+        </div>
+        <div class="col-md-6 float-right">
+          <div class="float-end"> <h3 class="mb-0">{% trans "Document" %} #{{ document.number }} / {{ document.date | date:"Y" }}
+          </h3>
+          <p class="m-0 p-0"> {% trans "Date" %}: {{ document.date | date:"SHORT_DATE_FORMAT" }} </p>
+          <p class="m-0 p-0"> {% trans "Due Date" %}: {{ document.due_date | date:"SHORT_DATE_FORMAT" }} </p>
+          </div>
+      </div>
+      </div>
+      </div>
+      <div class="card-body">
+        <div class="row mb-4">
+          <div class="col-sm-6">
+            <h5 class="mb-3">{% trans "From" %}:</h5>
+            <h5 class="text-dark mb-1">{{ company.name }}</h5>
+            {% if company.address %}
+              <div>{{ company.address }}</div>
+            {% endif %}
+
+            {% if company.vat %}
+              <div>{% trans 'VAT Number' %}: {{ company.vat }}</div>
+            {% endif %}
+
+              {% if company.email %}
+                <div>{% trans 'Email' %}: {{ company.email }}</div>
+              {% endif %}
+              
+              {% if company.website %}
+                <div>{% trans 'Website' %}: {{ company.website }}</div>
+              {% endif %}
+              
+              {% if company.phone %}
+                <div>{% trans 'Phone' %}: {{ company.phone }}</div>
+              {% endif %}
+
+              {% if company.fax %}
+                <div>{% trans 'Fax' %}: {{ company.fax }}</div>
+              {% endif %}
+
+              {% if company.cell %}
+                <div>{% trans 'Cell' %}: {{ company.cell }}</div>
+              {% endif %}
+
+            </div>
+          <div class="col-sm-6 ">
+            <h5 class="mb-3">{% trans "To" %}:</h5>
+            <h5 class="text-dark mb-1">{{ costumer.name }}</h5>
+            {% if costumer.address %}
+              <div>{{ costumer.address }}</div>
+            {% endif %}
+
+            {% if costumer.vat %}
+              <div>{% trans 'VAT Number' %}: {{ costumer.vat }}</div>
+            {% endif %}
+
+            {% if costumer.phone %}
+              <div>{% trans 'Phone' %}: {{ costumer.phone }}</div>
+            {% endif %}
+
+            {% if costumer.fax %}
+              <div>{% trans 'Fax' %}: {{ costumer.fax }}</div>
+            {% endif %}
+
+            {% if costumer.cell %}
+              <div>{% trans 'Cell' %}: {{ costumer.cell }}</div>
+            {% endif %}
+            
+            {% if costumer.email %}
+              <div> {% trans "Email" %} {{ costumer.email }}</div>
+            {% endif %}
+            {% if costumer.website %}
+              <div> {% trans "Website" %} {{ costumer.website }}</div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="table-responsive-sm">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-center">#</th>
+                <th>{% trans 'Description' %}</th>
+                <th class="text-end">{% trans 'Price' %}</th>
+                <th class="text-center">{% trans 'Qty' %}</th>
+                <th class="text-end">{% trans 'VAT Number' %}(%)</th>
+                <th class="text-end">{% trans 'Discount' %}(%)</th>
+                <th class="text-end">{% trans 'Total' %}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if items %}
+                {% for item in items  %}
+                  <tr>
+                    <td class="text-center" width="5%">{{ forloop.counter }}</td>
+                    <td class="text-start" width="40%">{{ item.product  }}</td>
+                    <td class="text-end" width="10%">{{ item.price | floatformat:2 |intcomma }}</td>
+                    <td class="text-center" width="10%">{{ item.quantity | floatformat:2 |intcomma }}</td>
+                    <td class="text-end" width="10%">{{ item.tax | floatformat:2 |intcomma }}</td>
+                    <td class="text-end" width="10%">{{ item.discount | floatformat:2 |intcomma }}</td>
+                    <td class="text-end" width="15%">{{ item.total | floatformat:2 |intcomma }}</td>  
+                  </tr>
+                {% endfor %}
+                    
+              {% else %}
+                <p class="alert alert-warning"> {% trans 'The are no items for this Document' %} </p>  
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+          </div>
+          <div class="col-md-4 ml-auto">
+            <table class="table table-clear">
+              <tbody>
+              <tr>
+                <td class="text-end">
+                  <strong class="text-dark text-end">{% trans "Subtotal" %}</strong>
+                </td>
+                <td class="text-end">{{ sub_total.sub_total__sum | floatformat:2 |intcomma }}</td>
+              </tr>
+              <tr>
+                <td class="text-end">
+                  <strong class="text-dark text-end">{% trans "Discount" %}</strong>
+                </td>
+                <td class="text-end">{{ discount_total.discount_total__sum  | floatformat:2 |intcomma }}</td>
+              </tr>
+              <tr>
+                <td class="text-end">
+                  <strong class="text-dark text-end">{% trans "VAT" %}</strong>
+                </td>
+              <td class="text-end">{{ tax_total.tax_total__sum | floatformat:2 |intcomma }}</td>
+              </tr>
+              <tr>
+              <td class="right text-end">
+              <strong class="text-dark text-end">{% trans "TOTAL" %}</strong>
+              </td>
+              <td class="right text-end">
+              <strong class="text-dark text-end">{{ total.total__sum | floatformat:2 |intcomma }}</strong>
+              </td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        
+          
+          {% if document.public_notes %}
+            <div class="card-footer bg-white">
+              <p class="mb-0">{{ document.public_notes }}</p>
+            </div>
+          {% endif %}
+    </div>
+  </div>
+
+<hr>
+<div class='container ml-5 mb-5'> 
+
+  <input type='button' id="convert-to-pdf" onclick="CreatePDFfromHTML()"
+  value="{% trans 'Print Document' %}" class="btn btn-success">
+
+  <a href=" {% url 'isis:document_list' %}" class="btn fa fa-stop-circle">{% trans 'Close' %}</a>
+</div>
+
+<div id="editor"></div>
+
+
+{% endblock layout %}

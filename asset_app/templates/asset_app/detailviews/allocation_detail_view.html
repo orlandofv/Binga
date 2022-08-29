@@ -1,0 +1,95 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Allocation Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Allocation Details' path='<a href="/allocations/"> Allocations</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-8" style='border: 1px solid #ccc; border-radius:5px;'>
+                {% if data.image.url %}
+                    <img src="{{ data.image.url }}">
+                {% endif %}
+                <h1>{{ data.allocation_no }} - 
+                    <a href="{% url 'asset_app:component_details' data.component.slug %}"> 
+                        {{ data.component }}</a> </h1>
+                <hr>
+                <h6> {% trans 'Costumer' %}: <a href="{% url 'asset_app:costumer_details' data.costumer.slug %}" >
+                <strong>{{ data.costumer }}</strong> </a> </h6>
+                <h6> {% trans 'Division' %}: <a href="{% url 'asset_app:division_details' data.division.slug %}"> 
+                <strong>{{ data.division }}</strong> </a> </h6>
+                <h6> {% trans 'Branch' %}: <a href="{% url 'asset_app:branch_details' data.branch.slug %}"> 
+                <strong>{{ data.branch }}</strong> </a> </h6>
+                <h6> {% trans 'Position' %}: <a href="{% url 'asset_app:position_details' data.position.slug %}"> 
+                <strong>{{ data.position }}</strong> </a> </h6>
+                <hr>
+                <h6> {% trans "Serial Number" %}: <strong>{{ data.serial_number }}</strong> </h6>
+                <h6> {% trans "Vendor" %}: <strong>{{ data.vendor }}</strong> </h6>
+                <h6> {% trans 'Purchased' %}: <strong>{{ data.date_purchased }}</strong></h6>
+                <h6> {% trans 'Price' %}: <strong>{{ data.purchase_amount }}</strong></h6>
+                <h6> {% trans 'Date allocated' %}: <strong>{{ data.date_allocated }}</strong></h6>
+                <h6> {% trans "Depreciation" %}: <strong>{{ data.depreciation }}</strong></h6>
+                <h6> {% trans 'Status' %}:  
+                    {% if data.status == '1' or data.status == 'Good' %}
+                        <i style="color: green;"> {% trans 'GOOD' %} </i>
+                    {% else %}
+                        <i style="color: red;"> {% trans 'BROKEN' %} </i>
+                    {% endif %}
+                </h6>
+                <hr>
+                <h6> {% trans 'Start Value (Hours)' %}: <strong>{{ data.start_value_hours }}</strong></h6>
+                <h6> {% trans 'Start Value (Years)' %}: <strong>{{ data.start_value_years }}</strong></h6>
+                <h6> {% trans 'Start Value (KM)' %}: <strong>{{ data.start_value_milliege }}</strong></h6>
+                <hr>
+                <h6> {% trans 'Garrantee Value (Hours)' %}: <strong>{{ data.garrantee_value_hours }}</strong></h6>
+                <h6> {% trans 'Garrantee Value (Years)' %}: <strong>{{ data.garrantee_value_years }}</strong></h6>
+                <h6> {% trans 'Garrantee Value (KM)' %}: <strong>{{ data.garrantee_milliege }}</strong></h6>
+                <hr>
+                <h6> {% trans 'End of Life Value (Hours)' %}: <strong>{{ data.end_of_life_hours }}</strong></h6>
+                <h6> {% trans 'End of Life Value (Years)' %}: <strong>{{ data.end_of_life_years }}</strong></h6>
+                <h6> {% trans 'End of Life Value (KM)' %}: <strong>{{ data.end_of_life_milliege }}</strong></h6>
+                <hr>
+                <h6> {% trans 'Warn Before (Hours)' %}: <strong>{{ data.warn_before_hours }}</strong></h6>
+                <h6> {% trans 'Warn Before Value (Years)' %}: <strong>{{ data.warn_before_years }}</strong></h6>
+                <h6> {% trans 'Warn Before Value (KM)' %}: <strong>{{ data.warn_before_milliege }}</strong></h6>
+                <hr>
+                <h6> {% trans 'Group' %}: <a href="{% url 'asset_app:group_details' data.group.slug %}"> 
+                <strong>{{ data.group }}</strong> </a> </h6>
+                <h6> {% trans 'System' %}: <a href="{% url 'asset_app:system_details' data.system.slug %}"> 
+                <strong>{{ data.system }}</strong> </a> </h6>
+                <h6> {% trans 'Type' %}: <a href="{% url 'asset_app:type_details' data.type.slug %}"> 
+                <strong>{{ data.type }}</strong> </a> </h6>
+                <h6> {% trans 'Sub Type' %}: <a href="{% url 'asset_app:subtype_details' data.subtype.slug %}"> 
+                <strong>{{ data.subtype }}</strong> </a> </h6>
+                <hr>
+                <h6> {% trans 'Notes' %}: <strong>{{ data.notes }}</strong></h6>
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ data.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ data.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ data.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ data.modified_by }}</i></p>
+                
+            </div>
+            <div class="col-md-4">
+                {% if data.qrcode %}
+                    <img src='{{ data.qrcode.url }}' alt='Qr Code' height='300px' width='300px'>
+                {% else %}
+                    <form action="{% url 'asset_app:allocation_update' data.slug %}" id ='qrcode_form'>
+                        <input type="submit" name="save_qrcode" value="Genarate Qr Code" 
+                        id="id_save_qrcode" class="btn btn-primary"> 
+            
+                    </form>
+                {% endif %}
+            </div
+        </div>
+    </div>
+{% endblock content %}

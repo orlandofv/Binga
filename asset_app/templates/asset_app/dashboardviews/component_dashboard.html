@@ -1,0 +1,70 @@
+{% extends 'index.html' %} 
+{% load static %} 
+{% load crispy_forms_tags %} 
+{% load i18n %} 
+
+{% block title %} {{ block.super }} | {% trans 'Components Dashboard' %} {% endblock title %} {% block content %}
+
+<div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+    <div class="row">
+        
+        <div class="col-md-12">
+            <a href="{% url 'asset_app:component_list' %}" 
+            class="btn btn-primary">{% trans 'All Components' %}: <strong>{{ total }}</strong></a>
+        </div>
+        
+        <div class="col-md-9">
+            
+            <h6 style="text-align:center; background-color:
+                #c0d0e0; padding: 10px; margin-top: 10px; border-radius: 5px 5px 0px 0px;"> 
+                {% trans 'Last 15 Components' %} 
+            </h6>
+        
+            <table id="sortTableLarge" class="table display responsive nowrap">
+                <thead>
+                <tr class="p-0 m-0">
+                    <th> {% trans 'System Number' %} </th>
+                    <th> {% trans "Name" %} </th>
+                    <th> {% trans "Maintenance" %} </th>
+                    <th> {% trans "Stock Code" %} </th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for obj in last %}
+                <tr data-id="{{ obj.id }}" class="row{{ obj.id }}">
+                    <td>{{ obj.component_no }}</td>
+                    <td>{{ obj.name }}</td>
+                    <td> <a href="{% url 'asset_app:maintenance_details' obj.maintenance.slug %}"> 
+                        {{ obj.maintenance }}</a> </td>
+                    <td>{{ obj.stock_code }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+
+        <div class="col-md-3">
+            <canvas id="component_chart" width="200" height="110"></canvas>
+            <canvas id="component_chart_2" width="200" height="110"></canvas>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    
+    var component_data = [{{ good }}, {{ broken }}];
+    console.log(component_data);
+
+    var component_allocation = [{{ allocated }}, {{ not_allocated }}];
+
+    createDoughnutChart(['Good','Broken'], 
+    component_data, 'List of Components', "Component Statuses", 'component_chart');
+
+    createDoughnutChart(['Allocated','Not Allocated'], 
+    component_allocation, 'List of Allocations', "Component Allocations", 'component_chart_2');
+
+</script>
+
+{% endblock content %}
+

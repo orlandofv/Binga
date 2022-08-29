@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+{% load humanize %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='List of Stocks' path='Stocks' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div id="ExtraButtons">
+        </div>
+        <hr>
+        {% csrf_token %}
+        {% crispy search_form %}
+        <table id="sortTableExtraLarge" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th>{% trans "Date" %}</th>
+                    <th>{% trans "Document" %}</th>
+                    <th>{% trans "Product" %}</th>
+                    <th>{% trans "Entity" %}</th>
+                    <th class="text-end">{% trans "Quantity" %}</th>
+                    <th>{% trans "Warehouse" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for obj in object_list %}
+                    <tr data-id="{{ obj.id }}" class="row{{ obj.id }}">
+                        <td> {{ obj.date_created }}  </td>
+                        <td>
+                            {{ obj.document }}
+                        </td>
+                        <td>{{ obj.product.name }} ({{ obj.product.code }})</td>
+                        <td>{{ obj.costumer }}</td>
+                        <td class="text-end">{{ obj.quantity | floatformat:2 |intcomma }}</td>
+                        <td>{{ obj.warehouse.name }}</td>
+                        <td></td>
+                    </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
+    

@@ -1,0 +1,69 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Allocations' path='Allocations' only%}
+{% endblock breadcrumb %}
+
+{% block content %}
+    {% csrf_token %}
+
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <a href="{% url 'asset_app:allocation_create' %} " class="btn btn-info fa fa-plus">
+           
+        </a>
+      
+        <button class="btn btn-danger delete-btn fa fa-minus-square" data-toggle="modal"
+        onclick="DeleteItems('#sortTableLarge', '{% url 'asset_app:allocation_create' %}')">
+             
+        </button>
+        <hr>
+
+        <table id="sortTableLarge" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th style="padding-left: 11px;">
+                        <input type="checkbox" id="checkall" name="main_Checkbox" 
+                        value="" style="vertical-align: middle"> 
+                    </th>
+                    <th style="text-align: left;">{% trans "System No." %}</th>
+                    <th>{% trans 'Component' %}</th>
+                    <th>{% trans 'Serial No.' %}</th>
+                    <th>{% trans 'Costumer' %}</th>
+                    <th>{% trans 'Actions' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for obj in object_list %}
+                    
+                        <tr data-id="{{ obj.id }}" class="row{{ obj.id }}" 
+                        {% if obj.status == '0' or obj.status == 'Broken' %}    
+                            style="background-color: #f9af9f;"
+                        {% endif %}>
+
+                            <td with="10"> <input type="checkbox" id="{{ obj.id }}" class="rowcheckbox" 
+                                value="" style="vertical-align: middle">
+                            </td>
+                            <td>{{ obj.allocation_no }}</td>
+                            <td>{{ obj.component }}</td>
+                            <td>{{ obj.serial_number }}</td> </td>
+                            <td>{{ obj.costumer }}</td>
+                            <td> <a href="{% url 'asset_app:allocation_update' obj.slug  %}" 
+                                    class="fas fa-edit btn btn-secondary">
+                                     
+                                </a> 
+                            
+                                <a href="{% url 'asset_app:allocation_details' obj.slug %}" 
+                                class="fa fa-eye btn btn-secondary">
+                                     
+                                </a> 
+                            </td>
+                        </tr> 
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
+    

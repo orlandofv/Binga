@@ -1,0 +1,91 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='List of Work Orders' path='Work Orders' %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    {% csrf_token %}
+
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        {% url 'asset_app:workorder_delete' as delete %}
+        {% url 'asset_app:workorder_create' as create %}
+        {% url 'asset_app:workorder_list' as redirect %}
+        
+        {% include 'new_delete_extra_buttons.html' with table_id='#sortTableLarge' delete_url=delete redirect_url=redirect create_url=create %}
+        
+        <hr>
+
+        <table id="sortTableLarge" class="table display responsive nowrap">
+            <thead>
+                <tr class="p-0 m-0">
+                    <th style="padding-left: 11px;">
+                        <input type="checkbox" id="checkall" name="main_Checkbox" 
+                        value="" style="vertical-align: middle"> 
+                    </th>
+                    <th> {% trans 'Order' %}</th>
+                    <th> {% trans 'Allocation' %} </th>
+                    <th> {% trans 'In Charge' %} </th>
+                    <th> {% trans "Status" %} </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for obj in object_list %}
+                    <tr data-id="{{ obj.id }}" class="row{{ obj.id }}" 
+                    {% if obj.is_overdue %}
+                        style="background-color: #f0a0b0;" 
+                    {% elif obj.is_complete %}
+                        style="background-color: #a0f0b0;" 
+                    {% elif obj.is_progress %}
+                        style="background-color: #a0b0f0;"
+                    {% endif %}
+                         >
+                        <td with="10"> <input type="checkbox" id="{{ obj.id }}" class="rowcheckbox" 
+                            value="" style="vertical-align: middle">
+                        </td>
+                        <td>{{ obj.order }}</td>
+                        <td>{{ obj.allocation }}</td>
+                        <td>{{ obj.responsible }}</td>
+                        <td> {% if obj.is_overdue %} Overdue
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: {{ obj.progress }}%;" aria-valuenow="{{ obj.progress }}" aria-valuemin="0" aria-valuemax="100">{{ obj.progress }}% </div>
+                             </div>
+
+                             {% elif obj.is_complete %} Complete
+                             <div class="progress" style="height: 20px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: {{ obj.progress }}%;" aria-valuenow="{{ obj.progress }}" aria-valuemin="0" aria-valuemax="100">{{ obj.progress }}% </div>
+                             </div>
+
+                             {% elif obj.is_pending %} Pending <div class="progress" style="height: 20px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: {{ obj.progress }}%;" aria-valuenow="{{ obj.progress }}" aria-valuemin="0" aria-valuemax="100">{{ obj.progress }}% </div>
+                             </div>
+                             {% elif obj.is_progress %} 
+                             In progress  <div class="progress" style="height: 20px;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: {{ obj.progress }}%;" aria-valuenow="{{ obj.progress }}" aria-valuemin="0" aria-valuemax="100">{{ obj.progress }}% </div>
+                                         </div>  
+                             {% else %} Abandoned {% endif %}</td>
+                        <td>
+                            <a href="{% url 'asset_app:workorder_update' obj.slug %}" 
+                                class="fas fa-edit btn btn-secondary">
+                                 
+                            </a> 
+                        
+                            <a href="{% url 'asset_app:workorder_details' obj.slug %}" 
+                            class="fa fa-eye btn btn-secondary">
+                                 
+                            </a> 
+                    
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
+    

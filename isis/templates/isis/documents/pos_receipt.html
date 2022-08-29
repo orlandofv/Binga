@@ -1,0 +1,181 @@
+{% extends 'invoice_base.html' %}
+
+{% load i18n %}
+{% load humanize %}
+{% load static %}
+
+{% block title %} {{ invoicing.document.name }} - {{ invoicing.number }} {% endblock title %}
+
+{% block layout %}
+
+<div class='container ml-5 mt-5'> 
+    <a href=" {% url 'isis:invoicing_list' %}" class="btn fa fa-stop-circle">{% trans 'Close' %}</a>
+  </div>
+
+<div id="invoice-POS" class="section-to-print">
+    
+    <center id="top">
+        
+    {% if company.logo %}
+        <div class="text-center" width="40" height="40">
+        <img src="{{ company.logo.url }}" alt="logo">
+        </div>
+    {% endif %}
+            
+    <div class="company-name"> 
+        <h2>{{ company.name }}</h2>
+      </div><!--End Info-->
+    </center><!--End InvoiceTop-->
+    
+    <div id="mid">
+      <div class="info"> 
+        <div class="company-info">
+            {% if company.address %}
+                {{ company.address }}
+            {% endif %}
+        </div>
+        <div class="company-info">
+            {% if company.email %}
+              {% trans 'Email' %}: {{ company.email }}
+            {% endif %}
+        </div>
+        <div class="company-info">
+            {% if company.website %}
+              {% trans 'Website' %}: {{ company.website }}
+            {% endif %}
+        </div>
+        <div class="company-info">
+            {% if company.phone %}
+              {% trans 'Phone' %}: {{ company.phone }}
+            {% endif %}
+        </div>
+        <div class="company-info">
+            {% if company.fax %}
+              {% trans 'Fax' %}: {{ company.fax }}
+            {% endif %}
+        </div>
+        <div class="company-info">
+            {% if company.cell %}
+              {% trans 'Cell' %}: {{ company.cell }}
+            {% endif %}
+        </div>
+        <hr>
+        <h3 class="m-0 p-0 text-center">{{ invoicing.document.name }} #{{ invoicing.number }}
+            / {{ invoicing.date | date:"Y" }}
+        </h3>
+        <p class="m-0 p-0 text-center"> {% trans "Date" %}: {{ invoicing.date | date:"SHORT_DATE_FORMAT"}} </p>
+        <hr>
+        <div class="mb-0">{% trans "To" %}:</div>
+        <div class="company-name"> 
+            <h2>{{ costumer.name }}</h2>
+        </div>
+        
+        <div class="company-info">
+            {% if costumer.address %}
+            <div>{{ costumer.address }}</div>
+          {% endif %}
+
+          {% if costumer.vat %}
+            <div>{% trans 'VAT Number' %}: {{ costumer.vat }}</div>
+          {% endif %}
+
+        </div>
+
+        <div class="company-info">
+        {% if costumer.vat %}
+            <div> {% trans "VAT number" %}: {{ costumer.vat }}</div>
+        {% endif %}
+        </div>
+
+            <div class="company-info">
+              {% if costumer.phone %}
+              <div>{% trans 'Phone' %}: {{ costumer.phone }}</div>
+            {% endif %}
+
+            {% if costumer.fax %}
+              <div>{% trans 'Fax' %}: {{ costumer.fax }}</div>
+            {% endif %}
+
+            {% if costumer.cell %}
+              <div>{% trans 'Cell' %}: {{ costumer.cell }}</div>
+            {% endif %}
+            </div>
+            <div class="company-info">
+            {% if costumer.email %}
+              <div> {% trans "Email" %} {{ costumer.email }}</div>
+            {% endif %}
+            </div>
+            <div class="company-info">
+            {% if costumer.website %}
+              <div> {% trans "Website" %} {{ costumer.website }}</div>
+            {% endif %}
+            </div>
+            <div class="company-info">
+        </p>
+      </div>
+    </div><!--End Invoice Mid-->
+    
+    <div id="bot">
+
+        <div id="table">
+            <table>
+                <tr class="tabletitle">
+                    <td class="item"><h2>{% trans 'Description' %}</h2></td>
+                    <td class="Hours"><h2>{% trans "Qt." %}</h2></td>
+                    <td class="Hours text-end"><h2>{% trans "Price" %}</h2></td>
+                    <td class="Rate text-end"><h2>{% trans 'Total' %}</h2></td>
+                </tr>
+
+                {% if items %}
+                    {% for item in items  %}
+                        <tr class="service">
+                            <td class="tableitem"><p class="itemtext">{{ item.product.name  }}</p></td>
+                            <td class="tableitem"><p class="itemtext">{{ item.quantity | floatformat:2 |intcomma }}</p></td>
+                            <td class="tableitem text-end"><p class="itemtext">{{ item.price | floatformat:2 |intcomma }}</p></td>
+                            <td class="tableitem text-end"><p class="itemtext">{{ item.sub_total | floatformat:2 |intcomma }}</p></td>
+                        </tr>
+                    {% endfor %}
+                    
+                {% else %}
+                    <p class="alert alert-warning"> {% trans 'The are no items for this Invoicing' %} </p>  
+                {% endif %}
+                <tr class="tabletitle">
+                    <td></td>
+                    <td></td>
+                    <td class="Rate"><h2>{% trans "Subtotal" %}</h2></td>
+                    <td class="payment text-end"><h2>{{ sub_total.sub_total__sum | floatformat:2 |intcomma }}</h2></td>
+                </tr>
+                
+                <tr class="tabletitle">
+                    <td></td>
+                    <td></td>
+                    <td class="Rate"><h2>{% trans "Discount" %}</h2></td>
+                    <td class="payment text-end"><h2>{{ discount_total.discount_total__sum | floatformat:2 |intcomma }}</h2></td>
+                </tr>
+
+                <tr class="tabletitle">
+                    <td></td>
+                    <td></td>
+                    <td class="Rate"><h2>{% trans "VAT" %}</h2></td>
+                    <td class="payment text-end"><h2>{{ tax_total.tax_total__sum | floatformat:2 |intcomma }}</h2></td>
+                </tr>
+
+                <tr class="tabletitle">
+                    <td></td>
+                    <td></td>
+                    <td class="Rate"><h2>{% trans 'Total' %}</h2></td>
+                    <td class="payment text-end"><h2>{{ total.total__sum | floatformat:2 |intcomma }}</h2></td>
+                </tr>
+
+            </table>
+        </div><!--End Table-->
+
+        <div id="legalcopy">
+            <p class="legal"><strong>{{ company.notes }}</strong>
+            </p>
+        </div>
+
+    </div><!--End InvoiceBot-->
+  </div><!--End Invoice-->
+
+{% endblock layout %}

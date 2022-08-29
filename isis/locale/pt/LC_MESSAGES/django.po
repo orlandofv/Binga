@@ -1,0 +1,1846 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-28 23:12-0200\n"
+"Last-Translator:   <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\isis\forms.py:28
+msgid "Parent Category"
+msgstr "Categoria Pai"
+
+#: .\isis\forms.py:42
+msgid "Add/Update Category"
+msgstr "Adicionar/Atualizar Categoria"
+
+#: .\isis\forms.py:44
+msgid "CATEGORY MAIN DATA"
+msgstr "DADOS PRINCIPAIS DA CATEGORIA"
+
+#: .\isis\forms.py:59 .\isis\forms.py:202 .\isis\forms.py:257
+#: .\isis\forms.py:293 .\isis\forms.py:329 .\isis\forms.py:421
+msgid "Save & Close"
+msgstr "Gravar & Fechar"
+
+#: .\isis\forms.py:60 .\isis\forms.py:203 .\isis\forms.py:258
+#: .\isis\forms.py:294 .\isis\forms.py:330
+msgid "Save & Edit"
+msgstr "Gravar & Editar"
+
+#: .\isis\forms.py:80
+#: .\isis\templates\isis\detailviews\product_detail_view.html:69
+#: .\isis\templates\isis\listviews\product_list.html:32
+msgid "Selling Price"
+msgstr "Preço de venda"
+
+#: .\isis\forms.py:81
+#: .\isis\templates\isis\detailviews\product_detail_view.html:70
+msgid "Min. Selling Price"
+msgstr "Preço Mínimo de Venda"
+
+#: .\isis\forms.py:82
+#: .\isis\templates\isis\detailviews\product_detail_view.html:71
+msgid "Selling Price 2"
+msgstr "Preço de Venda 2"
+
+#: .\isis\forms.py:83
+#: .\isis\templates\isis\detailviews\product_detail_view.html:72
+msgid "Selling Price 3"
+msgstr "Preço de Venda 3"
+
+#: .\isis\forms.py:84
+#: .\isis\templates\isis\detailviews\product_detail_view.html:73
+msgid "Selling Price 4"
+msgstr "Preço de Venda 4"
+
+#: .\isis\forms.py:85
+#: .\isis\templates\isis\detailviews\product_detail_view.html:74
+msgid "Selling Price 5"
+msgstr "Preço de Venda 5"
+
+#: .\isis\forms.py:86 .\isis\forms.py:87
+#: .\isis\templates\isis\detailviews\product_detail_view.html:75
+#: .\isis\templates\isis\listviews\product_list.html:33
+msgid "Purchase Price"
+msgstr "Preço de compra"
+
+#: .\isis\forms.py:88
+#: .\isis\templates\isis\detailviews\product_detail_view.html:62
+msgid "Stock Limit"
+msgstr "Limite de Estoque"
+
+#: .\isis\forms.py:89
+#: .\isis\templates\isis\detailviews\product_detail_view.html:61
+msgid "Desired Stock"
+msgstr "Estoque Desejado"
+
+#: .\isis\forms.py:105
+msgid "Other Images"
+msgstr "Outras Imagens"
+
+#: .\isis\forms.py:117
+msgid "Add/Update product"
+msgstr "Adicionar/Atualizar produto"
+
+#: .\isis\forms.py:119
+msgid "PRODUCT MAIN DATA"
+msgstr "DADOS PRINCIPAIS DO PRODUTO"
+
+#: .\isis\forms.py:153
+msgid "OTHER PRICES"
+msgstr "OUTROS PREÇOS"
+
+#: .\isis\forms.py:164
+msgid "IMAGES"
+msgstr "IMAGENS"
+
+#: .\isis\forms.py:172
+msgid "AREA - VOLUME - WEIGHT"
+msgstr "ÁREA - VOLUME - PESO"
+
+#: .\isis\forms.py:188
+msgid "STOCKS"
+msgstr "ESTOQUES"
+
+#: .\isis\forms.py:195
+msgid "PRIVATE NOTES"
+msgstr "NOTAS PRIVADAS"
+
+#: .\isis\forms.py:214
+msgid ""
+"\n"
+"            Product with same name already exists."
+msgstr ""
+"\n"
+"O produto não deve ficar em branco."
+
+#: .\isis\forms.py:218
+msgid ""
+"\n"
+"            The Code of Product must not be empty."
+msgstr ""
+"\n"
+"O Código do Produto não deve estar vazio."
+
+#: .\isis\forms.py:222
+msgid ""
+"\n"
+"            The Name of Product must not be empty."
+msgstr ""
+"\n"
+"O Nome do Produto não deve estar vazio."
+
+#: .\isis\forms.py:243
+msgid "Add/Update Tax"
+msgstr "Adicionar/Actualizar Taxa"
+
+#: .\isis\forms.py:245
+msgid "TAX MAIN DATA"
+msgstr "DADOS PRINCIPAIS TRIBUTÁRIOS"
+
+#: .\isis\forms.py:280
+msgid "Add/Update Payment Method"
+msgstr "Adicionar/Atualizar método de Pagamento"
+
+#: .\isis\forms.py:282
+msgid "PAYMENT METHOD DATA"
+msgstr "DADOS DO MÉTODO DE PAGAMENTO"
+
+#: .\isis\forms.py:316
+msgid "Add/Update Payment Term"
+msgstr "Adicionar/Atualizar Termo de Pagamento"
+
+#: .\isis\forms.py:318
+msgid "PAYMENT TERM DATA"
+msgstr "DADOS DO TERMO DE PAGAMENTO"
+
+#: .\isis\forms.py:344
+msgid "Please choose Costumer"
+msgstr "Por favor, escolha o cliente"
+
+#: .\isis\forms.py:359
+msgid "Add/Update Receipt"
+msgstr "Adicionar/Actualizar Recibo"
+
+#: .\isis\forms.py:361
+msgid "RECEIPT DATA"
+msgstr "DADOS DE RECIBO"
+
+#: .\isis\forms.py:367 .\isis\forms.py:477
+msgid "Next"
+msgstr "Próximo"
+
+#: .\isis\forms.py:384
+msgid ""
+"\n"
+"            Please choose Costumer or create Invoices First."
+msgstr ""
+"\n"
+"Por favor, escolha Cliente ou crie Faturas Primeiro."
+
+#: .\isis\forms.py:399
+msgid "Add/Update Document"
+msgstr "Adicionar/Atualizar Documento"
+
+#: .\isis\forms.py:401 .\isis\forms.py:454
+msgid "DOCUMENT DATA"
+msgstr "DADOS DO DOCUMENTO"
+
+#: .\isis\forms.py:422
+msgid "Save & New"
+msgstr "Gravar & Novo"
+
+#: .\isis\forms.py:452
+msgid "Add/Update Invoicing"
+msgstr "Adicionar/Atualizar Facturação"
+
+#: .\isis\forms.py:495
+msgid ""
+"Due date must be greater than Invoicing date\n"
+"            "
+msgstr ""
+"A data de vencimento deve ser maior que a data do Facturação\n"
+" "
+
+#: .\isis\forms.py:503 .\isis\forms.py:583 .\isis\models.py:110
+msgid "Service"
+msgstr "Serviço"
+
+#: .\isis\forms.py:503 .\isis\forms.py:583 .\isis\models.py:110
+msgid "Product"
+msgstr "Produto"
+
+#: .\isis\forms.py:506 .\isis\forms.py:586
+msgid "Product code / Barcode"
+msgstr "Código do produto / Cod. de Barras"
+
+#: .\isis\forms.py:528 .\isis\forms.py:608
+msgid "INVOICE ITEMS"
+msgstr "ARTIGOS DE FATURA"
+
+#: .\isis\forms.py:539 .\isis\forms.py:619
+msgid "Add Item"
+msgstr "Adicionar Artigo"
+
+#: .\isis\forms.py:550 .\isis\forms.py:630
+msgid ""
+"\n"
+"                Product must not be blank."
+msgstr ""
+"\n"
+"O produto não deve ficar em branco."
+
+#: .\isis\forms.py:558 .\isis\forms.py:638
+msgid ""
+"\n"
+"                Price is lower than the product Minimum selling price {}."
+msgstr ""
+"\n"
+" O preço é inferior ao preço mínimo de venda do produto {}."
+
+#: .\isis\forms.py:565 .\isis\forms.py:645
+msgid ""
+"\n"
+"            discount must be between 0 and 99.99."
+msgstr ""
+"\n"
+" o desconto deve estar entre 0 e 99,99."
+
+#: .\isis\forms.py:568 .\isis\forms.py:648
+msgid ""
+"\n"
+"            discount must be between 0 and 100."
+msgstr ""
+"\n"
+" o desconto deve estar entre 0 e 100."
+
+#: .\isis\models.py:24 .\isis\models.py:220 .\isis\models.py:488
+#: .\isis\models.py:660 .\isis\models.py:775
+#: .\isis\templates\isis\detailviews\category_detail_view.html:38
+#: .\isis\templates\isis\detailviews\category_detail_view.html:40
+#: .\isis\templates\isis\detailviews\document_detail_view.html:43
+#: .\isis\templates\isis\detailviews\document_detail_view.html:45
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:75
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:77
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:78
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:80
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:37
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:39
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:37
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:39
+#: .\isis\templates\isis\detailviews\product_detail_view.html:41
+#: .\isis\templates\isis\detailviews\product_detail_view.html:43
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:69
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:71
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:41
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:43
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:37
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:39
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:44
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:46
+#: .\isis\templates\isis\listviews\category_list.html:50
+#: .\isis\templates\isis\listviews\invoice_list.html:67
+#: .\isis\templates\isis\listviews\invoicing_list.html:67
+#: .\isis\templates\isis\listviews\payment_method_list.html:50
+#: .\isis\templates\isis\listviews\payment_term_list.html:50
+#: .\isis\templates\isis\listviews\product_return_list.html:57
+#: .\isis\templates\isis\listviews\receipt_list.html:60
+#: .\isis\templates\isis\listviews\tax_list.html:50
+msgid "Active"
+msgstr "Ativo"
+
+#: .\isis\models.py:24 .\isis\models.py:222
+#: .\isis\templates\isis\detailviews\category_detail_view.html:41
+#: .\isis\templates\isis\detailviews\document_detail_view.html:46
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:40
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:40
+#: .\isis\templates\isis\detailviews\product_detail_view.html:44
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:44
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:40
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:47
+#: .\isis\templates\isis\listviews\category_list.html:52
+#: .\isis\templates\isis\listviews\invoice_list.html:69
+#: .\isis\templates\isis\listviews\invoicing_list.html:69
+#: .\isis\templates\isis\listviews\payment_method_list.html:52
+#: .\isis\templates\isis\listviews\payment_term_list.html:52
+#: .\isis\templates\isis\listviews\product_return_list.html:59
+#: .\isis\templates\isis\listviews\receipt_list.html:62
+#: .\isis\templates\isis\listviews\tax_list.html:52
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\isis\models.py:29 .\isis\models.py:280 .\isis\models.py:320
+#: .\isis\models.py:344 .\isis\models.py:374 .\isis\models.py:380
+#: .\isis\models.py:386
+msgid "Yes"
+msgstr "Sim"
+
+#: .\isis\models.py:29 .\isis\models.py:282 .\isis\models.py:322
+#: .\isis\models.py:344 .\isis\models.py:376 .\isis\models.py:382
+#: .\isis\models.py:388
+msgid "No"
+msgstr "Não"
+
+#: .\isis\models.py:33 .\isis\models.py:71 .\isis\models.py:261
+#: .\isis\models.py:301 .\isis\models.py:346 .\isis\models.py:409
+#: .\isis\models.py:519 .\isis\models.py:582 .\isis\models.py:697
+#: .\isis\templates\isis\createviews\invoice_item_create.html:83
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:81
+#: .\isis\templates\isis\createviews\product_return_item_create.html:81
+#: .\isis\templates\isis\detailviews\category_detail_view.html:36
+#: .\isis\templates\isis\listviews\category_list.html:30
+#: .\isis\templates\isis\listviews\document_list.html:30
+#: .\isis\templates\isis\listviews\payment_method_list.html:30
+#: .\isis\templates\isis\listviews\payment_term_list.html:30
+#: .\isis\templates\isis\listviews\product_list.html:31
+#: .\isis\templates\isis\listviews\receipt_list.html:31
+#: .\isis\templates\isis\listviews\tax_list.html:30
+#: .\isis\templates\isis\listviews\warehouse_list.html:30
+msgid "Name"
+msgstr "Nome"
+
+#: .\isis\models.py:35
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:36
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:36
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:36
+#: .\isis\templates\isis\listviews\payment_method_list.html:31
+#: .\isis\templates\isis\listviews\payment_term_list.html:31
+#: .\isis\templates\isis\listviews\tax_list.html:31
+msgid "Rate"
+msgstr "Taxa"
+
+#: .\isis\models.py:36 .\isis\templates\isis\listviews\category_list.html:32
+#: .\isis\templates\isis\listviews\invoice_list.html:40
+#: .\isis\templates\isis\listviews\invoicing_list.html:40
+#: .\isis\templates\isis\listviews\payment_method_list.html:32
+#: .\isis\templates\isis\listviews\payment_term_list.html:32
+#: .\isis\templates\isis\listviews\product_return_list.html:38
+#: .\isis\templates\isis\listviews\receipt_list.html:34
+#: .\isis\templates\isis\listviews\tax_list.html:32
+msgid "Status"
+msgstr "Estado"
+
+#: .\isis\models.py:37 .\isis\models.py:77 .\isis\models.py:205
+#: .\isis\models.py:263 .\isis\models.py:303 .\isis\models.py:352
+#: .\isis\models.py:523
+#: .\isis\templates\isis\detailviews\category_detail_view.html:45
+#: .\isis\templates\isis\detailviews\document_detail_view.html:51
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:83
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:86
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:44
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:44
+#: .\isis\templates\isis\detailviews\product_detail_view.html:88
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:77
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:48
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:44
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:52
+#: .\isis\templates\isis\modals\document_payment_modal.html:50
+msgid "Notes"
+msgstr "Notas"
+
+#: .\isis\models.py:59 .\isis\models.py:74
+msgid "Image"
+msgstr "Imagem"
+
+#: .\isis\models.py:72
+#: .\isis\templates\isis\detailviews\category_detail_view.html:37
+#: .\isis\templates\isis\detailviews\document_detail_view.html:39
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:40
+#: .\isis\templates\isis\listviews\category_list.html:31
+msgid "Parent"
+msgstr "Parente"
+
+#: .\isis\models.py:76 .\isis\models.py:202 .\isis\models.py:268
+#: .\isis\models.py:308 .\isis\models.py:351 .\isis\models.py:528
+msgid "Active status"
+msgstr "Ativo"
+
+#: .\isis\models.py:102
+msgid "Categories"
+msgstr "Categorias"
+
+#: .\isis\models.py:146
+msgid "Kg"
+msgstr "Kg"
+
+#: .\isis\models.py:146
+msgid "G"
+msgstr "G"
+
+#: .\isis\models.py:146
+msgid "MG"
+msgstr "MG"
+
+#: .\isis\models.py:146
+msgid "ounce"
+msgstr "onça"
+
+#: .\isis\models.py:147
+msgid "pound"
+msgstr "libra"
+
+#: .\isis\models.py:147
+msgid "ton"
+msgstr "ton"
+
+#: .\isis\models.py:149
+msgid "m"
+msgstr "m"
+
+#: .\isis\models.py:149
+msgid "dm"
+msgstr "dm"
+
+#: .\isis\models.py:149
+msgid "cm"
+msgstr "cm"
+
+#: .\isis\models.py:149
+msgid "mm"
+msgstr "mm"
+
+#: .\isis\models.py:149
+msgid "ft"
+msgstr "pé"
+
+#: .\isis\models.py:150
+msgid "in"
+msgstr "polegadas"
+
+#: .\isis\models.py:152
+msgid "m²"
+msgstr "m²"
+
+#: .\isis\models.py:152
+msgid "dm²"
+msgstr "dm²"
+
+#: .\isis\models.py:152
+msgid "cm²"
+msgstr "cm²"
+
+#: .\isis\models.py:152
+msgid "mm²"
+msgstr "mm²"
+
+#: .\isis\models.py:152
+msgid "ft²"
+msgstr "pé²"
+
+#: .\isis\models.py:153
+msgid "in²"
+msgstr "polegadas²"
+
+#: .\isis\models.py:155
+msgid "m³"
+msgstr "m³"
+
+#: .\isis\models.py:155
+msgid "dm³"
+msgstr "dm³"
+
+#: .\isis\models.py:155
+msgid "cm³"
+msgstr "cm³"
+
+#: .\isis\models.py:155
+msgid "mm³"
+msgstr "mm³"
+
+#: .\isis\models.py:155
+msgid "ft³"
+msgstr "pé³"
+
+#: .\isis\models.py:156
+msgid "in³"
+msgstr "polegadas³"
+
+#: .\isis\models.py:156
+msgid "litre"
+msgstr "litros"
+
+#: .\isis\models.py:156
+msgid "gallon"
+msgstr "galão"
+
+#: .\isis\models.py:161
+#: .\isis\templates\isis\detailviews\product_detail_view.html:50
+msgid "For Sale"
+msgstr "À venda"
+
+#: .\isis\models.py:161
+msgid "Not for Sale"
+msgstr "Não vender"
+
+#: .\isis\models.py:162
+#: .\isis\templates\isis\detailviews\product_detail_view.html:55
+msgid "For Purchase"
+msgstr "Para compra"
+
+#: .\isis\models.py:162
+msgid "Not for Purchase"
+msgstr "Não para compra"
+
+#: .\isis\models.py:164
+msgid "Raw Product"
+msgstr "Produto bruto"
+
+#: .\isis\models.py:164
+msgid "Manufactured Product"
+msgstr "Produto Fabricado"
+
+#: .\isis\models.py:166
+msgid "Product Code"
+msgstr "Código do produto"
+
+#: .\isis\models.py:167
+msgid "Product Category"
+msgstr "Categoria de Produto"
+
+#: .\isis\models.py:169
+msgid "Name of Product"
+msgstr "Nome do produto"
+
+#: .\isis\models.py:170
+msgid "Type"
+msgstr "Tipo"
+
+#: .\isis\models.py:172
+#: .\isis\templates\isis\createviews\invoice_item_create.html:86
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:84
+#: .\isis\templates\isis\createviews\product_return_item_create.html:84
+#: .\isis\templates\isis\detailviews\product_detail_view.html:65
+msgid "Tax"
+msgstr "Taxa"
+
+#: .\isis\models.py:173
+#: .\isis\templates\isis\detailviews\product_detail_view.html:67
+msgid "Default Warehouse"
+msgstr "Armazém Padrão"
+
+#: .\isis\models.py:175
+msgid "Detailed Description"
+msgstr "Descrição detalhada"
+
+#: .\isis\models.py:176
+#: .\isis\templates\isis\detailviews\product_detail_view.html:64
+msgid "Barcode"
+msgstr "Código de Barras"
+
+#: .\isis\models.py:177
+msgid "Sell price"
+msgstr "Preço de venda"
+
+#: .\isis\models.py:178
+msgid "Min. Sell price"
+msgstr "Preço Mínimo de Venda"
+
+#: .\isis\models.py:179
+msgid "Sell price 2"
+msgstr "Preço de Venda 2"
+
+#: .\isis\models.py:180
+msgid "Sell price 3"
+msgstr "Preço de Venda 3"
+
+#: .\isis\models.py:181
+msgid "Sell price 4"
+msgstr "Preço de Venda 4"
+
+#: .\isis\models.py:182
+msgid "Sell price 5"
+msgstr "Preço de Venda 5"
+
+#: .\isis\models.py:183
+msgid "Purchase price"
+msgstr "Preço de compra"
+
+#: .\isis\models.py:184
+msgid "Max. purchase price"
+msgstr "Preço Máx. de Compra"
+
+#: .\isis\models.py:185
+msgid "Physical stock"
+msgstr "Estoque físico"
+
+#: .\isis\models.py:186
+msgid "Min. Stock"
+msgstr "Estoque Min."
+
+#: .\isis\models.py:187
+msgid "Stock limit"
+msgstr "Limite de Estoque"
+
+#: .\isis\models.py:188
+msgid "Desired stock"
+msgstr "Estoque Desejado"
+
+#: .\isis\models.py:189
+msgid "Primary Image"
+msgstr "Imagem primária"
+
+#: .\isis\models.py:190
+msgid "Product nature"
+msgstr "Natureza do Produto"
+
+#: .\isis\models.py:191
+msgid "Product url"
+msgstr "URL do produto"
+
+#: .\isis\models.py:192
+#: .\isis\templates\isis\detailviews\product_detail_view.html:85
+msgid "Weight"
+msgstr "Peso"
+
+#: .\isis\models.py:193
+msgid "Length"
+msgstr "Comprimento"
+
+#: .\isis\models.py:194
+msgid "width"
+msgstr "Largura"
+
+#: .\isis\models.py:195
+msgid "Height"
+msgstr "Peso"
+
+#: .\isis\models.py:196
+msgid "Length units"
+msgstr "Unidade de Comprimento"
+
+#: .\isis\models.py:197
+#: .\isis\templates\isis\detailviews\product_detail_view.html:83
+msgid "Area"
+msgstr "Área"
+
+#: .\isis\models.py:198
+msgid "Area units"
+msgstr "Unidade de área"
+
+#: .\isis\models.py:199
+#: .\isis\templates\isis\detailviews\product_detail_view.html:84
+msgid "Volume"
+msgstr "Volume"
+
+#: .\isis\models.py:200
+msgid "Volume units"
+msgstr "Volume"
+
+#: .\isis\models.py:201
+msgid "Weight units"
+msgstr "Peso"
+
+#: .\isis\models.py:203
+msgid "Sell status"
+msgstr "Estado de Venda"
+
+#: .\isis\models.py:204
+msgid "Purchase status"
+msgstr "Estado de Compra"
+
+#: .\isis\models.py:269 .\isis\models.py:309
+msgid "Default"
+msgstr "Padrão"
+
+#: .\isis\models.py:347
+msgid "Short Name"
+msgstr "Nome curto"
+
+#: .\isis\models.py:350
+msgid "Modify Stock?"
+msgstr "Modificar estoque?"
+
+#: .\isis\models.py:357
+msgid "Track Payment?"
+msgstr "Controlar Pagamento?"
+
+#: .\isis\models.py:358
+msgid "Track Due Date?"
+msgstr "Acompanhar data de vencimento?"
+
+#: .\isis\models.py:359
+msgid "Template"
+msgstr "Modelo"
+
+#: .\isis\models.py:407 .\isis\models.py:480 .\isis\models.py:580
+#: .\isis\models.py:652 .\isis\models.py:695 .\isis\models.py:767
+msgid "Delivered"
+msgstr "Entregue"
+
+#: .\isis\models.py:407 .\isis\models.py:580 .\isis\models.py:695
+msgid "Not delivered"
+msgstr "Não Entregue"
+
+#: .\isis\models.py:410 .\isis\templates\isis\listviews\invoicing_list.html:35
+#: .\isis\templates\isis\listviews\product_return_list.html:35
+msgid "Document"
+msgstr "Documento"
+
+#: .\isis\models.py:413 .\isis\models.py:585 .\isis\models.py:700
+msgid "Payment method"
+msgstr "método de pagamento"
+
+#: .\isis\models.py:414 .\isis\models.py:586 .\isis\models.py:701
+msgid "Payment term"
+msgstr "Termo de pagamento"
+
+#: .\isis\models.py:415 .\isis\models.py:521 .\isis\models.py:587
+#: .\isis\models.py:702
+#: .\isis\templates\isis\createviews\invoice_item_create.html:44
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:43
+#: .\isis\templates\isis\createviews\product_return_item_create.html:43
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:46
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:51
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:42
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:36
+#: .\isis\templates\isis\listviews\invoice_list.html:36
+#: .\isis\templates\isis\listviews\invoicing_list.html:36
+#: .\isis\templates\isis\listviews\product_return_list.html:36
+#: .\isis\templates\isis\listviews\receipt_list.html:32
+msgid "Costumer"
+msgstr "Cliente"
+
+#: .\isis\models.py:416
+#: .\isis\templates\isis\createviews\receipt_invoice.html:30
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:48
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:144
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:52
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:43
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:40
+#: .\isis\templates\isis\documents\invoice.html:29
+#: .\isis\templates\isis\documents\invoicing.html:29
+#: .\isis\templates\isis\documents\pos_receipt.html:66
+#: .\isis\templates\isis\documents\product_return.html:29
+#: .\isis\templates\isis\documents\receipt.html:29
+#: .\isis\templates\isis\listviews\document_list.html:33
+#: .\isis\templates\isis\listviews\receipt_list.html:33
+msgid "Date"
+msgstr "Data"
+
+#: .\isis\models.py:417 .\isis\models.py:589 .\isis\models.py:704
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:50
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:53
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:44
+#: .\isis\templates\isis\documents\invoice.html:31
+#: .\isis\templates\isis\documents\invoicing.html:30
+#: .\isis\templates\isis\documents\product_return.html:30
+msgid "Due Date"
+msgstr "Data de Vencimento"
+
+#: .\isis\models.py:419 .\isis\models.py:591 .\isis\models.py:706
+msgid "Warehouse"
+msgstr "Novo Armazém"
+
+#: .\isis\models.py:420
+msgid "Credit"
+msgstr "Crédito"
+
+#: .\isis\models.py:421
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:45
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:50
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:41
+#: .\isis\templates\isis\listviews\invoice_list.html:39
+#: .\isis\templates\isis\listviews\invoicing_list.html:39
+msgid "Debit"
+msgstr "Débito"
+
+#: .\isis\models.py:422
+#: .\isis\templates\isis\createviews\receipt_invoice.html:36
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:43
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:145
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:48
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:39
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:39
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:64
+#: .\isis\templates\isis\documents\invoice.html:111
+#: .\isis\templates\isis\documents\invoicing.html:110
+#: .\isis\templates\isis\documents\pos_receipt.html:126
+#: .\isis\templates\isis\documents\pos_receipt.html:166
+#: .\isis\templates\isis\documents\product_return.html:110
+#: .\isis\templates\isis\documents\receipt.html:105
+#: .\isis\templates\isis\modals\document_payment_modal.html:25
+msgid "Total"
+msgstr "Total"
+
+#: .\isis\models.py:423
+msgid "Total Tax"
+msgstr "Total"
+
+#: .\isis\models.py:424 .\isis\templates\isis\documents\invoice.html:142
+#: .\isis\templates\isis\documents\invoicing.html:141
+#: .\isis\templates\isis\documents\pos_receipt.html:145
+#: .\isis\templates\isis\documents\product_return.html:141
+msgid "Subtotal"
+msgstr "Sub Total"
+
+#: .\isis\models.py:425
+msgid "Total Discount"
+msgstr "Desconto"
+
+#: .\isis\models.py:426
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:53
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:56
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:47
+msgid "Paid Status"
+msgstr "Estado de Pagamento"
+
+#: .\isis\models.py:427
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:59
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:62
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:53
+msgid "Delivered Status"
+msgstr "Estado de Entrega"
+
+#: .\isis\models.py:428
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:65
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:68
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:59
+msgid "Finished Status"
+msgstr "Estado de Finalização"
+
+#: .\isis\models.py:429
+msgid "Active Status"
+msgstr "Estado de Entrega"
+
+#: .\isis\models.py:430 .\isis\models.py:596 .\isis\models.py:711
+msgid "Private Notes"
+msgstr "Notas Privadas"
+
+#: .\isis\models.py:431 .\isis\models.py:597 .\isis\models.py:712
+msgid "Public Notes"
+msgstr "Notas Públicas"
+
+#: .\isis\models.py:436 .\isis\models.py:608 .\isis\models.py:723
+msgid "Bank Account"
+msgstr "Conta Bancária"
+
+#: .\isis\models.py:448 .\isis\models.py:620 .\isis\models.py:735
+msgid "Overdue"
+msgstr "Vencimento"
+
+#: .\isis\models.py:450 .\isis\models.py:622 .\isis\models.py:737
+msgid "On date"
+msgstr "Em dia"
+
+#: .\isis\models.py:463 .\isis\models.py:635 .\isis\models.py:750
+msgid "Not paid"
+msgstr "Não pago"
+
+#: .\isis\models.py:482 .\isis\models.py:654 .\isis\models.py:769
+msgid "Not Delivered"
+msgstr "Não Entregue"
+
+#: .\isis\models.py:490 .\isis\models.py:662 .\isis\models.py:777
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:78
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:81
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:72
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: .\isis\models.py:529
+msgid "Finished status"
+msgstr "Estado de Finalização"
+
+#: .\isis\models.py:548 .\isis\models.py:968
+msgid "Add File"
+msgstr "Adicionar Ficheiro"
+
+#: .\isis\models.py:588 .\isis\models.py:703
+#: .\isis\templates\isis\createviews\invoice_item_create.html:54
+msgid "Invoice Date"
+msgstr "Data da Factura"
+
+#: .\isis\models.py:679 .\isis\models.py:794
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:63
+#: .\isis\templates\isis\documents\invoice.html:7
+#: .\isis\templates\isis\documents\invoice.html:27
+#: .\isis\templates\isis\listviews\invoice_list.html:35
+msgid "Invoice"
+msgstr "Factura"
+
+#: .\isis\models.py:806
+msgid "Select Invoice"
+msgstr "Selecione a Factura"
+
+#: .\isis\models.py:865
+msgid "Receipt Invoice"
+msgstr "Recibo"
+
+#: .\isis\models.py:866
+msgid "Receipt Invoices"
+msgstr "Recibos"
+
+#: .\isis\templates\isis\createviews\category_create.html:8
+#: .\isis\templates\isis\modals\category_modal.html:8
+msgid "New Category"
+msgstr "Nova Categoria"
+
+#: .\isis\templates\isis\createviews\document_create.html:8
+#: .\isis\templates\isis\modals\document_modal.html:8
+msgid "New Document"
+msgstr "Novo Documento"
+
+#: .\isis\templates\isis\createviews\invoice_create.html:8
+msgid "New Invoice"
+msgstr "Nova Factura"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:10
+msgid "New Invoice Item"
+msgstr "Novo Artigo da Factura"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:32
+msgid "Invoice Total"
+msgstr "Total da Factura"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:42
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:41
+#: .\isis\templates\isis\createviews\product_return_item_create.html:41
+msgid "Sub Total"
+msgstr "Sub Total"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:50
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:49
+#: .\isis\templates\isis\createviews\product_return_item_create.html:49
+msgid "Discount Total"
+msgstr "Desconto Total"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:52
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:51
+#: .\isis\templates\isis\createviews\product_return_item_create.html:51
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:51
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:54
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:45
+msgid "Payment Method"
+msgstr "método de pagamento"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:59
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:57
+#: .\isis\templates\isis\createviews\product_return_item_create.html:57
+msgid "Tax Total"
+msgstr "Taxa Total"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:61
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:59
+#: .\isis\templates\isis\createviews\product_return_item_create.html:59
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:52
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:55
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:46
+msgid "Payment Term"
+msgstr "Termo de pagamento"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:63
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:61
+#: .\isis\templates\isis\createviews\product_return_item_create.html:61
+#: .\isis\templates\isis\createviews\receipt_invoice.html:33
+msgid "Due on"
+msgstr "Vencimento em"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:74
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:72
+#: .\isis\templates\isis\createviews\product_return_item_create.html:72
+#: .\isis\templates\isis\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de artigos"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:84
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:82
+#: .\isis\templates\isis\createviews\product_return_item_create.html:82
+#: .\isis\templates\isis\documents\invoice.html:107
+#: .\isis\templates\isis\documents\invoicing.html:106
+#: .\isis\templates\isis\documents\pos_receipt.html:125
+#: .\isis\templates\isis\documents\product_return.html:106
+msgid "Price"
+msgstr "Preço"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:85
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:83
+#: .\isis\templates\isis\createviews\product_return_item_create.html:83
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:87
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:85
+#: .\isis\templates\isis\createviews\product_return_item_create.html:85
+#: .\isis\templates\isis\documents\invoice.html:110
+#: .\isis\templates\isis\documents\invoice.html:148
+#: .\isis\templates\isis\documents\invoicing.html:109
+#: .\isis\templates\isis\documents\invoicing.html:147
+#: .\isis\templates\isis\documents\pos_receipt.html:152
+#: .\isis\templates\isis\documents\product_return.html:109
+#: .\isis\templates\isis\documents\product_return.html:147
+msgid "Discount"
+msgstr "Desconto"
+
+#: .\isis\templates\isis\createviews\invoice_item_create.html:117
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:115
+#: .\isis\templates\isis\createviews\product_return_item_create.html:115
+msgid "Finish"
+msgstr "Finalizar"
+
+#: .\isis\templates\isis\createviews\invoicing_create.html:8
+msgid "New Invoicing"
+msgstr "Nova Facturação"
+
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:10
+msgid "New Invoicing Item"
+msgstr "Novo Artigo de Facturação"
+
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:31
+msgid "Invoicing Total"
+msgstr "Facturação Total"
+
+#: .\isis\templates\isis\createviews\invoicing_item_create.html:53
+msgid "Invoicing Date"
+msgstr "Data da Facturação"
+
+#: .\isis\templates\isis\createviews\payment_method_create.html:8
+#: .\isis\templates\isis\createviews\payment_term_create.html:8
+#: .\isis\templates\isis\createviews\tax_create.html:8
+#: .\isis\templates\isis\modals\tax_modal.html:8
+msgid "New Tax"
+msgstr "Nova Taxa"
+
+#: .\isis\templates\isis\createviews\product_create.html:8
+msgid "New Product"
+msgstr "Novo Produto"
+
+#: .\isis\templates\isis\createviews\product_return_item_create.html:10
+msgid "New Product Return Item"
+msgstr "Novo artigo de devolução"
+
+#: .\isis\templates\isis\createviews\product_return_item_create.html:31
+msgid "Return Note Total"
+msgstr "Total da Devolução"
+
+#: .\isis\templates\isis\createviews\product_return_item_create.html:53
+msgid "Return Note Date"
+msgstr "Data da Devolução"
+
+#: .\isis\templates\isis\createviews\receipt_create.html:8
+msgid "New Receipt"
+msgstr "Novo Recibo"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:9
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:9
+msgid "Receipt Details"
+msgstr "Detalhes do Recibo"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:27
+msgid "Invoice #"
+msgstr "Factura #"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:39
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:44
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:146
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:49
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:40
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:65
+#: .\isis\templates\isis\listviews\invoice_list.html:38
+#: .\isis\templates\isis\listviews\invoicing_list.html:38
+msgid "Paid"
+msgstr "Pago"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:42
+msgid "UnPaid"
+msgstr "Não pago"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:45
+#: .\isis\templates\isis\listviews\document_list.html:32
+#: .\isis\templates\isis\modals\document_payment_modal.html:10
+msgid "Payment"
+msgstr "Pagamento"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:72
+msgid "This costumer has no Invoice(s)"
+msgstr "Este cliente não tem factura(s)"
+
+#: .\isis\templates\isis\createviews\receipt_invoice.html:77
+msgid "Make Payment"
+msgstr "Pagar"
+
+#: .\isis\templates\isis\createviews\warehouse_create.html:8
+#: .\isis\templates\isis\modals\warehouse_modal.html:8
+msgid "New Warehouse"
+msgstr "Novo Armazém"
+
+#: .\isis\templates\isis\dashboardviews\product_dashboard.html:6
+msgid "Products Dashboard"
+msgstr "Painel de Produtos"
+
+#: .\isis\templates\isis\dashboardviews\product_dashboard.html:13
+msgid "All Products"
+msgstr "Todos Produtos"
+
+#: .\isis\templates\isis\dashboardviews\product_dashboard.html:20
+msgid "Last 15 Products"
+msgstr "Últimos 15 produtos"
+
+#: .\isis\templates\isis\detailviews\category_detail_view.html:8
+msgid "Category Details"
+msgstr "Detalhes da categoria"
+
+#: .\isis\templates\isis\detailviews\category_detail_view.html:31
+#: .\isis\templates\isis\detailviews\document_detail_view.html:34
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:38
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:37
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:31
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:31
+#: .\isis\templates\isis\detailviews\product_detail_view.html:34
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:34
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:32
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:31
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:34
+msgid "List"
+msgstr "Lista"
+
+#: .\isis\templates\isis\detailviews\category_detail_view.html:48
+#: .\isis\templates\isis\detailviews\document_detail_view.html:54
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:86
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:89
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:47
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:47
+#: .\isis\templates\isis\detailviews\product_detail_view.html:90
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:80
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:51
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:47
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:55
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\isis\templates\isis\detailviews\category_detail_view.html:49
+#: .\isis\templates\isis\detailviews\document_detail_view.html:55
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:87
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:90
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:48
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:48
+#: .\isis\templates\isis\detailviews\product_detail_view.html:91
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:81
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:52
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:48
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:56
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\isis\templates\isis\detailviews\category_detail_view.html:50
+#: .\isis\templates\isis\detailviews\document_detail_view.html:56
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:88
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:91
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:49
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:49
+#: .\isis\templates\isis\detailviews\product_detail_view.html:92
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:82
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:53
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:49
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:57
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\isis\templates\isis\detailviews\category_detail_view.html:51
+#: .\isis\templates\isis\detailviews\document_detail_view.html:57
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:89
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:92
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:50
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:50
+#: .\isis\templates\isis\detailviews\product_detail_view.html:93
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:83
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:54
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:50
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:58
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\isis\templates\isis\detailviews\document_detail_view.html:8
+msgid "Document Details"
+msgstr "Detalhes do documento"
+
+#: .\isis\templates\isis\detailviews\document_detail_view.html:40
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:41
+#: .\isis\templates\isis\listviews\warehouse_list.html:31
+msgid "Address"
+msgstr "Endereço"
+
+#: .\isis\templates\isis\detailviews\document_detail_view.html:41
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:42
+#: .\isis\templates\isis\listviews\warehouse_list.html:32
+msgid "Contacts"
+msgstr "Contactos"
+
+#: .\isis\templates\isis\detailviews\document_detail_view.html:42
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:43
+msgid "Open Status"
+msgstr "Estado aberto"
+
+#: .\isis\templates\isis\detailviews\document_detail_view.html:50
+#: .\isis\templates\isis\detailviews\product_detail_view.html:87
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:51
+#: .\isis\templates\isis\documents\invoice.html:106
+#: .\isis\templates\isis\documents\invoicing.html:105
+#: .\isis\templates\isis\documents\pos_receipt.html:123
+#: .\isis\templates\isis\documents\product_return.html:105
+#: .\isis\templates\isis\documents\receipt.html:104
+msgid "Description"
+msgstr "Descrição"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:9
+msgid "Invoice Details"
+msgstr "Detalhes da Factura"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:68
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:71
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:62
+msgid "Validated"
+msgstr "Validado"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:70
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:73
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:64
+msgid "Not Validated"
+msgstr "Não Validado"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:95
+msgid "Last 5 Costumer Paid Invoices"
+msgstr "Este cliente não tem factura(s)"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:109
+msgid "Costumer Noit Paid Invoices"
+msgstr "Este cliente não tem factura(s)"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:138
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:58
+msgid "Payments"
+msgstr "Pagamentos"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:143
+#: .\isis\templates\isis\documents\receipt.html:7
+#: .\isis\templates\isis\documents\receipt.html:27 .\isis\views.py:981
+msgid "Receipt"
+msgstr "Recibo"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:147
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:66
+msgid "Remaining"
+msgstr "Remanescente"
+
+#: .\isis\templates\isis\detailviews\invoice_detail_view.html:166
+#: .\isis\templates\isis\detailviews\receipt_detail_view.html:84
+msgid "Totals"
+msgstr "Totais"
+
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:9
+msgid "Invoicing Details"
+msgstr "Detalhes de Facturação"
+
+#: .\isis\templates\isis\detailviews\invoicing_detail_view.html:43
+#: .\isis\views.py:1824 .\isis\views.py:1932
+msgid "Return Note"
+msgstr "Devolução"
+
+#: .\isis\templates\isis\detailviews\payment_method_detail_view.html:8
+#: .\isis\templates\isis\detailviews\payment_term_detail_view.html:8
+#: .\isis\templates\isis\detailviews\tax_detail_view.html:8
+msgid "Tax Details"
+msgstr "Detalhes de Taxa"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:8
+msgid "Product Details"
+msgstr "Detalhes do produto"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:38
+msgid "Category"
+msgstr "Categoria"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:40
+msgid "Item Type"
+msgstr "Tipo de Artigo"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:49
+msgid "Sell Status"
+msgstr "Estado de Venda"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:51
+msgid "Not For Sale"
+msgstr "Não para venda"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:54
+msgid "Purchase Status"
+msgstr "Estado de Compra"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:56
+msgid "Not For Purchase"
+msgstr "Não para Compra"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:60
+#: .\isis\templates\isis\listviews\product_list.html:34
+msgid "Physical Stock"
+msgstr "Estoque Físico"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:76
+msgid "Max. Purchase Price"
+msgstr "Preço Máx. de Compra"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:78
+msgid "Product Nature"
+msgstr "Natureza do Produto"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:79
+msgid "Product Url"
+msgstr "URL do produto"
+
+#: .\isis\templates\isis\detailviews\product_detail_view.html:80
+msgid "Length X Width X Height"
+msgstr "Comprimento x Largura x Altura"
+
+#: .\isis\templates\isis\detailviews\product_return_detail_view.html:9
+msgid "product_return Details"
+msgstr "Detalhes da devolução"
+
+#: .\isis\templates\isis\detailviews\warehouse_detail_view.html:8
+msgid "Warehouse Details"
+msgstr "Detalhes do Armazém"
+
+#: .\isis\templates\isis\documents\invoice.html:13
+#: .\isis\templates\isis\documents\invoice.html:185
+msgid "Print Invoice"
+msgstr "Imprimir fatura"
+
+#: .\isis\templates\isis\documents\invoice.html:15
+#: .\isis\templates\isis\documents\invoice.html:187
+#: .\isis\templates\isis\documents\invoicing.html:15
+#: .\isis\templates\isis\documents\invoicing.html:186
+#: .\isis\templates\isis\documents\pos_receipt.html:12
+#: .\isis\templates\isis\documents\product_return.html:15
+#: .\isis\templates\isis\documents\product_return.html:184
+#: .\isis\templates\isis\documents\receipt.html:15
+#: .\isis\templates\isis\documents\receipt.html:159
+msgid "Close"
+msgstr "Fechar"
+
+#: .\isis\templates\isis\documents\invoice.html:39
+#: .\isis\templates\isis\documents\invoicing.html:38
+#: .\isis\templates\isis\documents\product_return.html:38
+#: .\isis\templates\isis\documents\receipt.html:37
+msgid "From"
+msgstr "De"
+
+#: .\isis\templates\isis\documents\invoice.html:46
+#: .\isis\templates\isis\documents\invoice.html:78
+#: .\isis\templates\isis\documents\invoice.html:109
+#: .\isis\templates\isis\documents\invoicing.html:45
+#: .\isis\templates\isis\documents\invoicing.html:77
+#: .\isis\templates\isis\documents\invoicing.html:108
+#: .\isis\templates\isis\documents\pos_receipt.html:79
+#: .\isis\templates\isis\documents\product_return.html:45
+#: .\isis\templates\isis\documents\product_return.html:77
+#: .\isis\templates\isis\documents\product_return.html:108
+#: .\isis\templates\isis\documents\receipt.html:44
+#: .\isis\templates\isis\documents\receipt.html:76
+msgid "VAT Number"
+msgstr "NUIT"
+
+#: .\isis\templates\isis\documents\invoice.html:50
+#: .\isis\templates\isis\documents\invoice.html:94
+#: .\isis\templates\isis\documents\invoicing.html:49
+#: .\isis\templates\isis\documents\invoicing.html:93
+#: .\isis\templates\isis\documents\pos_receipt.html:39
+#: .\isis\templates\isis\documents\pos_receipt.html:105
+#: .\isis\templates\isis\documents\product_return.html:49
+#: .\isis\templates\isis\documents\product_return.html:93
+#: .\isis\templates\isis\documents\receipt.html:48
+#: .\isis\templates\isis\documents\receipt.html:92
+msgid "Email"
+msgstr "E-mail"
+
+#: .\isis\templates\isis\documents\invoice.html:54
+#: .\isis\templates\isis\documents\invoice.html:97
+#: .\isis\templates\isis\documents\invoicing.html:53
+#: .\isis\templates\isis\documents\invoicing.html:96
+#: .\isis\templates\isis\documents\pos_receipt.html:44
+#: .\isis\templates\isis\documents\pos_receipt.html:110
+#: .\isis\templates\isis\documents\product_return.html:53
+#: .\isis\templates\isis\documents\product_return.html:96
+#: .\isis\templates\isis\documents\receipt.html:52
+#: .\isis\templates\isis\documents\receipt.html:95
+msgid "Website"
+msgstr "Pág. Web"
+
+#: .\isis\templates\isis\documents\invoice.html:58
+#: .\isis\templates\isis\documents\invoice.html:82
+#: .\isis\templates\isis\documents\invoicing.html:57
+#: .\isis\templates\isis\documents\invoicing.html:81
+#: .\isis\templates\isis\documents\pos_receipt.html:49
+#: .\isis\templates\isis\documents\pos_receipt.html:92
+#: .\isis\templates\isis\documents\product_return.html:57
+#: .\isis\templates\isis\documents\product_return.html:81
+#: .\isis\templates\isis\documents\receipt.html:56
+#: .\isis\templates\isis\documents\receipt.html:80
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\isis\templates\isis\documents\invoice.html:62
+#: .\isis\templates\isis\documents\invoice.html:86
+#: .\isis\templates\isis\documents\invoicing.html:61
+#: .\isis\templates\isis\documents\invoicing.html:85
+#: .\isis\templates\isis\documents\pos_receipt.html:54
+#: .\isis\templates\isis\documents\pos_receipt.html:96
+#: .\isis\templates\isis\documents\product_return.html:61
+#: .\isis\templates\isis\documents\product_return.html:85
+#: .\isis\templates\isis\documents\receipt.html:60
+#: .\isis\templates\isis\documents\receipt.html:84
+msgid "Fax"
+msgstr "Fax"
+
+#: .\isis\templates\isis\documents\invoice.html:66
+#: .\isis\templates\isis\documents\invoice.html:90
+#: .\isis\templates\isis\documents\invoicing.html:65
+#: .\isis\templates\isis\documents\invoicing.html:89
+#: .\isis\templates\isis\documents\pos_receipt.html:59
+#: .\isis\templates\isis\documents\pos_receipt.html:100
+#: .\isis\templates\isis\documents\product_return.html:65
+#: .\isis\templates\isis\documents\product_return.html:89
+#: .\isis\templates\isis\documents\receipt.html:64
+#: .\isis\templates\isis\documents\receipt.html:88
+msgid "Cell"
+msgstr "Celular"
+
+#: .\isis\templates\isis\documents\invoice.html:71
+#: .\isis\templates\isis\documents\invoicing.html:70
+#: .\isis\templates\isis\documents\pos_receipt.html:68
+#: .\isis\templates\isis\documents\product_return.html:70
+#: .\isis\templates\isis\documents\receipt.html:69
+msgid "To"
+msgstr "Para"
+
+#: .\isis\templates\isis\documents\invoice.html:108
+#: .\isis\templates\isis\documents\invoicing.html:107
+#: .\isis\templates\isis\documents\product_return.html:107
+msgid "Qty"
+msgstr "Quantidade"
+
+#: .\isis\templates\isis\documents\invoice.html:129
+msgid "The are no items for this Invoice"
+msgstr "Não há artigos para esta fatura"
+
+#: .\isis\templates\isis\documents\invoice.html:154
+#: .\isis\templates\isis\documents\invoicing.html:153
+#: .\isis\templates\isis\documents\pos_receipt.html:159
+#: .\isis\templates\isis\documents\product_return.html:153
+msgid "VAT"
+msgstr "IVA"
+
+#: .\isis\templates\isis\documents\invoice.html:160
+#: .\isis\templates\isis\documents\invoicing.html:159
+#: .\isis\templates\isis\documents\product_return.html:159
+#: .\isis\templates\isis\documents\receipt.html:132
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: .\isis\templates\isis\documents\invoicing.html:13
+#: .\isis\templates\isis\documents\invoicing.html:184
+#: .\isis\templates\isis\documents\product_return.html:13
+#: .\isis\templates\isis\documents\product_return.html:182
+msgid "Print"
+msgstr "Imprimir"
+
+#: .\isis\templates\isis\documents\invoicing.html:128
+#: .\isis\templates\isis\documents\pos_receipt.html:140
+msgid "The are no items for this Invoicing"
+msgstr "Não há itens para este Facturação"
+
+#: .\isis\templates\isis\documents\pos_receipt.html:86
+msgid "VAT number"
+msgstr "NUIT"
+
+#: .\isis\templates\isis\documents\pos_receipt.html:124
+msgid "Qt."
+msgstr "Qt."
+
+#: .\isis\templates\isis\documents\product_return.html:27
+msgid "RETURN NOTE"
+msgstr "DEVOLUÇÃO"
+
+#: .\isis\templates\isis\documents\product_return.html:128
+msgid "The are no items for this product_return"
+msgstr "Não há artigos para esta devolução"
+
+#: .\isis\templates\isis\documents\receipt.html:13
+#: .\isis\templates\isis\documents\receipt.html:157
+msgid "Print Receipt"
+msgstr "Recibos"
+
+#: .\isis\templates\isis\documents\receipt.html:119
+msgid "The are no items for this Receipt"
+msgstr "Não há artigos para esta fatura"
+
+#: .\isis\templates\isis\listviews\category_list.html:33
+#: .\isis\templates\isis\listviews\document_list.html:34
+#: .\isis\templates\isis\listviews\invoice_list.html:41
+#: .\isis\templates\isis\listviews\invoicing_list.html:41
+#: .\isis\templates\isis\listviews\payment_method_list.html:33
+#: .\isis\templates\isis\listviews\payment_term_list.html:33
+#: .\isis\templates\isis\listviews\product_list.html:35
+#: .\isis\templates\isis\listviews\product_return_list.html:39
+#: .\isis\templates\isis\listviews\receipt_list.html:35
+#: .\isis\templates\isis\listviews\tax_list.html:33
+#: .\isis\templates\isis\listviews\warehouse_list.html:33
+msgid "Actions"
+msgstr "Ações"
+
+#: .\isis\templates\isis\listviews\document_list.html:31
+msgid "Stock"
+msgstr "Estoque"
+
+#: .\isis\templates\isis\listviews\invoice_list.html:37
+#: .\isis\templates\isis\listviews\invoicing_list.html:37
+#: .\isis\templates\isis\listviews\product_return_list.html:37
+#: .\isis\templates\isis\modals\document_payment_modal.html:40
+msgid "Amount"
+msgstr "Valor"
+
+#: .\isis\templates\isis\listviews\product_list.html:30
+msgid "Code"
+msgstr "Código"
+
+#: .\isis\templates\isis\listviews\warehouse_list.html:61
+msgid "Movements"
+msgstr "Movimentos"
+
+#: .\isis\templates\isis\modals\bank_account_modal.html:8
+msgid "New Bank Account"
+msgstr "Nova Conta Bancária"
+
+#: .\isis\templates\isis\modals\costumer_modal.html:8
+msgid "New Costumer"
+msgstr "Novo cliente"
+
+#: .\isis\templates\isis\modals\document_payment_modal.html:59
+msgid "No payment method found. Please create some payment methods first."
+msgstr ""
+"Nenhuma forma de pagamento encontrada. Crie algumas formas de pagamento "
+"primeiro."
+
+#: .\isis\templates\isis\modals\document_payment_modal.html:63
+msgid "Make payment"
+msgstr "Pagar"
+
+#: .\isis\templates\isis\modals\document_payment_modal.html:64
+msgid "Payment POS"
+msgstr "Pagamento POS"
+
+#: .\isis\templates\isis\modals\payment_method_modal.html:8
+msgid "New Payment Method"
+msgstr "Nova forma de pagamento"
+
+#: .\isis\templates\isis\modals\payment_term_modal.html:8
+msgid "New Payment Term"
+msgstr "Novo termo de pagamento"
+
+#: .\isis\templates\isis\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\isis\templates\isis\updateviews\category_update.html:8
+msgid "Update Category"
+msgstr "Atualizar Categoria"
+
+#: .\isis\templates\isis\updateviews\document_update.html:8
+msgid "Update Document"
+msgstr "Atualizar Documento"
+
+#: .\isis\templates\isis\updateviews\invoice_update.html:8
+msgid "Update Invoice"
+msgstr "Atualizar Factura"
+
+#: .\isis\templates\isis\updateviews\invoicing_update.html:8
+msgid "Update Invoicing"
+msgstr "Atualizar Facturação"
+
+#: .\isis\templates\isis\updateviews\payment_method_update.html:8
+#: .\isis\templates\isis\updateviews\payment_term_update.html:8
+#: .\isis\templates\isis\updateviews\tax_update.html:8
+msgid "Update Tax"
+msgstr "Atualizar Taxa"
+
+#: .\isis\templates\isis\updateviews\product_update.html:8
+msgid "Update Product"
+msgstr "Atualizar Produto"
+
+#: .\isis\templates\isis\updateviews\receipt_update.html:8
+msgid "Update Receipt"
+msgstr "Atualizar Recibo"
+
+#: .\isis\templates\isis\updateviews\warehouse_update.html:8
+msgid "Update Warehouse"
+msgstr "Atualizar Armazém"
+
+#: .\isis\views.py:83
+msgid "Category added successfully!"
+msgstr "Recibo actualizado com sucesso!"
+
+#: .\isis\views.py:122
+msgid "Category updated successfully!"
+msgstr "Recibo actualizado com sucesso!"
+
+#: .\isis\views.py:149 .\isis\views.py:388 .\isis\views.py:511
+#: .\isis\views.py:754 .\isis\views.py:838 .\isis\views.py:1038
+#: .\isis\views.py:1137 .\isis\views.py:1474
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\isis\views.py:152
+msgid "Category delete successfully!"
+msgstr "Recibo eliminado Com sucesso!"
+
+#: .\isis\views.py:167
+msgid "No parent"
+msgstr "Sem Parente"
+
+#: .\isis\views.py:258
+msgid "Product added successfully!"
+msgstr "Produto adicionado com sucesso!"
+
+#: .\isis\views.py:359
+msgid "Product updated successfully!"
+msgstr "Produto atualizado com sucesso!"
+
+#: .\isis\views.py:391
+msgid "Product delete successfully!"
+msgstr "Produto excluído com sucesso!"
+
+#: .\isis\views.py:447
+msgid "Tax added successfully!"
+msgstr "Imposto adicionado com sucesso!"
+
+#: .\isis\views.py:485
+msgid "Tax updated successfully!"
+msgstr "Imposto atualizado com sucesso!"
+
+#: .\isis\views.py:514
+msgid "Tax delete successfully!"
+msgstr "Exclusão de imposto com sucesso!"
+
+#: .\isis\views.py:593
+msgid "Please contact Administrator to add new Products!"
+msgstr "Entre em contato com o Administrador para adicionar novos Produtos!"
+
+#: .\isis\views.py:690
+msgid "PaymentMethod added successfully!"
+msgstr "Método de pagamento adicionado com sucesso!"
+
+#: .\isis\views.py:728
+msgid "PaymentMethod updated successfully!"
+msgstr "Método de pagamento atualizado com sucesso!"
+
+#: .\isis\views.py:757
+msgid "PaymentMethod delete successfully!"
+msgstr "Método de pagamento excluído com sucesso!"
+
+#: .\isis\views.py:774
+msgid "PaymentTerm added successfully!"
+msgstr "Termo de pagamento adicionado com sucesso!"
+
+#: .\isis\views.py:812
+msgid "PaymentTerm updated successfully!"
+msgstr "Termo de pagamento atualizado com sucesso!"
+
+#: .\isis\views.py:841
+msgid "PaymentTerm delete successfully!"
+msgstr "Termo de pagamento atualizado com sucesso!"
+
+#: .\isis\views.py:909
+msgid "Receipt is closed and cannot be edited."
+msgstr "O recibo está fechado e não pode ser editado."
+
+#: .\isis\views.py:916 .\isis\views.py:967
+msgid "This costumer has no pending invoices!"
+msgstr "Este cliente não tem facturas pendentes!"
+
+#: .\isis\views.py:960
+msgid ""
+"There are no invoices with pending payments! Please create Invoice First."
+msgstr "Não há facturas com pagamentos pendentes! Crie uma fatura primeiro."
+
+#: .\isis\views.py:1041
+msgid "Receipt delete successfully!"
+msgstr "Recibo eliminado Com sucesso!"
+
+#: .\isis\views.py:1082
+msgid "Document added successfully!"
+msgstr "Recibo actualizado com sucesso!"
+
+#: .\isis\views.py:1111
+msgid "Document updated successfully!"
+msgstr "Recibo actualizado com sucesso!"
+
+#: .\isis\views.py:1140
+msgid "Document delete successfully!"
+msgstr "Recibo eliminado Com sucesso!"
+
+#: .\isis\views.py:1335 .\isis\views.py:1561 .\isis\views.py:1918
+msgid "Document is closed and cannot be edited."
+msgstr "O documento está fechado e não pode ser editado."
+
+#: .\isis\views.py:1477
+msgid "Invoicing delete successfully!"
+msgstr "Recibo eliminado Com sucesso!"
+
+#: .\isis\views.py:1547 .\isis\views.py:2029
+msgid "Not Deleted! {}."
+msgstr "Não excluído! {}."
+
+#: .\isis\views.py:1575 .\isis\views.py:1785
+msgid "Invoicing"
+msgstr "Facturação"
+
+#: .\isis\views.py:1579 .\isis\views.py:1936
+msgid "Please create Invoice Items First"
+msgstr "Por favor, crie artigos da factura primeiro"
+
+#: .\isis\views.py:1610 .\isis\views.py:1965
+msgid ""
+"No product matches the given barcode. Please choose product from the "
+"dropdown below."
+msgstr ""
+"Nenhum produto encontrado com esse cod. de barras. Por favor escolha o "
+"produto na lista abaixo"
+
+#: .\isis\views.py:1623 .\isis\views.py:1978
+msgid ""
+"Please use numbers that do not contain commas (','), and use dot ('.') for "
+"decimals.\n"
+"{}."
+msgstr ""
+"Use números que não contenham vírgulas (',') e ponto de use ('.') para "
+"decimais.\n"
+"{}."
+
+#: .\isis\views.py:1627 .\isis\views.py:1982
+msgid "Please choose product from the dropdown, or add a new product."
+msgstr "Por favor, escolha produto na lista ou crie um novo."
+
+#: .\isis\views.py:1631 .\isis\views.py:1986
+msgid "This product is inactive and cannot be sold."
+msgstr "Este produto está inativo e não pode ser vendido."
+
+#: .\isis\views.py:1635 .\isis\views.py:1990
+msgid "This product is not for sale."
+msgstr "Este produto não é para venda"
+
+#: .\isis\views.py:1765
+msgid "Invoice is closed and cannot be edited."
+msgstr "Factura está fechada e não pode ser editada."
+
+#: .\isis\views.py:1777
+msgid "Paid amount is less than total, it must be equal to total amount."
+msgstr "O valor pago é menor que o total, deve ser igual ao valor total."
+
+#: .\isis\views.py:1815
+msgid "Document is not finished. Please Finish it First."
+msgstr "O documento não foi finalizado. Finalize-o primeiro."
+
+#: .\isis\views.py:1820
+msgid "Document does not modify stock."
+msgstr "Este documento não modifica estoque"
+
+#~ msgid "product_return Total"
+#~ msgstr "Total da Devolução"
+
+#~ msgid "product_return Date"
+#~ msgstr "Data da devolução"
+
+#~ msgid "ProductReturn"
+#~ msgstr "Devolução"
+
+#~ msgid "Add/Update Invoice"
+#~ msgstr "Adicionar/Atualizar factura"
+
+#~ msgid "INVOICE DATA"
+#~ msgstr "DADOS DA FACTURA"
+
+#~ msgid ""
+#~ "Due date must be greater than Invoice date\n"
+#~ "            "
+#~ msgstr ""
+#~ "A data de vencimento deve ser maior que a data da fatura\n"
+#~ " "
+
+#~ msgid "Last 5 Costumer Paid Invoicings"
+#~ msgstr "Este cliente não tem factura(s)"
+
+#~ msgid "Costumer Noit Paid Invoicings"
+#~ msgstr "Facturas não Pagas"
+
+#~ msgid "Invoice created successfully!"
+#~ msgstr "Recibo actualizado com sucesso!"
+
+#~ msgid "Invoice updated successfully!"
+#~ msgstr "Factura atualizada com sucesso!"
+
+#~ msgid "Invoice delete successfully!"
+#~ msgstr "Factura excluída com sucesso!"
+
+#~ msgid "Invoicing created successfully!"
+#~ msgstr "Recibo actualizado com sucesso!"
+
+#~ msgid "Paid amount is more than total, it must be equal to total amount."
+#~ msgstr "O valor pago é maior que o total, deve ser igual ao valor total."
+
+#~ msgid "Payment entered successfully"
+#~ msgstr "Recibo eliminado Com sucesso!"
+
+#, python-format
+#~ msgid "Rate (%%)"
+#~ msgstr "Valor (%)"

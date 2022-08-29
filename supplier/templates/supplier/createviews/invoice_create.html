@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'New Supplier Invoice' %} {% endblock title %}
+
+{% block breadcrumb %}
+{% include 'breadcrumb.html' with title='New Supplier Invoice' path='<a href="/suppliers/"> Supplier Invoices </a>' dest='New Supplier Invoice' %}
+{% endblock breadcrumb %}
+            
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="conteiner-fluid p-10 m-0" id="results">
+                </div>
+                {% csrf_token %}
+                {% crispy form %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'modal.html' with title="" template='supplier/modals/supplier_modal.html' id='supplier' %}
+    {% include 'modal.html' with title="" template='isis/modals/warehouse_modal.html' id='warehouse' %}
+    {% include 'modal.html' with title="" template='isis/modals/payment_method_modal.html' id='payment_method' %}
+    {% include 'modal.html' with title="" template='isis/modals/payment_term_modal.html' id='payment_term' %}
+    {% include 'modal.html' with title="" template='isis/modals/bank_account_modal.html' id='bank_account' %}
+{% endblock content %}

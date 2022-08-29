@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 08:26+0200\n"
+"PO-Revision-Date: 2022-08-19 09:25-0200\n"
+"Last-Translator: None None <vilankazi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\warehouse\forms.py:27
+msgid "Add/Update Warehouse"
+msgstr "Adicionar/Atualizar Armazém"
+
+#: .\warehouse\forms.py:29
+msgid "WAREHOUSE MAIN DATA"
+msgstr "DADOS PRINCIPAIS DO ARMAZÉM"
+
+#: .\warehouse\forms.py:56
+msgid "Save & Close"
+msgstr "Gravar & Fechar"
+
+#: .\warehouse\forms.py:57
+msgid "Save & Edit"
+msgstr "Gravar & Editar"
+
+#: .\warehouse\models.py:14
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:42
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:44
+msgid "Active"
+msgstr "Ativo"
+
+#: .\warehouse\models.py:14
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:45
+msgid "Inactive"
+msgstr "Inativo"
+
+#: .\warehouse\models.py:30
+msgid "Active status"
+msgstr "Ativo"
+
+#: .\warehouse\models.py:32
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:50
+msgid "Notes"
+msgstr "Notas"
+
+#: .\warehouse\models.py:61
+msgid "Default Warehouse"
+msgstr "Armazém Padrão"
+
+#: .\warehouse\templates\warehouse\createviews\warehouse_create.html:8
+msgid "New Warehouse"
+msgstr "Novo Armazém"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:8
+msgid "Warehouse Details"
+msgstr "Detalhes do Armazém"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:34
+msgid "List"
+msgstr "Lista"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:38
+#: .\warehouse\templates\warehouse\listviews\warehouse_list.html:31
+msgid "Parent"
+msgstr "Parente"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:39
+#: .\warehouse\templates\warehouse\listviews\warehouse_list.html:32
+msgid "Address"
+msgstr "Endereço"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:40
+#: .\warehouse\templates\warehouse\listviews\warehouse_list.html:33
+msgid "Contacts"
+msgstr "Contactos"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:41
+msgid "Open Status"
+msgstr "Estado de Aberto"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:49
+msgid "Description"
+msgstr "Descrição"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:53
+msgid "Created on"
+msgstr "Criado em"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:54
+msgid "Created by"
+msgstr "Criado por"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:55
+msgid "Modified on"
+msgstr "Modificado em"
+
+#: .\warehouse\templates\warehouse\detailviews\warehouse_detail_view.html:56
+msgid "Modified by"
+msgstr "Modificado por"
+
+#: .\warehouse\templates\warehouse\listviews\warehouse_list.html:30
+msgid "Name"
+msgstr "Novo"
+
+#: .\warehouse\templates\warehouse\listviews\warehouse_list.html:34
+msgid "Actions"
+msgstr "Ações"
+
+#: .\warehouse\templates\warehouse\partials\action_item_list.html:5
+msgid "List of Actions"
+msgstr "Lista de Ações"
+
+#: .\warehouse\templates\warehouse\partials\action_item_list.html:39
+msgid "List of Items"
+msgstr "Lista de artigos"
+
+#: .\warehouse\templates\warehouse\updateviews\warehouse_update.html:8
+msgid "Update Warehouse"
+msgstr "Atualizar Armazém"
+
+#: .\warehouse\views.py:38
+msgid "Warehouse added successfully!"
+msgstr "Armazém adicionado com sucesso!"
+
+#: .\warehouse\views.py:91
+msgid "Warehouse updated successfully!"
+msgstr "Armazém atualizado com sucesso!"
+
+#: .\warehouse\views.py:117
+msgid "Not Deleted! {}"
+msgstr "Não excluído! {}"
+
+#: .\warehouse\views.py:120
+msgid "Warehouse delete successfully!"
+msgstr "Armazém excluído com sucesso!"
+
+#: .\warehouse\views.py:135
+msgid "No parent"
+msgstr "Sem Parente"

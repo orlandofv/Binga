@@ -1,0 +1,54 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+
+{% block title %} {{ block.super }} | {% trans 'Work Order Details' %} {% endblock title %}
+
+{% block breadcrumb %}
+    {% include 'breadcrumb.html' with title='Work Order Details' path='<a href="/workorders/"> Work Orders</a>' dest='Details'  %}
+{% endblock breadcrumb %}
+
+{% block content %}
+    
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                {% if data.image.url %}
+                    <img src="{{ data.image.url }}">
+                {% endif %}
+                
+                {% if data.is_overdue %} <h1 style="color: red;"> Overdue </h1> {% endif %}
+                <h1>{{ data.order }} ({{ data.allocation }}) </h1>
+                <div class="progress" style="height: 1px; margin-bottom: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: {{ data.progress }}%;" aria-valuenow="{{ data.progress }}" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{ data.progress }}%;" aria-valuenow="{{ data.progress }}" aria-valuemin="0" aria-valuemax="100">{{ data.progress }}% </div>
+                  </div>
+                <hr>
+                <h6>{% trans 'Ramaining Time' %}: <strong>{{ ramaining_time }}</strong></h6>
+                <h6>{% trans 'Allocation' %}: <strong>{{ data.allocation }}</strong></h6>
+                <h6>{% trans 'Costumer' %}: <strong>{{ data.allocation.costumer }}</strong></h6>
+                <h6>{% trans 'Person in Charge' %}: <strong>{{ data.responsible }}</strong></h6>
+                <h6>{% trans 'Address' %}: <strong>{{ data.allocation.costumer.address }}</strong></h6>
+                <h6>{% trans 'Start Date' %}: <strong>{{ data.start }}</strong></h6>
+                <h6>{% trans 'End Date' %}: <strong>{{ data.end }}</strong></h6>
+                <h6>{% trans 'Warning Date' %}: <strong>{{ data.warn_after }}</strong></h6>
+                <h6>{% trans 'Work Status' %}: <strong 
+                    {% if data.status == 'Abandoned' or data.status == 'Pending' %} style="color:red;" {% else %} style="color:green;" {% endif %}>{{ data.status }}</strong></h6>
+    
+                <h6>{% trans 'Notes' %}: <strong>{{ data.notes }}</strong></h6>
+                
+                <hr>
+                <p>{% trans 'Created on' %}: <i>{{ data.date_created}}</i></p>
+                <p>{% trans 'Created by' %}: <i>{{ data.created_by }}</i></p>
+                <p>{% trans 'Modified on' %}: <i>{{ data.date_modified }}</i></p>
+                <p>{% trans 'Modified by' %}: <i>{{ data.modified_by }}</i></p>
+                
+            </div>
+        </div>
+    </div>
+{% endblock content %}
